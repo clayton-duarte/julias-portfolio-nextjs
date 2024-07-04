@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
 
-import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 import Container from "@/components/Container";
 import Header from "@/components/Header";
-
+import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 
 const Content = styled.div`
   flex-direction: column;
@@ -33,7 +32,10 @@ export default function WorkPage() {
       <Container>
         <Content>
           {projects.map((cardProps, index) =>
-            <ProjectCard key={`project-card-${index}`} {...cardProps} />
+            <ProjectCard
+              key={`project-card-${index}`}
+              {...cardProps}
+            />
           )}
         </Content>
       </Container>

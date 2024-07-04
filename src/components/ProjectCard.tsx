@@ -1,5 +1,6 @@
-import styled from "@emotion/styled"
 import Image from "next/image";
+
+import styled from "@emotion/styled"
 
 const Card = styled.div`
   background: ${props => props.theme.PRIMARY};

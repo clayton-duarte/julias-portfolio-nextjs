@@ -1,5 +1,6 @@
-import { ThemeProvider as Provider, Global, Theme } from '@emotion/react';
 import { Nunito_Sans } from "next/font/google";
+
+import { ThemeProvider as Provider, Global, Theme } from '@emotion/react';
 
 const nunito = Nunito_Sans({
   adjustFontFallback: false,
