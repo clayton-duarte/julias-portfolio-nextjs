@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
-import Container from "@/components/Container";
-import Header from "@/components/Header";
-import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
+import Container from "~/components/Container";
+import Header from "~/components/Header";
+import ProjectCard, { ProjectCardProps } from "~/components/ProjectCard";
 
 const Content = styled.div`
   flex-direction: column;
@@ -14,15 +14,15 @@ const Content = styled.div`
 const projects: ProjectCardProps[] = [{
   title: "Case Study - HighKey app",
   description: "The HighKey app helps users to mix and match outfits while they can check their wearing habits.",
-  cta: "View project"
+  href: "/work/highkey-app-case-study"
 }, {
   title: "Kijiji - Industry Project",
   description: "The HighKey app helps users to mix and match outfits while they check their wearing habits.",
-  cta: "View project"
+  href: "/work/kijiji-industry-project"
 }, {
   title: "Case Study - HighKey app",
   description: "The HighKey app helps users to mix and match outfits while they can check their wearing habits.",
-  cta: "View project"
+  href: "/work/highkey-app-case-study"
 }]
 
 export default function WorkPage() {

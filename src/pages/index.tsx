@@ -1,7 +1,6 @@
-
 import styled from '@emotion/styled'
 
-import Header from '@/components/Header'
+import Header from '~/components/Header'
 
 const Article = styled.article`
   background-image: url("https://placehold.co/1920x1080?text=placeholder");

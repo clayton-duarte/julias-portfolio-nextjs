@@ -1,3 +1,6 @@
+import { useRouter } from 'next/router'
+import { ReactNode, useMemo } from 'react'
+
 import styled from '@emotion/styled'
 
 import Container from './Container'
@@ -21,7 +24,8 @@ const Nav = styled.nav`
   gap: 10rem;
 `
 
-const Link = styled.a`
+const Link = styled.a<{ active?: boolean }>`
+  font-weight: ${props => props.active ? 700 : 400};
   text-decoration: none;
   transition: 250ms;
   color: inherit;
@@ -30,27 +34,37 @@ const Link = styled.a`
   }
 `
 
-const Home = styled(Link)`
-  font-weight: 700;
-`
-
 const DesktopLink = styled(Link)`
-@media only screen and (max-width: 1024px) {
-  .hiddenMedium {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
-}
 `
+
+function SmartLink({ children, href }: { children: ReactNode, href: string }) {
+  const router = useRouter();
+
+  const isActive = useMemo(() => {
+    if (href === '/' && router.pathname !== '/') return false;
+
+    if (router.pathname.startsWith(href)) return true;
+
+    return false;
+  }, [href, router.pathname])
+
+  return (
+    <Link active={isActive} href={href}>{children}</Link>
+  )
+}
 
 export default function HeaderComponent() {
   return (
     <Header>
       <Container>
         <Wrapper>
-          <Home href='/'>Logo</Home>
+          <SmartLink href='/'>Home</SmartLink>
           <Nav>
-            <Link href="/work">Work</Link>
-            <Link href="#">About</Link>
+            <SmartLink href="/work">Work</SmartLink>
+            <SmartLink href="/about">About</SmartLink>
             <DesktopLink href="#">LinkedIn</DesktopLink>
             <DesktopLink href="#">Resume</DesktopLink>
           </Nav>

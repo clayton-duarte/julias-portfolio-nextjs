@@ -3,8 +3,8 @@ import Image from "next/image";
 import styled from "@emotion/styled"
 
 const Card = styled.div`
-  background: ${props => props.theme.PRIMARY};
-  color: ${props => props.theme.WHITE};
+  background: ${props => props.theme.LIGHT};
+  /* color: ${props => props.theme.WHITE}; */
   border-radius: 40px;
   padding: 92px;
   display: flex;
@@ -30,10 +30,11 @@ const Description = styled.p`
 `
 
 const Button = styled.a`
-  border: 1px solid ${props => props.theme.WHITE};
-  color: ${props => props.theme.WHITE};
+  /* border: 1px solid ${props => props.theme.WHITE}; */
+  background: ${props => props.theme.WHITE};
+  color: ${props => props.theme.BLACK};
   transition: 250ms linear;
-  background: transparent;
+  /* background: transparent; */
   text-decoration: none;
   align-items: center;
   border-radius: 10px;
@@ -42,22 +43,22 @@ const Button = styled.a`
   font-weight: 700;
   font-size: 32px;
   &:hover {
-    border: 1px solid ${props => props.theme.PRIMARY};
+    /* border: 1px solid ${props => props.theme.PRIMARY}; */
     background: ${props => props.theme.WHITE};
     color: ${props => props.theme.PRIMARY};
   }
 `
 
 export interface ProjectCardProps {
-  description: string;
   title: string;
-  cta: string;
+  description: string;
+  href?: string;
 }
 
 export default function ProjectCard({
   title,
   description,
-  cta
+  href = "#"
 }: ProjectCardProps) {
   return (
     <Card>
@@ -73,8 +74,8 @@ export default function ProjectCard({
         <Description>
           {description}
         </Description>
-        <Button href="#">
-          {cta}
+        <Button href={href}>
+          View project
         </Button>
       </Content>
     </Card>

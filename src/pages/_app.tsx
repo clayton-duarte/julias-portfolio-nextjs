@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 
-import { ThemeProvider } from "@/theme";
+import { ThemeProvider } from "~/theme";
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
 
