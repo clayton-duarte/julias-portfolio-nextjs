@@ -1,30 +1,33 @@
 import styled from '@emotion/styled'
 
+import Container from './Container'
+
 const Header = styled.header`
-  /* border-bottom: 1px solid #272424; */
-  box-shadow: 0 0 1rem #27242433;
+  box-shadow: 0 0 1rem ${props => props.theme.LIGHT};
   font-size: 1.5rem;
 `
 
-const Container = styled.div`
-  display: flex;
+const Wrapper = styled.div`
   justify-content: space-between;
-  /* max-width: 1280px;
-  margin: 0 auto; */
+  display: flex;
   padding: 3rem;
   gap: 3rem;
 `
 
 const Nav = styled.nav`
-  display: flex;
   justify-content: flex-end;
   align-items: center;
+  display: flex;
   gap: 10rem;
 `
 
 const Link = styled.a`
   text-decoration: none;
+  transition: 250ms;
   color: inherit;
+  &:hover {
+    color: ${props => props.theme.PRIMARY};
+  }
 `
 
 const Home = styled(Link)`
@@ -43,13 +46,15 @@ export default function HeaderComponent() {
   return (
     <Header>
       <Container>
-        <Home>Logo</Home>
-        <Nav>
-          <Link href="/work">Work</Link>
-          <Link href="#">About</Link>
-          <DesktopLink href="#">LinkedIn</DesktopLink>
-          <DesktopLink href="#">Resume</DesktopLink>
-        </Nav>
+        <Wrapper>
+          <Home href='/'>Logo</Home>
+          <Nav>
+            <Link href="/work">Work</Link>
+            <Link href="#">About</Link>
+            <DesktopLink href="#">LinkedIn</DesktopLink>
+            <DesktopLink href="#">Resume</DesktopLink>
+          </Nav>
+        </Wrapper>
       </Container>
     </Header>
   )
