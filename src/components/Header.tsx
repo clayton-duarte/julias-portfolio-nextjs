@@ -12,8 +12,8 @@ const Header = styled.header`
 
 const Wrapper = styled.div`
   justify-content: space-between;
+  padding: 3rem 0;
   display: flex;
-  padding: 3rem;
   gap: 3rem;
 `
 
