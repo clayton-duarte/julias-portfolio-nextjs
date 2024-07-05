@@ -21,7 +21,7 @@ const StyledText = styled.span<StyledTextProps>`
   text-align: ${({ align: textAlign }) => textAlign ?? 'left'};
   text-transform: ${({ transform }) => transform ?? 'none'};
   font-weight: ${({ bold }) => (bold ? '700' : '400')};
-  font-size: ${({ size }) => (size ?? '1rem')};
+  font-size: ${({ size }) => (size ?? 'inherit')};
   padding: ${({ p }) => p ?? 0};
   margin: ${({ m }) => m ?? 0};
 `;

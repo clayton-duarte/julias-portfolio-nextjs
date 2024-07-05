@@ -1,10 +1,9 @@
-// import Image from "next/image";
-
 import styled from "@emotion/styled";
 
 import Container from "~/components/Container";
 import Header from "~/components/Header";
 import BannerSection from "~/components/highKeySections/Banner";
+import ProblemSpaceSection from "~/components/highKeySections/ProblemSpace";
 import SummarySection from "~/components/highKeySections/Summary";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
@@ -90,17 +89,7 @@ export default function HighkeyAppCaseStudyPage() {
       <Header />
       <BannerSection />
       <SummarySection />
-
-      <Container>
-        <Title primary>Problem Space</Title>
-        <P2>
-          Gen Z Canadians, aged 12-27, struggle to plan their outfits, leading to overbuying or underusing their clothing pieces.
-        </P2>
-        <br />
-        <P2>
-          This problem occurs because they often forget about the clothes they own after purchase. As a result, items are underutilized or donated after minimal use. Addressing this issue is crucial to help them make more conscious purchasing decisions, save money and optimize their wardrobe.
-        </P2>
-      </Container>
+      <ProblemSpaceSection />
 
       <Container>
         <CardSection>
