@@ -9,6 +9,7 @@ import Persona from "~/components/highKeySections/Persona";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import Summary from "~/components/highKeySections/Summary";
+import TaskFlow from "~/components/highKeySections/TaskFlow";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
 import UserStories from "~/components/highKeySections/UserStories";
 import WhatPeopleSay from "~/components/highKeySections/WhatPeopleSay";
@@ -30,6 +31,10 @@ export default function HighkeyAppCaseStudyPage() {
       <HowMightWe />
       <ExperienceMapping />
       <UserStories />
+      <TaskFlow />
+      <p>UI Inspo</p>
+      <p>Sketches</p>
+      <p>Wireframes</p>
     </>
   )
 }

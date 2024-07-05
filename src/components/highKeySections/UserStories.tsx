@@ -20,7 +20,7 @@ export default function UserStories() {
             View the full User Stories here.
           </Link>
         </Text.H5>
-        <Text.H3 bold={false} align='center' >Approach</Text.H3>
+        <Text.H3 bold={false} align='center'>Approach</Text.H3>
         <Grid gap="2rem" m='3rem 0'>
           <Text.H5 bold={false}>
             To optimize user experience, I have chosen to focus on the Epic{' '}
