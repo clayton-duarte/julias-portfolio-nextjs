@@ -46,6 +46,7 @@ export interface StyledGridProps {
   container?: boolean;
   height?: string;
   area?: string;
+  radius?: string;
 }
 
 export const StyledGrid = styled.div<StyledGridProps>`
@@ -61,6 +62,7 @@ export const StyledGrid = styled.div<StyledGridProps>`
   grid-template-rows: ${(props) => props.xsy ?? 'auto'};
   align-self: ${(props) => props.alignSelf ?? 'auto'};
   align-items: ${(props) => props.align ?? 'start'};
+  border-radius: ${(props) => props.radius ?? '0'};
   grid-area: ${(props) => props.area ?? 'auto'};
   height: ${(props) => props.height ?? 'auto'};
   gap: ${(props) => props.gap ?? '1rem'};

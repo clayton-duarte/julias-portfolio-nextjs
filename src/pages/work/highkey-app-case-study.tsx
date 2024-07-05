@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Container from "~/components/Container";
 import Header from "~/components/Header";
 import BannerSection from "~/components/highKeySections/Banner";
+import DesignProcessSection from "~/components/highKeySections/DesignProcess";
 import ProblemSpaceSection from "~/components/highKeySections/ProblemSpace";
 import SummarySection from "~/components/highKeySections/Summary";
 
@@ -90,43 +91,7 @@ export default function HighkeyAppCaseStudyPage() {
       <BannerSection />
       <SummarySection />
       <ProblemSpaceSection />
-
-      <Container>
-        <CardSection>
-          <Title align="center">Design Process</Title>
-          <Row>
-            <Col grow={1} align="center">
-              <img src="https://placehold.co/126x126" />
-              <P2>Empathize</P2>
-              <ul>
-                <li>Secondary</li>
-                <li>Research</li>
-                <li>User Interviews</li>
-              </ul>
-            </Col>
-            <Col grow={1} align="center">
-              <img src="https://placehold.co/126x126" />
-              <P2>Define</P2>
-              <ul>
-                <li>User Interviews</li>
-                <li>Secondary Research</li>
-              </ul>
-            </Col>
-            <Col grow={1} align="center">
-              <img src="https://placehold.co/126x126" />
-              <P2>Ideate</P2>
-            </Col>
-            <Col grow={1} align="center">
-              <img src="https://placehold.co/126x126" />
-              <P2>Prototype</P2>
-            </Col>
-            <Col grow={1} align="center">
-              <img src="https://placehold.co/126x126" />
-              <P2>Test</P2>
-            </Col>
-          </Row>
-        </CardSection>
-      </Container>
+      <DesignProcessSection />
 
       <Container>
         <Title primary separator>Secondary Research</Title>
