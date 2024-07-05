@@ -16,7 +16,8 @@ export default function HowMightWe() {
         <Text.H5 bold={false}>
           I then plotted exercise their pain points, behaviours and motivations into a{' '}
           <Text.Strong color='PRIMARY'>Experience Mapping</Text.Strong>{' '}
-          to further understand how the users are currently experiencing the problem of underusing.        </Text.H5>
+          to further understand how the users are currently experiencing the problem of underusing.
+        </Text.H5>
       </Grid>
     </>
   )
