@@ -8,7 +8,7 @@ import Text from '../Text';
 export default function SecondaryResearch() {
   return (
     <>
-      <Grid container>
+      <Grid container p='0 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Secondary Research</Text.H4>
         <Hr />
         <Grid m='4rem 0' gap='2rem'>
@@ -70,7 +70,7 @@ export default function SecondaryResearch() {
         </Grid>
       </Grid>
       <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
-        <Grid container>
+        <Grid container p='0 3rem'>
           <Text.H5 bold={false}>
             After looking at some existing data, I wanted to find out why people are wearing their clothes less often, even though Gen Z, the generation that buys the most fashion, knows a lot about environmental issues. To understand this better, I talked to three Gen Z individuals living in Toronto who use social media for outfit inspiration.
           </Text.H5>

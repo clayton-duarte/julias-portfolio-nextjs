@@ -5,33 +5,18 @@ import styled from '@emotion/styled'
 
 import Grid from './Grid'
 
-const Header = styled.header`
+const Header = styled(Grid)`
   border-bottom: 2px solid ${props => props.theme.BLACK};
-  background: ${props => props.theme.WHITE};
-  font-size: 1.5rem;
   position: sticky;
   z-index: 999;
   top: 0;
-`
-
-const Wrapper = styled.div`
-  justify-content: space-between;
-  padding: 3rem 0;
-  display: flex;
-  gap: 3rem;
-`
-
-const Nav = styled.nav`
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
-  gap: 10rem;
 `
 
 const Link = styled.a<{ active?: boolean }>`
   font-weight: ${props => props.active ? 700 : 400};
   text-decoration: none;
   transition: 250ms;
+  font-size: 1.5rem;
   color: inherit;
   &:hover {
     color: ${props => props.theme.PRIMARY};
@@ -62,17 +47,15 @@ function SmartLink({ children, href }: { children: ReactNode, href: string }) {
 
 export default function HeaderComponent() {
   return (
-    <Header>
-      <Grid container>
-        <Wrapper>
-          <SmartLink href='/'>Home</SmartLink>
-          <Nav>
-            <SmartLink href="/work">Work</SmartLink>
-            <SmartLink href="/about">About</SmartLink>
-            <DesktopLink href="#">LinkedIn</DesktopLink>
-            <DesktopLink href="#">Resume</DesktopLink>
-          </Nav>
-        </Wrapper>
+    <Header bg='WHITE'>
+      <Grid container gap='3rem' p='3rem' xs='auto auto' justify='space-between'>
+        <SmartLink href='/'>Home</SmartLink>
+        <Grid xs='repeat(4, auto)' gap='10rem'>
+          <SmartLink href="/work">Work</SmartLink>
+          <SmartLink href="/about">About</SmartLink>
+          <DesktopLink href="#">LinkedIn</DesktopLink>
+          <DesktopLink href="#">Resume</DesktopLink>
+        </Grid>
       </Grid>
     </Header>
   )

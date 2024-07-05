@@ -29,7 +29,7 @@ export default function WorkPage() {
   return (
     <>
       <Header />
-      <Grid container>
+      <Grid container p='3rem 0'>
         <Content>
           {projects.map((cardProps, index) =>
             <ProjectCard

@@ -9,6 +9,7 @@ import InterviewScript from "~/components/highKeySections/InterviewScript";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import Summary from "~/components/highKeySections/Summary";
+import ThemesSection from "~/components/highKeySections/ThemesSection";
 import Text from "~/components/Text";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
@@ -99,48 +100,9 @@ export default function HighkeyAppCaseStudyPage() {
       <SecondaryResearch />
       <InterviewScript />
       <AffinityMapping />
+      <ThemesSection />
 
-      <Grid container>
-        <CardSection>
-          <Title align="center">Themes</Title>
-          <Row>
-            <Col>
-              <P1>Inspirational and Aspirational Shopping:</P1>
-              <P1>
-                Insight - Seeking specific styles, Using social media for quick fashion inspiration and planning outfits, The thrill of thrifting and finding unique pieces.
-              </P1>
-            </Col>
-            <Col>
-              <P1>Ethical and Quality Concerns:</P1>
-              <P1>
-                Insight - Ethical issues with certain brands affecting purchasing decisions.
-                <br />
-                Disappointment with the quality of expensive items from well-known brands.
-              </P1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <P1>Fit and Sizing Challenges:</P1>
-              <P1>
-                Insight - Difficulty finding jeans that fit well for petite heights. Inconsistent sizing leading to items being too tight, loose, long, or short.
-                <br />
-                Online purchases not fitting well or matching expectations.
-              </P1>
-            </Col>
-            <Col>
-              <P1>Fit and Sizing Challenges:</P1>
-              <P1>
-                Insight - Difficulty finding jeans that fit well for petite heights. Inconsistent sizing leading to items being too tight, loose, long, or short.
-                <br />
-                Online purchases not fitting well or matching expectations.
-              </P1>
-            </Col>
-          </Row>
-        </CardSection>
-      </Grid>
-
-      <Grid container>
+      <Grid container p='0 3rem'>
         <Title align="center">Epics</Title>
         <P2 align="center">Some of the Epics I end up with.</P2>
         <Row>
@@ -169,7 +131,7 @@ export default function HighkeyAppCaseStudyPage() {
         </Row>
       </Grid>
 
-      <Grid container>
+      <Grid container p='0 3rem'>
         <Title primary align="center">Chosen Epic</Title>
         <Row>
           <Col>
@@ -183,7 +145,7 @@ export default function HighkeyAppCaseStudyPage() {
         </P1>
       </Grid>
 
-      <Grid container>
+      <Grid container p='0 3rem'>
         <Title primary separator>Persona</Title>
         <Row>
           <Col>
