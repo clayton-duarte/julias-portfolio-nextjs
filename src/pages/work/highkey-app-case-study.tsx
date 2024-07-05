@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 import Grid from "~/components/Grid";
 import Header from "~/components/Header";
+import AffinityMapping from "~/components/highKeySections/AffinityMapping";
 import Banner from "~/components/highKeySections/Banner";
 import DesignProcess from "~/components/highKeySections/DesignProcess";
 import InterviewScript from "~/components/highKeySections/InterviewScript";
@@ -96,43 +97,8 @@ export default function HighkeyAppCaseStudyPage() {
       <ProblemSpace />
       <DesignProcess />
       <SecondaryResearch />
-      <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
-        <Grid container>
-          <Text.H5 bold={false}>
-            After looking at some existing data, I wanted to find out why people are wearing their clothes less often, even though Gen Z, the generation that buys the most fashion, knows a lot about environmental issues. To understand this better, I talked to three Gen Z individuals living in Toronto who use social media for outfit inspiration.
-          </Text.H5>
-        </Grid>
-      </Grid>
       <InterviewScript />
-
-      <Grid container>
-        <Title primary separator>Interview Script</Title>
-        <Row>
-          <Col>
-            <P2 strong>Some of the questions that I used during the interviews:</P2>
-          </Col>
-          <Col />
-        </Row>
-        <Row>
-          <img src="https://placehold.co/500x500" />
-          <List>
-            <ListItem>What apps do you typically use?</ListItem>
-            <ListItem>What is your main goal when buying a clothing piece?</ListItem>
-            <ListItem>Tell me about the last time you tried to give away your clothes. What was the biggest challenge to it?</ListItem>
-            <ListItem>How many times you would say you wear a clothing piece, before giving away your clothes?</ListItem>
-          </List>
-        </Row>
-      </Grid>
-
-      <Grid container>
-        <Title primary separator>Affinity Mapping</Title>
-        <Row>
-          <Col align="center">
-            <img src="https://placehold.co/743x1178" />
-            <img src="https://placehold.co/743x1178" />
-            <img src="https://placehold.co/743x1178" /></Col>
-        </Row>
-      </Grid>
+      <AffinityMapping />
 
       <Grid container>
         <CardSection>
