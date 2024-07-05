@@ -17,9 +17,9 @@ export interface StyledTextProps {
 
 const StyledText = styled.span<StyledTextProps>`
   background: ${(props) => (props.bg ? props.theme[props.bg] : 'transparent')};
+  color: ${({ theme, color }) => color != null ? theme[color] : 'inherit'};
   text-align: ${({ align: textAlign }) => textAlign ?? 'left'};
   text-transform: ${({ transform }) => transform ?? 'none'};
-  color: ${({ theme, color }) => theme[color || 'BLACK']};
   font-weight: ${({ bold }) => (bold ? '700' : '400')};
   font-size: ${({ size }) => (size ?? '1rem')};
   padding: ${({ p }) => p ?? 0};

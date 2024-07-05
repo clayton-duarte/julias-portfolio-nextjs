@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import Container from "~/components/Container";
 import Header from "~/components/Header";
 import BannerSection from "~/components/highKeySections/Banner";
+import SummarySection from "~/components/highKeySections/Summary";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
   justify-content: ${props => props.justify || 'start'};
@@ -27,11 +28,6 @@ const H2 = styled.h2<{ primary?: boolean; align?: string }>`
   text-align: ${props => props.align || 'left'};
   font-size: 36px;
   margin: 0;
-`
-
-const BgSection = styled.section`
-  background-color: ${props => props.theme.PRIMARY};
-  color: ${props => props.theme.WHITE};
 `
 
 const Col = styled.div<{ align?: string; grow?: number }>`
@@ -93,33 +89,7 @@ export default function HighkeyAppCaseStudyPage() {
     <>
       <Header />
       <BannerSection />
-
-      <BgSection>
-        <Container>
-          <Row justify='space-between'>
-            <Col>
-              <Title>My role</Title>
-              <P1>UX/UI and Research</P1>
-            </Col>
-            <Col>
-              <Title>Industry</Title>
-              <P1>Fashion, Retail</P1>
-            </Col>
-            <Col>
-              <Title>Tools used</Title>
-              <P1>
-                Figma, Google slides, Google Docs,
-                <br />
-                Photoshop, Illustrator, Optimal Workshop
-              </P1>
-            </Col>
-            <Col>
-              <Title>Duration</Title>
-              <P1>May 2024 - July 5</P1>
-            </Col>
-          </Row>
-        </Container>
-      </BgSection>
+      <SummarySection />
 
       <Container>
         <Title primary>Problem Space</Title>

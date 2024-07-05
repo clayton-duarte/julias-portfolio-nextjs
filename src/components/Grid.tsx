@@ -23,6 +23,7 @@ function fromFourAxisToString(prop?: FourAxisProp): string | undefined {
 
 export interface StyledGridProps {
   bg?: ColorNames;
+  color?: ColorNames;
   justify?: string;
   justifySelf?: string;
   align?: string;
@@ -49,6 +50,8 @@ export interface StyledGridProps {
 
 export const StyledGrid = styled.div<StyledGridProps>`
   display: grid;
+  background: ${(props) => (props.bg ? props.theme[props.bg] : 'transparent')};
+  color: ${(props) => (props.color ? props.theme[props.color] : 'inherit')};
   max-width: ${(props) => (props.container ? Breakpoints.XL : '100%')};
   max-height: ${(props) => props.maxHeight ?? 'max-content'};
   padding: ${(props) => fromFourAxisToString(props.p) ?? 0};
@@ -71,7 +74,6 @@ export const StyledGrid = styled.div<StyledGridProps>`
       : props.xsy || props.mdy || props.lgy || props.xly
         ? '100%'
         : 'min-content'};
-  background: ${(props) => (props.bg ? props.theme[props.bg] : 'transparent')};
   // Responsive
   @media (min-width: ${Breakpoints.SM}) {
     grid-template-columns: ${(props) => props.sm ?? props.xs ?? '1fr'};
