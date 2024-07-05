@@ -10,6 +10,7 @@ import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import Summary from "~/components/highKeySections/Summary";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
+import WhatPeopleSay from "~/components/highKeySections/WhatPeopleSay";
 import Text from "~/components/Text";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
@@ -101,49 +102,7 @@ export default function HighkeyAppCaseStudyPage() {
       <InterviewScript />
       <AffinityMapping />
       <ThemesSection />
-
-      <Grid container p='0 3rem'>
-        <Title align="center">Epics</Title>
-        <P2 align="center">Some of the Epics I end up with.</P2>
-        <Row>
-          <Col>
-            <SmallCard block>
-              <P1 strong align="center">Utilization & Wear Frequency</P1>
-            </SmallCard>
-          </Col>
-          <Col>
-            <SmallCard block>
-              <P1 strong align="center">Seasonal Management</P1>
-            </SmallCard>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <SmallCard block>
-              <P1 strong align="center">Cataloging & Organizing</P1>
-            </SmallCard>
-          </Col>
-          <Col>
-            <SmallCard block>
-              <P1 strong align="center">Sustainability & Education</P1>
-            </SmallCard>
-          </Col>
-        </Row>
-      </Grid>
-
-      <Grid container p='0 3rem'>
-        <Title primary align="center">Chosen Epic</Title>
-        <Row>
-          <Col>
-            <SmallCard block>
-              <P1 strong align="center">Utilization & Wear Frequency</P1>
-            </SmallCard>
-          </Col>
-        </Row>
-        <P1 primary>
-          Since the interviewees explained how many  times they buy something or even receive hand-me-downs from parents  and forget them inside the wardrobe. I have chosen to target this problem and create a solution that helps Gen Z Canadians who are unsure about how style their clothes and end up forgetting about those clothes.
-        </P1>
-      </Grid>
+      <WhatPeopleSay />
 
       <Grid container p='0 3rem'>
         <Title primary separator>Persona</Title>
