@@ -6,8 +6,12 @@ import styled from '@emotion/styled'
 import Container from './Container'
 
 const Header = styled.header`
-  box-shadow: 0 0 1rem ${props => props.theme.LIGHT};
+  border-bottom: 2px solid ${props => props.theme.BLACK};
+  background: ${props => props.theme.WHITE};
   font-size: 1.5rem;
+  position: sticky;
+  z-index: 999;
+  top: 0;
 `
 
 const Wrapper = styled.div`

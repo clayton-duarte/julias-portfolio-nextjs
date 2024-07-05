@@ -1,0 +1,27 @@
+import Image from "next/image";
+
+import { ButtonLink } from "../Button";
+import Container from "../Container";
+import Grid from "../Grid";
+import Text from "../Text";
+
+export default function BannerSection() {
+  return (
+    <Container>
+      <Grid xs='auto 1fr' gap='2rem' p='4rem 0'>
+        <Image
+          src="/high-key-banner.png"
+          alt="high-key-app"
+          width={620}
+          height={610}
+          priority
+        />
+        <Grid gap="2rem" xs='auto'>
+          <Text.H1 color='PRIMARY'>HighKey - Case Study</Text.H1>
+          <Text.H4 m="0 0 2rem 0" bold={false}>The HighKey app helps users to mix and match outfits while they can check their wearing habits.</Text.H4>
+          <ButtonLink size="2rem" href="#">View prototype</ButtonLink>
+        </Grid>
+      </Grid>
+    </Container>
+  )
+}

@@ -12,7 +12,7 @@ const Content = styled.div`
 `
 
 const projects: ProjectCardProps[] = [{
-  title: "Case Study - HighKey app",
+  title: "HighKey - Case Study",
   description: "The HighKey app helps users to mix and match outfits while they can check their wearing habits.",
   href: "/work/highkey-app-case-study"
 }, {

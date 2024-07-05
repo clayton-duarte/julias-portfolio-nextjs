@@ -4,8 +4,10 @@ import styled from "@emotion/styled";
 
 import Container from "~/components/Container";
 import Header from "~/components/Header";
+import BannerSection from "~/components/highKeySections/Banner";
 
-const Row = styled.div<{ align?: string }>`
+const Row = styled.div<{ align?: string; justify?: string }>`
+  justify-content: ${props => props.justify || 'start'};
   align-items: ${props => props.align || 'start'};
   justify-content: space-between;
   margin: 3rem 0;
@@ -20,9 +22,11 @@ const H1 = styled.h1`
   margin: 0;
 `
 
-const H2 = styled.h2`
-  color: ${props => props.theme.PRIMARY};
+const H2 = styled.h2<{ primary?: boolean; align?: string }>`
+  color: ${props => props.primary ? props.theme.PRIMARY : 'inherit'};
+  text-align: ${props => props.align || 'left'};
   font-size: 36px;
+  margin: 0;
 `
 
 const BgSection = styled.section`
@@ -30,7 +34,7 @@ const BgSection = styled.section`
   color: ${props => props.theme.WHITE};
 `
 
-const Col = styled.div<{ align?: string }>`
+const Col = styled.div<{ align?: string; grow?: number }>`
   align-items: ${props => props.align || 'start'};
   flex-direction: column;
   justify-items: start;
@@ -48,14 +52,15 @@ const Title = styled.h3<{ primary?: boolean; align?: string; separator?: boolean
   margin: 1rem 0;
 `
 
-const P1 = styled.p`
+const P1 = styled.p<{ strong?: boolean; align?: string; primary?: boolean }>`
+  color: ${props => props.primary ? props.theme.PRIMARY : 'inherit'};
+  font-weight: ${props => props.strong ? '700' : '400'};
+  text-align: ${props => props.align || 'left'};
   margin: 0;
 `
 
-const P2 = styled.p<{ strong?: boolean }>`
-  font-weight: ${props => props.strong ? '700' : '400'};
+const P2 = styled(P1)`
   font-size: 27px;
-  margin: 0;
 `
 
 const CardSection = styled.section`
@@ -75,29 +80,23 @@ const ListItem = styled.li`
   font-size: 27px;
 `
 
+const SmallCard = styled.div<{ block?: boolean }>`
+  width: ${props => props.block ? '100%' : 'auto'};
+  background: ${props => props.theme.PRIMARY};
+  color: ${props => props.theme.WHITE};
+  border-radius: 20px;
+  padding: 2rem 4rem;
+`
+
 export default function HighkeyAppCaseStudyPage() {
   return (
     <>
       <Header />
-      <Container>
-        <Row>
-          {/* <Image
-            src="/high-key-app.png"
-            alt="high-key-app"
-            width={338}
-            height={688}
-            priority
-          /> */}
-          <img src="https://placehold.co/620x610" />
-          <div>
-            <H1>Case Study - HighKey app</H1>
-            <H2>The HighKey app helps users to mix and match outfits while they can check their wearing habits.</H2>
-          </div>
-        </Row>
-      </Container>
+      <BannerSection />
+
       <BgSection>
         <Container>
-          <Row>
+          <Row justify='space-between'>
             <Col>
               <Title>My role</Title>
               <P1>UX/UI and Research</P1>
@@ -121,20 +120,23 @@ export default function HighkeyAppCaseStudyPage() {
           </Row>
         </Container>
       </BgSection>
+
       <Container>
         <Title primary>Problem Space</Title>
         <P2>
           Gen Z Canadians, aged 12-27, struggle to plan their outfits, leading to overbuying or underusing their clothing pieces.
         </P2>
+        <br />
         <P2>
           This problem occurs because they often forget about the clothes they own after purchase. As a result, items are underutilized or donated after minimal use. Addressing this issue is crucial to help them make more conscious purchasing decisions, save money and optimize their wardrobe.
         </P2>
       </Container>
+
       <Container>
         <CardSection>
           <Title align="center">Design Process</Title>
           <Row>
-            <Col>
+            <Col grow={1} align="center">
               <img src="https://placehold.co/126x126" />
               <P2>Empathize</P2>
               <ul>
@@ -143,7 +145,7 @@ export default function HighkeyAppCaseStudyPage() {
                 <li>User Interviews</li>
               </ul>
             </Col>
-            <Col>
+            <Col grow={1} align="center">
               <img src="https://placehold.co/126x126" />
               <P2>Define</P2>
               <ul>
@@ -151,21 +153,22 @@ export default function HighkeyAppCaseStudyPage() {
                 <li>Secondary Research</li>
               </ul>
             </Col>
-            <Col>
+            <Col grow={1} align="center">
               <img src="https://placehold.co/126x126" />
               <P2>Ideate</P2>
             </Col>
-            <Col>
+            <Col grow={1} align="center">
               <img src="https://placehold.co/126x126" />
               <P2>Prototype</P2>
             </Col>
-            <Col>
+            <Col grow={1} align="center">
               <img src="https://placehold.co/126x126" />
               <P2>Test</P2>
             </Col>
           </Row>
         </CardSection>
-      </Container >
+      </Container>
+
       <Container>
         <Title primary separator>Secondary Research</Title>
         <Row>
@@ -178,6 +181,7 @@ export default function HighkeyAppCaseStudyPage() {
                 <P2>of Gen Z are the most willing to pay more for sustainable products.</P2>
               </Col>
             </Row>
+            <a href="#">Accordingly to FirstInsight</a>
           </Col>
           <H2>But</H2>
           <Col>
@@ -189,25 +193,27 @@ export default function HighkeyAppCaseStudyPage() {
                 <P2>The number of times a garment is worn has declined  in 15 years</P2>
               </Col>
             </Row>
+            <a href="#">Accordingly to FirstInsight</a>
           </Col>
         </Row>
       </Container>
+
       <Container>
         <Title primary separator>Assumptions</Title>
         <Row>
-          <Col>
+          <Col grow={1}>
             <Row>
               <img src="https://placehold.co/62x62" />
               <P2>Gen Z Canadians do not have access to information about where to donate their clothes.</P2>
             </Row>
           </Col>
-          <Col>
+          <Col grow={1}>
             <Row>
               <img src="https://placehold.co/62x62" />
               <P2>Gen Z Canadians have a sustainable mindset, but overbuying is still a big struggle for them.</P2>
             </Row>
           </Col>
-          <Col>
+          <Col grow={1}>
             <Row>
               <img src="https://placehold.co/62x62" />
               <P2>Gen Z Canadians are more likely to buy clothes in person than online.</P2>
@@ -229,7 +235,7 @@ export default function HighkeyAppCaseStudyPage() {
           </Col>
           <Col />
         </Row>
-        <Title primary>Chosen assumption</Title>
+        <Title align="center" primary>Chosen assumption</Title>
         <Row>
           <Col />
           <Col>
@@ -241,6 +247,7 @@ export default function HighkeyAppCaseStudyPage() {
           <Col />
         </Row>
       </Container>
+
       <Container>
         <Title primary separator>Hypothesis</Title>
         <Row>
@@ -267,6 +274,7 @@ export default function HighkeyAppCaseStudyPage() {
           <P2 strong>Gabriella, Gen Z Canadian, 22 years old. Lives in TO, she got her first job last year and uses Tiktok and Pinterest for clothing inspo.</P2>
         </Row>
       </Container>
+
       <Container>
         <Title primary separator>Interview Script</Title>
         <Row>
@@ -285,6 +293,7 @@ export default function HighkeyAppCaseStudyPage() {
           </List>
         </Row>
       </Container>
+
       <Container>
         <Title primary separator>Affinity Mapping</Title>
         <Row>
@@ -292,6 +301,129 @@ export default function HighkeyAppCaseStudyPage() {
             <img src="https://placehold.co/743x1178" />
             <img src="https://placehold.co/743x1178" />
             <img src="https://placehold.co/743x1178" /></Col>
+        </Row>
+      </Container>
+
+      <Container>
+        <CardSection>
+          <Title align="center">Themes</Title>
+          <Row>
+            <Col>
+              <P1>Inspirational and Aspirational Shopping:</P1>
+              <P1>
+                Insight - Seeking specific styles, Using social media for quick fashion inspiration and planning outfits, The thrill of thrifting and finding unique pieces.
+              </P1>
+            </Col>
+            <Col>
+              <P1>Ethical and Quality Concerns:</P1>
+              <P1>
+                Insight - Ethical issues with certain brands affecting purchasing decisions.
+                <br />
+                Disappointment with the quality of expensive items from well-known brands.
+              </P1>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <P1>Fit and Sizing Challenges:</P1>
+              <P1>
+                Insight - Difficulty finding jeans that fit well for petite heights. Inconsistent sizing leading to items being too tight, loose, long, or short.
+                <br />
+                Online purchases not fitting well or matching expectations.
+              </P1>
+            </Col>
+            <Col>
+              <P1>Fit and Sizing Challenges:</P1>
+              <P1>
+                Insight - Difficulty finding jeans that fit well for petite heights. Inconsistent sizing leading to items being too tight, loose, long, or short.
+                <br />
+                Online purchases not fitting well or matching expectations.
+              </P1>
+            </Col>
+          </Row>
+        </CardSection>
+      </Container>
+
+      <Container>
+        <Title align="center">Epics</Title>
+        <P2 align="center">Some of the Epics I end up with.</P2>
+        <Row>
+          <Col>
+            <SmallCard block>
+              <P1 strong align="center">Utilization & Wear Frequency</P1>
+            </SmallCard>
+          </Col>
+          <Col>
+            <SmallCard block>
+              <P1 strong align="center">Seasonal Management</P1>
+            </SmallCard>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <SmallCard block>
+              <P1 strong align="center">Cataloging & Organizing</P1>
+            </SmallCard>
+          </Col>
+          <Col>
+            <SmallCard block>
+              <P1 strong align="center">Sustainability & Education</P1>
+            </SmallCard>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container>
+        <Title primary align="center">Chosen Epic</Title>
+        <Row>
+          <Col>
+            <SmallCard block>
+              <P1 strong align="center">Utilization & Wear Frequency</P1>
+            </SmallCard>
+          </Col>
+        </Row>
+        <P1 primary>
+          Since the interviewees explained how many  times they buy something or even receive hand-me-downs from parents  and forget them inside the wardrobe. I have chosen to target this problem and create a solution that helps Gen Z Canadians who are unsure about how style their clothes and end up forgetting about those clothes.
+        </P1>
+      </Container>
+
+      <Container>
+        <Title primary separator>Persona</Title>
+        <Row>
+          <Col>
+            <img src="https://placehold.co/550x826" />
+            <br />
+            <SmallCard block>
+              <H2 align="center">Jordan, 21 student</H2>
+            </SmallCard>
+          </Col>
+          <Col>
+            <SmallCard>
+              <H2>About</H2>
+            </SmallCard>
+            <br />
+            <P1>
+              Jordan, a Canadian Gen Z, struggles with a closet full  forgotten clothes, reflecting a broader issue of throwaway fashion culture. Despite a love for trendy and expressive outfits, he often feel overwhelmed by the abundance of choices.
+            </P1>
+            <br />
+            <SmallCard>
+              <H2>Needs</H2>
+            </SmallCard>
+            <br />
+            <List>
+              <li>Desires tools or methods to help plan outfits for the week efficiently.</li>
+              <li>Values the experience and story behind clothing items, such as a leather jacket from a thrift store in Amsterdam.</li>
+              <li>Prefers clothes that have a personal story or significance.</li>
+            </List>
+            <br />
+            <SmallCard>
+              <H2>Frustations</H2>
+            </SmallCard>
+            <List>
+              <li>Forgets about clothes after purchase, leading to underutilization.</li>
+              <li>Feels restricted by the lack of choices in the closet during the winter season.</li>
+            </List>
+          </Col>
         </Row>
       </Container>
     </>
