@@ -3,7 +3,7 @@ import Image from "next/image";
 import Grid from "../Grid";
 import Text from "../Text";
 
-export default function DesignProcessSection() {
+export default function DesignProcess() {
   return (
     <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
       <Grid container p='3rem 0'>
@@ -13,8 +13,14 @@ export default function DesignProcessSection() {
           <br />
           process to places real people at the center of the solution.
         </Text>
-        <Grid justify="center" m='3rem 0 4rem 0'>
-          <img style={{ margin: '0 auto' }} src="https://placehold.co/660x420" />
+        <Grid justify="center" m='3rem 0 4rem 0' xs='auto'>
+          <Image
+            src="/double-diamond.png"
+            alt="high-key-app"
+            width={665}
+            height={420}
+            priority
+          />
         </Grid>
         <Grid xs='repeat(5, auto)' justify="space-between" m='2rem 0'>
           <Grid>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Text } from '~/components/Text';
 
 import Grid from "../Grid";
@@ -10,8 +12,14 @@ export default function ExperienceMapping() {
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Experience Mapping</Text.H4>
         <Hr />
       </Grid>
-      <Grid justify="center" xs='auto'>
-        <img src='https://placehold.co/1130x1300' alt='placeholder' />
+      <Grid justify="center" xs='auto' m='0 0 3rem 0'>
+        <Image
+          src="/experience-mapping.png"
+          alt="high-key-app"
+          width={1130}
+          height={1300}
+          priority
+        />
       </Grid>
       <Grid bg='PRIMARY' color="WHITE">
         <Grid container p='3rem'>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import Grid from "../Grid";
@@ -15,7 +16,13 @@ export default function InterviewScript() {
         </Text.H5>
         <span />
         <Grid>
-          <img src="https://placehold.co/500x500" />
+          <Image
+            src="/taking-notes.png"
+            alt="high-key-app"
+            width={500}
+            height={500}
+            priority
+          />
         </Grid>
         <Grid.Ul gap='3rem'>
           <li>
