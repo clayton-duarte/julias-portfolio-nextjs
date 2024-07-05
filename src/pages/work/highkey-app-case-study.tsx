@@ -3,6 +3,7 @@ import Header from "~/components/Header";
 import AffinityMapping from "~/components/highKeySections/AffinityMapping";
 import Banner from "~/components/highKeySections/Banner";
 import DesignProcess from "~/components/highKeySections/DesignProcess";
+import HowMightWe from "~/components/highKeySections/HowMightWe";
 import InterviewScript from "~/components/highKeySections/InterviewScript";
 import Persona from "~/components/highKeySections/Persona";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
@@ -25,6 +26,7 @@ export default function HighkeyAppCaseStudyPage() {
       <ThemesSection />
       <WhatPeopleSay />
       <Persona />
+      <HowMightWe />
     </>
   )
 }
