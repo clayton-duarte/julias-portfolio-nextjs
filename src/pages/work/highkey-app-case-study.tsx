@@ -10,6 +10,7 @@ import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import Summary from "~/components/highKeySections/Summary";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
+import UserStories from "~/components/highKeySections/UserStories";
 import WhatPeopleSay from "~/components/highKeySections/WhatPeopleSay";
 
 export default function HighkeyAppCaseStudyPage() {
@@ -28,6 +29,7 @@ export default function HighkeyAppCaseStudyPage() {
       <Persona />
       <HowMightWe />
       <ExperienceMapping />
+      <UserStories />
     </>
   )
 }
