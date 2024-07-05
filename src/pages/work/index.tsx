@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-import Container from "~/components/Container";
+import Grid from "~/components/Grid";
 import Header from "~/components/Header";
 import ProjectCard, { ProjectCardProps } from "~/components/ProjectCard";
 
@@ -29,7 +29,7 @@ export default function WorkPage() {
   return (
     <>
       <Header />
-      <Container>
+      <Grid container>
         <Content>
           {projects.map((cardProps, index) =>
             <ProjectCard
@@ -38,7 +38,7 @@ export default function WorkPage() {
             />
           )}
         </Content>
-      </Container>
+      </Grid>
     </>
   )
 }

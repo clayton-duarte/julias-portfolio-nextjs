@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-import Container from '../Container';
 import Grid from '../Grid';
 import Hr from '../Hr';
 import Text from '../Text';
 
 export default function SecondaryResearch() {
   return (
-    <Container>
+    <Grid container>
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Secondary Research</Text.H4>
       <Hr />
       <Grid m='4rem 0' gap='2rem'>
@@ -68,6 +67,6 @@ export default function SecondaryResearch() {
           </Link>
         </Text>
       </Grid>
-    </Container>
+    </Grid>
   )
 }

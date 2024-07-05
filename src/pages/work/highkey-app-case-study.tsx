@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
 
-import Container from "~/components/Container";
+import Grid from "~/components/Grid";
 import Header from "~/components/Header";
 import Banner from "~/components/highKeySections/Banner";
 import DesignProcess from "~/components/highKeySections/DesignProcess";
+import InterviewScript from "~/components/highKeySections/InterviewScript";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import Summary from "~/components/highKeySections/Summary";
+import Text from "~/components/Text";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
   justify-content: ${props => props.justify || 'start'};
@@ -94,85 +96,16 @@ export default function HighkeyAppCaseStudyPage() {
       <ProblemSpace />
       <DesignProcess />
       <SecondaryResearch />
+      <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
+        <Grid container>
+          <Text.H5 bold={false}>
+            After looking at some existing data, I wanted to find out why people are wearing their clothes less often, even though Gen Z, the generation that buys the most fashion, knows a lot about environmental issues. To understand this better, I talked to three Gen Z individuals living in Toronto who use social media for outfit inspiration.
+          </Text.H5>
+        </Grid>
+      </Grid>
+      <InterviewScript />
 
-      <Container>
-        <Title primary separator>Assumptions</Title>
-        <Row>
-          <Col grow={1}>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians do not have access to information about where to donate their clothes.</P2>
-            </Row>
-          </Col>
-          <Col grow={1}>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians have a sustainable mindset, but overbuying is still a big struggle for them.</P2>
-            </Row>
-          </Col>
-          <Col grow={1}>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians are more likely to buy clothes in person than online.</P2>
-            </Row>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians tend to purchase excessive clothing due to attractive prices, discounts, and sales.</P2>
-            </Row>
-          </Col>
-          <Col>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians use social media as a reference for outfit ideas.</P2>
-            </Row>
-          </Col>
-          <Col />
-        </Row>
-        <Title align="center" primary>Chosen assumption</Title>
-        <Row>
-          <Col />
-          <Col>
-            <Row>
-              <img src="https://placehold.co/62x62" />
-              <P2>Gen Z Canadians tend to purchase excessive clothing due to attractive prices, discounts, and sales.</P2>
-            </Row>
-          </Col>
-          <Col />
-        </Row>
-      </Container>
-
-      <Container>
-        <Title primary separator>Hypothesis</Title>
-        <Row>
-          <Col>
-            <P2>
-              <strong>I believe that</strong> Gen Z people overbuy and end up forgetting to wear their clothes.
-            </P2>
-            <P2>
-              <strong>I will know I am right</strong> when 3 out 5 of my interviewees mentioned that they forget their clothes in their wardrobe.
-            </P2>
-          </Col>
-          <Col />
-        </Row>
-        <Row align="center">
-          <img src="https://placehold.co/500x500" />
-          <P2 strong>John, Gen Z Canadian, 22 years old. Used to live in Hamilton but recently moved to TO to live with his roommates. His style is casual and sport.</P2>
-        </Row>
-        <Row align="center">
-          <img src="https://placehold.co/500x500" />
-          <P2 strong>Emma, Gen Z Canadian, 19 years old. Living with her parents in Toronto, so she can save money. Have a more pop colour clothing style, uses Instagram for inspiration.</P2>
-        </Row>
-        <Row align="center">
-          <img src="https://placehold.co/500x500" />
-          <P2 strong>Gabriella, Gen Z Canadian, 22 years old. Lives in TO, she got her first job last year and uses Tiktok and Pinterest for clothing inspo.</P2>
-        </Row>
-      </Container>
-
-      <Container>
+      <Grid container>
         <Title primary separator>Interview Script</Title>
         <Row>
           <Col>
@@ -189,9 +122,9 @@ export default function HighkeyAppCaseStudyPage() {
             <ListItem>How many times you would say you wear a clothing piece, before giving away your clothes?</ListItem>
           </List>
         </Row>
-      </Container>
+      </Grid>
 
-      <Container>
+      <Grid container>
         <Title primary separator>Affinity Mapping</Title>
         <Row>
           <Col align="center">
@@ -199,9 +132,9 @@ export default function HighkeyAppCaseStudyPage() {
             <img src="https://placehold.co/743x1178" />
             <img src="https://placehold.co/743x1178" /></Col>
         </Row>
-      </Container>
+      </Grid>
 
-      <Container>
+      <Grid container>
         <CardSection>
           <Title align="center">Themes</Title>
           <Row>
@@ -239,9 +172,9 @@ export default function HighkeyAppCaseStudyPage() {
             </Col>
           </Row>
         </CardSection>
-      </Container>
+      </Grid>
 
-      <Container>
+      <Grid container>
         <Title align="center">Epics</Title>
         <P2 align="center">Some of the Epics I end up with.</P2>
         <Row>
@@ -268,9 +201,9 @@ export default function HighkeyAppCaseStudyPage() {
             </SmallCard>
           </Col>
         </Row>
-      </Container>
+      </Grid>
 
-      <Container>
+      <Grid container>
         <Title primary align="center">Chosen Epic</Title>
         <Row>
           <Col>
@@ -282,9 +215,9 @@ export default function HighkeyAppCaseStudyPage() {
         <P1 primary>
           Since the interviewees explained how many  times they buy something or even receive hand-me-downs from parents  and forget them inside the wardrobe. I have chosen to target this problem and create a solution that helps Gen Z Canadians who are unsure about how style their clothes and end up forgetting about those clothes.
         </P1>
-      </Container>
+      </Grid>
 
-      <Container>
+      <Grid container>
         <Title primary separator>Persona</Title>
         <Row>
           <Col>
@@ -322,7 +255,7 @@ export default function HighkeyAppCaseStudyPage() {
             </List>
           </Col>
         </Row>
-      </Container>
+      </Grid>
     </>
   )
 }

@@ -1,11 +1,10 @@
-import Container from "../Container";
 import Grid from "../Grid";
 import Text from "../Text";
 
 export default function SummarySection() {
   return (
     <Grid bg="PRIMARY" color="WHITE">
-      <Container>
+      <Grid container>
         <Grid justify='space-between' xs="repeat(4, auto)" p='5rem 0'>
           <Grid>
             <Text.H4>My role</Text.H4>
@@ -28,7 +27,7 @@ export default function SummarySection() {
             <Text>May 2024 - July 5</Text>
           </Grid>
         </Grid>
-      </Container>
+      </Grid>
     </Grid>
   )
 }

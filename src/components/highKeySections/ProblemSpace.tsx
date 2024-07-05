@@ -1,10 +1,9 @@
-import Container from "../Container";
 import Grid from "../Grid";
 import Text from "../Text";
 
 export default function ProblemSpaceSection() {
   return (
-    <Container>
+    <Grid container>
       <Grid p='2rem 0'>
         <Text.H4 color='PRIMARY' m='0 0 3rem 0'>Problem Space</Text.H4>
         <Text.H5 bold={false}>
@@ -16,6 +15,6 @@ export default function ProblemSpaceSection() {
           <Text.Strong color="PRIMARY">underutilized or donated after minimal use</Text.Strong>.
         </Text.H5>
       </Grid>
-    </Container>
+    </Grid>
   )
 }

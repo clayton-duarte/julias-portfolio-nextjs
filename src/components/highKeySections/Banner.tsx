@@ -1,13 +1,12 @@
 import Image from "next/image";
 
 import { ButtonLink } from "../Button";
-import Container from "../Container";
 import Grid from "../Grid";
 import Text from "../Text";
 
 export default function BannerSection() {
   return (
-    <Container>
+    <Grid container>
       <Grid xs='auto 1fr' gap='2rem' p='4rem 0'>
         <Image
           src="/high-key-banner.png"
@@ -22,6 +21,6 @@ export default function BannerSection() {
           <ButtonLink size="2rem" href="#">View prototype</ButtonLink>
         </Grid>
       </Grid>
-    </Container>
+    </Grid>
   )
 }

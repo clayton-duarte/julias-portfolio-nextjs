@@ -3,7 +3,7 @@ import { ReactNode, useMemo } from 'react'
 
 import styled from '@emotion/styled'
 
-import Container from './Container'
+import Grid from './Grid'
 
 const Header = styled.header`
   border-bottom: 2px solid ${props => props.theme.BLACK};
@@ -63,7 +63,7 @@ function SmartLink({ children, href }: { children: ReactNode, href: string }) {
 export default function HeaderComponent() {
   return (
     <Header>
-      <Container>
+      <Grid container>
         <Wrapper>
           <SmartLink href='/'>Home</SmartLink>
           <Nav>
@@ -73,7 +73,7 @@ export default function HeaderComponent() {
             <DesktopLink href="#">Resume</DesktopLink>
           </Nav>
         </Wrapper>
-      </Container>
+      </Grid>
     </Header>
   )
 }

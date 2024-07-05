@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-import Container from "../Container";
 import Grid from "../Grid";
 import Text from "../Text";
 
 export default function DesignProcessSection() {
   return (
     <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
-      <Container>
+      <Grid container>
         <Text.H4 align="center" m='1rem 0'>Design Process</Text.H4>
         <Text align='center' m='2rem 0'>
           I used a human-centered approach in a double diamond
@@ -79,7 +78,7 @@ export default function DesignProcessSection() {
             <Text.H6 bold={false} align="center">Test</Text.H6>
           </Grid>
         </Grid>
-      </Container>
+      </Grid>
     </Grid>
   )
 }
