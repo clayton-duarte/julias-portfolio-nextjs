@@ -78,6 +78,10 @@ function GlobalStyles() {
         * {
           box-sizing: border-box;
         }
+
+        a {
+          color: ${t.BLACK};
+        }
       `}
     />
   );

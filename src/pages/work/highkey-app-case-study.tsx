@@ -2,10 +2,11 @@ import styled from "@emotion/styled";
 
 import Container from "~/components/Container";
 import Header from "~/components/Header";
-import BannerSection from "~/components/highKeySections/Banner";
-import DesignProcessSection from "~/components/highKeySections/DesignProcess";
-import ProblemSpaceSection from "~/components/highKeySections/ProblemSpace";
-import SummarySection from "~/components/highKeySections/Summary";
+import Banner from "~/components/highKeySections/Banner";
+import DesignProcess from "~/components/highKeySections/DesignProcess";
+import ProblemSpace from "~/components/highKeySections/ProblemSpace";
+import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
+import Summary from "~/components/highKeySections/Summary";
 
 const Row = styled.div<{ align?: string; justify?: string }>`
   justify-content: ${props => props.justify || 'start'};
@@ -88,39 +89,11 @@ export default function HighkeyAppCaseStudyPage() {
   return (
     <>
       <Header />
-      <BannerSection />
-      <SummarySection />
-      <ProblemSpaceSection />
-      <DesignProcessSection />
-
-      <Container>
-        <Title primary separator>Secondary Research</Title>
-        <Row>
-          <Col>
-            <Row>
-              <Col>
-                <H1>73%</H1>
-              </Col>
-              <Col>
-                <P2>of Gen Z are the most willing to pay more for sustainable products.</P2>
-              </Col>
-            </Row>
-            <a href="#">Accordingly to FirstInsight</a>
-          </Col>
-          <H2>But</H2>
-          <Col>
-            <Row>
-              <Col>
-                <H1>36%</H1>
-              </Col>
-              <Col>
-                <P2>The number of times a garment is worn has declined  in 15 years</P2>
-              </Col>
-            </Row>
-            <a href="#">Accordingly to FirstInsight</a>
-          </Col>
-        </Row>
-      </Container>
+      <Banner />
+      <Summary />
+      <ProblemSpace />
+      <DesignProcess />
+      <SecondaryResearch />
 
       <Container>
         <Title primary separator>Assumptions</Title>
