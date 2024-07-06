@@ -9,6 +9,7 @@ import MoodboardBranding from "~/components/highKeySections/MoodboardBranding";
 import Persona from "~/components/highKeySections/Persona";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
+import SketchesWireframes from "~/components/highKeySections/SketchesWireframes";
 import Summary from "~/components/highKeySections/Summary";
 import TaskFlow from "~/components/highKeySections/TaskFlow";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
@@ -25,7 +26,6 @@ export default function HighkeyAppCaseStudyPage() {
       <ProblemSpace /> {/* 1 <<<<<<< */}
       <DesignProcess /> {/* 1 <<<<<<< */}
       <SecondaryResearch /> {/* 1 <<<<<<< */}
-      {/* <p>Hypothesis and Assumptions</p> 2 */}
       <InterviewScript /> {/* 3 */}
       <AffinityMapping /> {/* 3 */}
       <ThemesSection /> {/* 3 <<<<<<< */}
@@ -36,9 +36,9 @@ export default function HighkeyAppCaseStudyPage() {
       <UserStories /> {/* 7-8 */}
       <TaskFlow /> {/* 9 <<<<<<< */}
       <MoodboardBranding /> {/* 14 */}
+      <SketchesWireframes /> {/* 11 */}
+      <p>Hypothesis and Assumptions</p> {/* 2 */}
       <p>UI Inspo</p> {/* 10 */}
-      <p>Sketches</p> {/* 11 */}
-      <p>Wireframes and 1st Prototype</p> {/* 11 */}
       <p>User Testing and Results</p> {/* 12 <<<<<<< */}
       <p>Before and After</p> {/* 13 <<<<<<< */}
       <p>UI Library and Design System</p> {/* 15 <<<<<<< */}

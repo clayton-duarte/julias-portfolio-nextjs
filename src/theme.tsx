@@ -90,6 +90,7 @@ function GlobalStyles() {
         img {
           max-width: 100%;
           height: auto;
+          width: auto;
         }
       `}
     />
