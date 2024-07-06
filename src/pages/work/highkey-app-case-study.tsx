@@ -13,6 +13,7 @@ import TaskFlow from "~/components/highKeySections/TaskFlow";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
 import UserStories from "~/components/highKeySections/UserStories";
 import WhatPeopleSay from "~/components/highKeySections/WhatPeopleSay";
+import ScrollTopFab from "~/components/ScrollTopFab";
 
 export default function HighkeyAppCaseStudyPage() {
   return (
@@ -43,6 +44,7 @@ export default function HighkeyAppCaseStudyPage() {
       <p>High Fidelity Design and Prototype</p> {/* 16 <<<<<<< */}
       <p>Tarot Cards</p> {/* 17 <<<<<<< */}
       <p>Key Learnings and Next Steps</p> {/* 18 <<<<<<< */}
+      <ScrollTopFab />
     </>
   )
 }

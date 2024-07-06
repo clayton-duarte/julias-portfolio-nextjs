@@ -32,7 +32,7 @@ export default function ProjectCard({
           </Text.H5>
         </Grid>
         {href ? (
-          <ButtonLink size="1.5rem" href={href} color="DARK">
+          <ButtonLink size="1.5rem" href={href} color="BLACK">
             View project
           </ButtonLink>
         ) : (
