@@ -5,6 +5,7 @@ import DesignProcess from "~/components/highKeySections/DesignProcess";
 import ExperienceMapping from "~/components/highKeySections/ExperienceMapping";
 import HowMightWe from "~/components/highKeySections/HowMightWe";
 import InterviewScript from "~/components/highKeySections/InterviewScript";
+import MoodboardBranding from "~/components/highKeySections/MoodboardBranding";
 import Persona from "~/components/highKeySections/Persona";
 import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
@@ -34,12 +35,12 @@ export default function HighkeyAppCaseStudyPage() {
       <ExperienceMapping /> {/* 5 <<<<<<< */}
       <UserStories /> {/* 7-8 */}
       <TaskFlow /> {/* 9 <<<<<<< */}
+      <MoodboardBranding /> {/* 14 */}
       <p>UI Inspo</p> {/* 10 */}
       <p>Sketches</p> {/* 11 */}
       <p>Wireframes and 1st Prototype</p> {/* 11 */}
       <p>User Testing and Results</p> {/* 12 <<<<<<< */}
       <p>Before and After</p> {/* 13 <<<<<<< */}
-      <p>Moodboard and Branding</p> {/* 14 */}
       <p>UI Library and Design System</p> {/* 15 <<<<<<< */}
       <p>High Fidelity Design and Prototype</p> {/* 16 <<<<<<< */}
       <p>Tarot Cards</p> {/* 17 <<<<<<< */}

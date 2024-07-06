@@ -22,11 +22,11 @@ export default function UserStories() {
         />
       </Grid>
       <Grid container p='3rem'>
-        <Text.H5 bold={false} align='center' m='0 0 5rem 0'>
+        <Text.H6 bold={false} align='center' m='0 0 5rem 0'>
           <Link href='https://docs.google.com/spreadsheets/d/10hmNROvyIbVEXt7ShnJDHVbtxTSnVn8ONtygGsGsY38/edit'>
             View the full User Stories here.
           </Link>
-        </Text.H5>
+        </Text.H6>
         <Text.H3 bold={false} align='center'>Approach</Text.H3>
         <Grid gap="2rem" m='3rem 0'>
           <Text.H5 bold={false}>

@@ -26,7 +26,7 @@ export default function TaskFlow() {
         </Text.H5>
       </Grid>
       <Text.H3 p='3rem' bold={false} align='center'>Add an item into the app</Text.H3>
-      <Grid xs='1fr' justify="center">
+      <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={addItemUserStory}
           alt="high-key-app"
@@ -34,7 +34,7 @@ export default function TaskFlow() {
         />
       </Grid>
       <Text.H3 p='3rem' bold={false} align='center'>Create an outfit</Text.H3>
-      <Grid xs='auto' justify="center">
+      <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={clothUsageUserStory}
           alt="high-key-app"
@@ -42,7 +42,7 @@ export default function TaskFlow() {
         />
       </Grid>
       <Text.H3 p='3rem' bold={false} align='center'>Clothing usage visualization</Text.H3>
-      <Grid xs='auto' justify="center">
+      <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={createOutfitUserStory}
           alt="high-key-app"
