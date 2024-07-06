@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import highKeyApp from '~/assets/high-key-app.png'
+
 import { ButtonLink } from "./Button";
 import Grid from "./Grid";
 import Text from "./Text";
@@ -18,10 +20,8 @@ export default function ProjectCard({
   return (
     <Grid xs='auto auto' bg='LIGHT' p="4rem">
       <Image
-        src="/high-key-app.png"
+        src={highKeyApp}
         alt="high-key-app"
-        width={338}
-        height={688}
         priority
       />
       <Grid xs='auto' gap="2rem" p='2rem'>

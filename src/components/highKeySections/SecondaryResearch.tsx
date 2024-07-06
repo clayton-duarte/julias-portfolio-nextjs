@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from 'next/link';
 
+import trendDown from '~/assets/trend-down.svg';
+
 import Grid from '../Grid';
 import Hr from '../Hr';
 import Text from '../Text';
@@ -30,15 +32,13 @@ export default function SecondaryResearch() {
             </Text.H5>
           </Grid>
           <Grid>
-            <Grid xs='auto auto' gap='2rem' align="center">
+            <Grid xs='80px auto' gap='2rem' align="center">
               <Image
-                src="/trend-down.svg"
+                src={trendDown}
                 alt="high-key-app"
-                width={80}
-                height={80}
                 priority
               />
-              <Text.H1 color='PRIMARY'>36% </Text.H1>
+              <Text.H1 color='PRIMARY'>36%</Text.H1>
             </Grid>
             <Text.H5 bold={false}>
               The{' '}

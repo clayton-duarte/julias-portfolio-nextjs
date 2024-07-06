@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import highKeyBanner from '~/assets/high-key-banner.png'
+
 import { ButtonLink } from "../Button";
 import Grid from "../Grid";
 import Text from "../Text";
@@ -7,12 +9,10 @@ import Text from "../Text";
 export default function BannerSection() {
   return (
     <Grid container p='3rem'>
-      <Grid xs='auto 1fr' gap='2rem' p='4rem 0'>
+      <Grid xs='minmax(auto, 620px) 1fr' gap='2rem' p='4rem 0'>
         <Image
-          src="/high-key-banner.png"
+          src={highKeyBanner}
           alt="high-key-app"
-          width={620}
-          height={610}
           priority
         />
         <Grid gap="2rem" xs='auto'>

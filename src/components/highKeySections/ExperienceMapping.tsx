@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import experienceMapping from '~/assets/experience-mapping.png'
 import { Text } from '~/components/Text';
 
 import Grid from "../Grid";
@@ -12,12 +13,10 @@ export default function ExperienceMapping() {
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Experience Mapping</Text.H4>
         <Hr />
       </Grid>
-      <Grid justify="center" xs='auto' m='0 0 6rem 0'>
+      <Grid justify="center" xs='minmax(auto, 1100px)' m='0 0 6rem 0'>
         <Image
-          src="/experience-mapping.png"
+          src={experienceMapping}
           alt="high-key-app"
-          width={1130}
-          height={1300}
           priority
         />
       </Grid>

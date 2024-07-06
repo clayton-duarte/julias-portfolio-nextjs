@@ -24,7 +24,7 @@ export default function HighkeyAppCaseStudyPage() {
       <ProblemSpace /> {/* 1 <<<<<<< */}
       <DesignProcess /> {/* 1 <<<<<<< */}
       <SecondaryResearch /> {/* 1 <<<<<<< */}
-      <p>Hypothesis and Assumptions</p> {/* 2 */}
+      {/* <p>Hypothesis and Assumptions</p> 2 */}
       <InterviewScript /> {/* 3 */}
       <AffinityMapping /> {/* 3 */}
       <ThemesSection /> {/* 3 <<<<<<< */}

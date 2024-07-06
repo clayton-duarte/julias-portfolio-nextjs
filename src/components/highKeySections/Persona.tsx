@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import styled from "@emotion/styled";
 
+import jordan from '~/assets/jordan.jpg'
+
 import Grid from "../Grid";
 import Hr from "../Hr";
 import Text from "../Text";
@@ -30,13 +32,11 @@ export default function Persona() {
           Jordan, a Canadian Gen Z, struggles with a closet full  forgotten clothes, reflecting a broader issue of throwaway fashion culture. Despite a love for trendy and expressive outfits, he often feel overwhelmed by the abundance of choices.
         </Text.H5>
       </Grid>
-      <Grid xs='550px auto' gap='0' align='justify'>
+      <Grid xs='minmax(auto, 550px) auto' gap='0' align='justify'>
         <GridBorderTop>
           <Image
-            src="/jordan.jpg"
+            src={jordan}
             alt="high-key-app"
-            height={725}
-            width={550}
             priority
           />
         </GridBorderTop>
@@ -62,7 +62,7 @@ export default function Persona() {
             </Grid.Ul>
           </Grid>
         </GridBorderTopLeft>
-        <Grid align="center">
+        <Grid align="center" p='1rem'>
           <Grid>
             <Text.H4 bold={false} align='center'>Jordan, 21 student</Text.H4>
             <Text.H5 bold={false} align='center'>

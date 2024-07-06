@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import userStories from '~/assets/user-stories.png'
+
 import Grid from "../Grid";
 import Hr from "../Hr";
 import Text from "../Text";
@@ -12,12 +14,10 @@ export default function UserStories() {
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>User Stories</Text.H4>
         <Hr />
       </Grid>
-      <Grid justify="center" xs='auto'>
+      <Grid justify="center" xs='minmax(auto, 730px)'>
         <Image
-          src="/user-stories.png"
+          src={userStories}
           alt="high-key-app"
-          width={736}
-          height={389 + 340}
           priority
         />
       </Grid>

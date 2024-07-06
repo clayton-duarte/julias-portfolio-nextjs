@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import takingNotes from '~/assets/taking-notes.png'
+
 import Grid from "../Grid";
 import Hr from "../Hr";
 import Text from "../Text";
@@ -10,17 +12,15 @@ export default function InterviewScript() {
     <Grid container p='3rem'>
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Interview Script</Text.H4>
       <Hr />
-      <Grid m='3rem 0' gap='3rem' xs="1fr 1fr" align='center'>
+      <Grid m='3rem 0' gap='3rem' xs="minmax(auto, 1fr) 1fr" align='center'>
         <Text.H5>
           Some of the questions that I used during the interviews:
         </Text.H5>
         <span />
         <Grid>
           <Image
-            src="/taking-notes.png"
+            src={takingNotes}
             alt="high-key-app"
-            width={500}
-            height={500}
             priority
           />
         </Grid>

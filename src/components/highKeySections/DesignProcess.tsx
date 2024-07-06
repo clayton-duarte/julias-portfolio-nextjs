@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+import define from '~/assets/define.svg'
+import doubleDiamond from '~/assets/double-diamond.png'
+import empathize from '~/assets/empathize.svg'
+import ideate from '~/assets/ideate.svg'
+import prototype from '~/assets/prototype.svg'
+import test from '~/assets/test.svg'
+
 import Grid from "../Grid";
 import Text from "../Text";
 
@@ -13,12 +20,10 @@ export default function DesignProcess() {
           <br />
           process to places real people at the center of the solution.
         </Text>
-        <Grid justify="center" m='3rem 0 4rem 0' xs='auto'>
+        <Grid justify="center" m='3rem 0 4rem 0' xs='minmax(auto, 665px)'>
           <Image
-            src="/double-diamond.png"
+            src={doubleDiamond}
             alt="high-key-app"
-            width={665}
-            height={420}
             priority
           />
         </Grid>
@@ -26,10 +31,8 @@ export default function DesignProcess() {
           <Grid>
             <Grid bg='WHITE' p='2rem' radius='2.5rem'>
               <Image
-                src="/empathize.svg"
+                src={empathize}
                 alt="high-key-app"
-                width={50}
-                height={50}
                 priority
               />
             </Grid>
@@ -38,10 +41,8 @@ export default function DesignProcess() {
           <Grid>
             <Grid bg='WHITE' p='2rem' radius='2.5rem'>
               <Image
-                src="/define.svg"
+                src={define}
                 alt="high-key-app"
-                width={50}
-                height={50}
                 priority
               />
             </Grid>
@@ -50,10 +51,8 @@ export default function DesignProcess() {
           <Grid>
             <Grid bg='WHITE' p='2rem' radius='2.5rem'>
               <Image
-                src="/ideate.svg"
+                src={ideate}
                 alt="high-key-app"
-                width={50}
-                height={50}
                 priority
               />
             </Grid>
@@ -62,10 +61,8 @@ export default function DesignProcess() {
           <Grid>
             <Grid bg='WHITE' p='2rem' radius='2.5rem'>
               <Image
-                src="/prototype.svg"
+                src={prototype}
                 alt="high-key-app"
-                width={50}
-                height={50}
                 priority
               />
             </Grid>
@@ -74,10 +71,8 @@ export default function DesignProcess() {
           <Grid>
             <Grid bg='WHITE' p='2rem' radius='2.5rem'>
               <Image
-                src="/test.svg"
+                src={test}
                 alt="high-key-app"
-                width={50}
-                height={50}
                 priority
               />
             </Grid>

@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+import persona1 from '~/assets/persona1.png'
+import persona2 from '~/assets/persona2.png'
+import persona3 from '~/assets/persona3.png'
+
 import Grid from "../Grid";
 import Text from "../Text";
 
@@ -8,32 +12,26 @@ export default function WhatPeopleSay() {
     <>
       <Grid container p='3rem'>
         <Text.H4 bold={false} align='center'>What people are saying?</Text.H4>
-        <Grid xs='auto auto' align="center" gap='3rem'>
+        <Grid xs='minmax(auto, 500px) minmax(auto, 500px)' align="center" justify='center' gap='3rem'>
           <Image
-            src="/persona1.png"
+            src={persona1}
             alt="high-key-app"
-            width={500}
-            height={500}
             priority
           />
           <Text.H5>
             “I get a lot of hand-me-downs so a lot of the hand-me-downs I keep and then I never wear them so they’re always in the back of my closet.”
           </Text.H5>
           <Image
-            src="/persona2.png"
+            src={persona2}
             alt="high-key-app"
-            width={500}
-            height={500}
             priority
           />
           <Text.H5>
             “Let’s organize this mess!” You know, only keep the essentials. The biggest challenge? Definitely deciding which pieces are the essentials”
           </Text.H5>
           <Image
-            src="/persona3.png"
+            src={persona3}
             alt="high-key-app"
-            width={500}
-            height={500}
             priority
           />
           <Text.H5>
