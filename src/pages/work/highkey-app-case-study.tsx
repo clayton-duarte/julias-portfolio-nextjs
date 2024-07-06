@@ -30,8 +30,8 @@ export default function HighkeyAppCaseStudyPage() {
       <ThemesSection /> {/* 3 <<<<<<< */}
       <WhatPeopleSay /> {/* 3 */}
       <Persona /> {/* 4 <<<<<<< */}
-      <ExperienceMapping /> {/* 5 <<<<<<< */}
       <HowMightWe /> {/* 6 <<<<<<< */}
+      <ExperienceMapping /> {/* 5 <<<<<<< */}
       <UserStories /> {/* 7-8 */}
       <TaskFlow /> {/* 9 <<<<<<< */}
       <p>UI Inspo</p> {/* 10 */}

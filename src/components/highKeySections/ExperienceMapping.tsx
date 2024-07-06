@@ -8,11 +8,11 @@ import Hr from "../Hr";
 export default function ExperienceMapping() {
   return (
     <>
-      <Grid container p='3rem'>
+      <Grid container p='1rem 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Experience Mapping</Text.H4>
         <Hr />
       </Grid>
-      <Grid justify="center" xs='auto' m='0 0 3rem 0'>
+      <Grid justify="center" xs='auto' m='0 0 6rem 0'>
         <Image
           src="/experience-mapping.png"
           alt="high-key-app"

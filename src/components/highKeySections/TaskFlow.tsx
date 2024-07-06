@@ -1,3 +1,9 @@
+import Image from "next/image";
+
+import addItemUserStory from '~/assets/add-item-user-story.png'
+import clothUsageUserStory from '~/assets/cloth-usage-user-story.png'
+import createOutfitUserStory from '~/assets/create-outfit-user-story.png'
+
 import Grid from "../Grid";
 import Hr from "../Hr";
 import Text from "../Text";
@@ -19,14 +25,29 @@ export default function TaskFlow() {
           This shows the data visualization in a subtle way without being pushy.
         </Text.H5>
       </Grid>
-      <Text.H3 bold={false} align='center'>Create an outfit</Text.H3>
-      <Text.H3 bold={false} align='center'>Epic & Task</Text.H3>
-      <Grid gap='2rem' m='3rem 0'>
-        <Text.H5 bold={false}>
-          Based on this Epic, I created a task flow where the user can{' '}
-          <Text.Strong color='PRIMARY'>create an outfit</Text.Strong>.{' '}
-          By tracking how many times they include a particular clothing piece in their outfits, they can see if they are truly wearing that beloved t-shirt or not.
-        </Text.H5>
+      <Text.H3 p='3rem' bold={false} align='center'>Add an item into the app</Text.H3>
+      <Grid xs='1fr' justify="center">
+        <Image
+          src={addItemUserStory}
+          alt="high-key-app"
+          priority
+        />
+      </Grid>
+      <Text.H3 p='3rem' bold={false} align='center'>Create an outfit</Text.H3>
+      <Grid xs='auto' justify="center">
+        <Image
+          src={clothUsageUserStory}
+          alt="high-key-app"
+          priority
+        />
+      </Grid>
+      <Text.H3 p='3rem' bold={false} align='center'>Clothing usage visualization</Text.H3>
+      <Grid xs='auto' justify="center">
+        <Image
+          src={createOutfitUserStory}
+          alt="high-key-app"
+          priority
+        />
       </Grid>
     </Grid>
   )

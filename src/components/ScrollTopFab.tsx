@@ -28,7 +28,7 @@ export default function ScrollTopFab() {
 
   const onScroll = () => {
     const scrollY = window.scrollY;
-    const visible = scrollY > 100;
+    const visible = scrollY > 200;
 
     setIsVisible(visible);
   };

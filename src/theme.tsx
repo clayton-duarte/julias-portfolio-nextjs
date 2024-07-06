@@ -82,8 +82,14 @@ function GlobalStyles() {
         a {
           color: ${t.BLACK};
         }
+          
         a:hover {
           text-decoration: underline;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
         }
       `}
     />

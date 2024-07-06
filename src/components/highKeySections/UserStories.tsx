@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import Grid from "../Grid";
@@ -12,7 +13,13 @@ export default function UserStories() {
         <Hr />
       </Grid>
       <Grid justify="center" xs='auto'>
-        <img src='https://placehold.co/730x800' alt='placeholder' />
+        <Image
+          src="/user-stories.png"
+          alt="high-key-app"
+          width={736}
+          height={389 + 340}
+          priority
+        />
       </Grid>
       <Grid container p='3rem'>
         <Text.H5 bold={false} align='center' m='0 0 5rem 0'>
