@@ -14,7 +14,9 @@ export default function SketchesWireframes() {
   return (
     <>
       <Grid container p='0 3rem'>
-        <Text.H4 m='3rem 0 0 0' align="center" transform='capitalize'>Bringing Ideas to reality</Text.H4>
+        <Text.H4 m='3rem 0 0 0' align="center" transform='capitalize' color="PRIMARY">
+          Bringing Ideas to reality
+        </Text.H4>
         <Grid gap="3rem" m='5rem 0' xs='minmax(auto, 540px)'>
           <Text.H4 bold={false}>
             First Round

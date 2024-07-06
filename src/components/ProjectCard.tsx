@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import highKeyApp from '~/assets/high-key-app.png'
+import Image, { StaticImageData } from "next/image";
 
 import { ButtonLink } from "./Button";
 import Grid from "./Grid";
@@ -10,18 +8,24 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   href?: string;
+  image: {
+    src: StaticImageData;
+    alt: string;
+    size: string;
+  }
 }
 
 export default function ProjectCard({
   description,
   title,
-  href
+  image,
+  href,
 }: ProjectCardProps) {
   return (
-    <Grid xs='auto auto' bg='LIGHT' p="4rem">
+    <Grid xs={`minmax(auto, ${image.size}) auto`} bg='LIGHT' p="4rem">
       <Image
-        src={highKeyApp}
-        alt="high-key-app"
+        src={image.src}
+        alt={image.alt}
         priority
       />
       <Grid xs='auto' gap="2rem" p='2rem'>
@@ -37,7 +41,7 @@ export default function ProjectCard({
           </ButtonLink>
         ) : (
           <ButtonLink size="1.5rem" color="LIGHT">
-            Comming Soon
+            Coming Soon
           </ButtonLink>
         )}
       </Grid>
