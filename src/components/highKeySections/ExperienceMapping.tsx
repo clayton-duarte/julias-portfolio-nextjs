@@ -4,14 +4,12 @@ import experienceMapping from '~/assets/experience-mapping.png'
 import { Text } from '~/components/Text';
 
 import Grid from "../Grid";
-import Hr from "../Hr";
 
 export default function ExperienceMapping() {
   return (
     <>
       <Grid container p='1rem 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Experience Mapping</Text.H4>
-        <Hr />
       </Grid>
       <Grid justify="center" xs='minmax(auto, 1100px)' m='0 0 6rem 0'>
         <Image

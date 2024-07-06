@@ -6,21 +6,19 @@ import typography from '~/assets/typography.png'
 import wordmark from '~/assets/wordmark.png'
 
 import Grid from "../Grid";
-import Hr from "../Hr";
 import Text from "../Text";
 
 export default function MoodboardBranding() {
   return (
     <Grid container p='3rem'>
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Wordmark</Text.H4>
-      <Hr />
-      <Grid xs='minmax(auto, 768px)' m="3rem 0">
-        <Text.H5 bold={false}>
+      <Grid xs='minmax(auto, 936px)' m="3rem 0" gap="2rem">
+        <Text.H4 bold={false}>
           I tried to create the wordmark through some sketches, but it was not the path I wanted to follow.
-        </Text.H5>
-        <Text.H5 bold={false}>
+        </Text.H4>
+        <Text.H4 bold={false}>
           I initially envisioned the wordmark to be clean, minimal, and geometric, but my sketches leaned towards a more organic style. So, I went back to the laptop and started testing using guiding lines.
-        </Text.H5>
+        </Text.H4>
       </Grid>
       <Grid justify="center" xs='minmax(auto, 1fr)'>
         <Image
@@ -45,7 +43,7 @@ export default function MoodboardBranding() {
           priority
         />
       </Grid>
-      <Link href="https://www.figma.com/design/mLbMNuRlPPfixgpWu1Vh5H/MoodBoard?node-id=0-1&t=ry8bEd10jl6NFd1N-0">
+      <Link target='__blank' href="https://www.figma.com/design/mLbMNuRlPPfixgpWu1Vh5H/MoodBoard?node-id=0-1&t=ry8bEd10jl6NFd1N-0">
         <Text.H6 bold={false} m='3rem' align='center'>
           View the full UI Library and Design System here.
         </Text.H6>

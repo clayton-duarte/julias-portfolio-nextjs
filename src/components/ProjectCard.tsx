@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-import { ButtonLink } from "./Button";
+import Button, { ButtonLink } from "./Button";
 import Grid from "./Grid";
 import Text from "./Text";
 
@@ -40,9 +40,9 @@ export default function ProjectCard({
             View project
           </ButtonLink>
         ) : (
-          <ButtonLink size="1.5rem" color="LIGHT">
+          <Button disabled size="1.5rem" color="LIGHT">
             Coming Soon
-          </ButtonLink>
+          </Button>
         )}
       </Grid>
     </Grid>

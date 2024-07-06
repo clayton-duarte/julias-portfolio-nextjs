@@ -1,10 +1,16 @@
 import Image from 'next/image'
 
+import styled from '@emotion/styled';
+
 import tarotFace from '~/assets/tarot-face.png';
 import tarotVerse from '~/assets/tarot-verse.png';
 
 import Grid from "../Grid";
 import Text from "../Text";
+
+const StyledImage = styled(Image)`
+  border-radius: 2rem;
+`
 
 export default function TarotCards() {
   return (
@@ -19,8 +25,8 @@ export default function TarotCards() {
         </Grid>
 
         <Grid m="5rem 0" xs="minmax(auto, 370px) minmax(auto, 370px)" justify='space-evenly' gap='3rem'>
-          <Image src={tarotFace} alt='Tarot Face' priority />
-          <Image src={tarotVerse} alt='Tarot Face' priority />
+          <StyledImage src={tarotFace} alt='Tarot Face' priority />
+          <StyledImage src={tarotVerse} alt='Tarot Face' priority />
         </Grid>
 
         <Grid justify="center" gap='2rem'>

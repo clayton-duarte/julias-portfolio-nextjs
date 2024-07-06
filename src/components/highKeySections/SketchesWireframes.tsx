@@ -52,7 +52,7 @@ export default function SketchesWireframes() {
         </Grid>
       </Grid>
       <Grid container p='0 3rem'>
-        <Grid justify="center" xs="minmax(auto, 500px)" m='5rem 0 3rem 0'>
+        <Grid justify="center" xs="minmax(auto, 500px)" m='5rem 0 10rem 0'>
           <Text.H5>
             Ensure that the onboarding screen provides an app summary for users.
           </Text.H5>
@@ -62,7 +62,7 @@ export default function SketchesWireframes() {
           alt="high-key-app"
           priority
         />
-        <Grid justify="center" xs="minmax(auto, 500px)" m='5rem 0 3rem 0'>
+        <Grid justify="center" xs="minmax(auto, 500px)" m='10rem 0'>
           <Text.H5>
             Consider the real-life concepts of “outfits” and “closets” to improve the flow and user understanding.
           </Text.H5>
@@ -72,14 +72,14 @@ export default function SketchesWireframes() {
           alt="high-key-app"
           priority
         />
-        <Grid gap="2rem" m="3rem 0">
+        <Grid gap="2rem" m="5rem 0">
           <Text.H5 bold={false}>
             I have changed the name of the page from “All Items” to “Your Closet” because, in real-life situations, users have their clothing pieces in their closets.
           </Text.H5>
           <Text.H5 bold={false}>Additionally, I ended up changing the Trendy Outfits card to provide users with better filtering options for their clothes, a search bar for faster finding, chips, and a sort-by feature for less-used clothing pieces.
           </Text.H5>
         </Grid>
-        <Grid justify="center" xs="minmax(auto, 500px)" m='5rem 0 3rem 0'>
+        <Grid justify="center" xs="minmax(auto, 500px)" m='10rem 0'>
           <Text.H5>
             Use consistent text to describe the same actions or items within the app.
           </Text.H5>
@@ -89,7 +89,7 @@ export default function SketchesWireframes() {
           alt="high-key-app"
           priority
         />
-        <Grid xs="minmax(auto, 840px)" m='5rem 0 3rem 0'>
+        <Grid xs="minmax(auto, 840px)" m='5rem 0'>
           <Text.H5 bold={false}>
             The page changes on those screens three times, when in reality the full flow would be happening on your closet page.
           </Text.H5>

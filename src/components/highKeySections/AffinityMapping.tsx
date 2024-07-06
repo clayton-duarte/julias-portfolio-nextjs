@@ -19,7 +19,6 @@ export default function AffinityMapping() {
       </Grid>
       <Grid container p='0 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Affinity Mapping</Text.H4>
-        <Hr />
         <Grid m='3rem 0 0 0' justify="center" xs='minmax(auto, 500px)' gap='.25rem'>
           <Text.H6 align='center'>Pain Points</Text.H6>
           <Hr />

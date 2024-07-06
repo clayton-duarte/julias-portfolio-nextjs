@@ -15,7 +15,7 @@ const projects: ProjectCardProps[] = [{
   }
 }, {
   title: "Kijiji - Industry Project",
-  description: "The HighKey app helps users to mix and match outfits while they check their wearing habits.",
+  description: "Kijiji is a platform that allows users to buy and sell items locally. I worked on a solution to help small businesses strive in the platform.",
   image: {
     src: kijiji,
     alt: "Kijiji",

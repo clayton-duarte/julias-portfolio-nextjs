@@ -47,6 +47,7 @@ export interface StyledGridProps {
   height?: string;
   area?: string;
   radius?: string;
+  size?: string;
 }
 
 export const StyledGrid = styled.div<StyledGridProps>`
@@ -54,6 +55,7 @@ export const StyledGrid = styled.div<StyledGridProps>`
   background: ${(props) => (props.bg ? props.theme[props.bg] : 'transparent')};
   color: ${(props) => (props.color ? props.theme[props.color] : 'inherit')};
   max-width: ${(props) => (props.container ? Breakpoints.XL : '100%')};
+  font-size: ${(props) => props.size ? props.size : 'inherit'};
   max-height: ${(props) => props.maxHeight ?? 'max-content'};
   padding: ${(props) => fromFourAxisToString(props.p) ?? 0};
   justify-self: ${(props) => props.justifySelf ?? 'start'};

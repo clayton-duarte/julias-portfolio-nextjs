@@ -4,7 +4,6 @@ import Link from 'next/link';
 import trendDown from '~/assets/trend-down.svg';
 
 import Grid from '../Grid';
-import Hr from '../Hr';
 import Text from '../Text';
 
 export default function SecondaryResearch() {
@@ -12,7 +11,6 @@ export default function SecondaryResearch() {
     <>
       <Grid container p='0 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Secondary Research</Text.H4>
-        <Hr />
         <Grid m='4rem 0' gap='2rem'>
           <Text.H5 bold={false}>A research from FirstInsight shows that 73% of Gen Z{' '}
             <Text.Strong color='PRIMARY'>are willing to pay more for sustainable products</Text.Strong>.

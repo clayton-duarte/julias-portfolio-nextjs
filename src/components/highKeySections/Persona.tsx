@@ -5,7 +5,6 @@ import styled from "@emotion/styled";
 import jordan from '~/assets/jordan.jpg'
 
 import Grid from "../Grid";
-import Hr from "../Hr";
 import Text from "../Text";
 
 const GridBorderLeft = styled(Grid)`
@@ -25,9 +24,8 @@ export default function Persona() {
   return (
     <Grid container p='0 3rem'>
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Persona</Text.H4>
-      <Hr />
       <Grid m='3rem 0'>
-        <Text.H4 bold={false}>Meet Jordan</Text.H4>
+        <Text.H4 bold={false}>About</Text.H4>
         <Text.H5 bold={false} >
           Jordan, a Canadian Gen Z, struggles with a closet full  forgotten clothes, reflecting a broader issue of throwaway fashion culture. Despite a love for trendy and expressive outfits, he often feel overwhelmed by the abundance of choices.
         </Text.H5>
@@ -43,7 +41,7 @@ export default function Persona() {
         <GridBorderTopLeft align='center'>
           <Grid>
             <Text.H4 bold={false}>Needs</Text.H4>
-            <Grid.Ul gap='2rem'>
+            <Grid.Ul size="1.5rem" gap='2rem'>
               <li>
                 <Text.H5 bold={false}>
                   Desires tools or methods to help plan outfits for the week efficiently.
@@ -72,7 +70,7 @@ export default function Persona() {
         </Grid>
         <GridBorderLeft p='0 0 3rem 0'>
           <Text.H4 bold={false}>Frustations</Text.H4>
-          <Grid.Ul gap='2rem'>
+          <Grid.Ul size="1.5rem" gap='2rem'>
             <li>
               <Text.H5 bold={false}>
                 Forgets about clothes after purchase, leading to underutilization.              </Text.H5>
