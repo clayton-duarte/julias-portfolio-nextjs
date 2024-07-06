@@ -1,43 +1,49 @@
 import styled from '@emotion/styled'
 
+import Grid from '~/components/Grid';
 import Header from '~/components/Header'
+import Text from '~/components/Text';
 
-const Article = styled.article`
-  background-image: url("https://placehold.co/1920x1080?text=placeholder");
+const HomeBanner = styled(Grid)`
+  height: calc(100vh - 130px); // full page - header
+  background-image: url("/julia-banner.png");
+  background-position-y: bottom;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 64px 0 64px 0;
   align-items: flex-end;
   overflow-x: hidden;
+  position: relative;
   display: flex;
-  height: 90vh;
 `
 
-const H1 = styled.h1`
-  animation: marquee 5s linear infinite;
-  transform: translateX(1ch);
+const Marquee = styled(Text.H1)`
+  text-shadow: 0 0 1px ${props => props.theme.WHITE};
+  animation: marquee 20s linear infinite;
+  transform: translateX(0);
+  position: absolute;
+  bottom: 0;
   white-space: nowrap;
   font-weight: 400;
   font-size: 200px;
   width: 41ch;
-  margin: 0;
   @keyframes marquee {
     from {
-      transform: translateX(1ch);
+      transform: translateX(0);
     }
     to {
-      transform: translateX(-20.5ch);
+      transform: translateX(-21.5ch);
     }
   }
 `
 
 export default function HomePage() {
   return (
-    <>
+    <Grid bg='LIGHT' gap='0'>
       <Header />
-      <Article>
-        <H1>• Julia Santos - UX Designer • Julia Santos - UX Designer</H1>
-      </Article>
-    </>
+      <HomeBanner>
+        <Marquee>• Julia Santos - UX Designer • Julia Santos - UX Designer •</Marquee>
+      </HomeBanner>
+    </Grid>
   );
 }

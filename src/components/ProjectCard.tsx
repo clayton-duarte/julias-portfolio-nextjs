@@ -4,7 +4,6 @@ import styled from "@emotion/styled"
 
 const Card = styled.div`
   background: ${props => props.theme.LIGHT};
-  /* color: ${props => props.theme.WHITE}; */
   border-radius: 40px;
   padding: 92px;
   display: flex;
@@ -30,11 +29,8 @@ const Description = styled.p`
 `
 
 const Button = styled.a`
-  /* border: 1px solid ${props => props.theme.WHITE}; */
   background: ${props => props.theme.WHITE};
   color: ${props => props.theme.BLACK};
-  transition: 250ms linear;
-  /* background: transparent; */
   text-decoration: none;
   align-items: center;
   border-radius: 10px;
@@ -43,7 +39,6 @@ const Button = styled.a`
   font-weight: 700;
   font-size: 32px;
   &:hover {
-    /* border: 1px solid ${props => props.theme.PRIMARY}; */
     background: ${props => props.theme.WHITE};
     color: ${props => props.theme.PRIMARY};
   }

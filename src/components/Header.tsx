@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactNode, useMemo } from 'react'
 
@@ -12,18 +13,16 @@ const Header = styled(Grid)`
   top: 0;
 `
 
-const Link = styled.a<{ active?: boolean }>`
+const StyledLink = styled(Link) <{ active?: boolean }>`
   font-weight: ${props => props.active ? 700 : 400};
   text-decoration: none;
-  transition: 250ms;
   font-size: 1.5rem;
-  color: inherit;
   &:hover {
     color: ${props => props.theme.PRIMARY};
   }
 `
 
-const DesktopLink = styled(Link)`
+const DesktopLink = styled(StyledLink)`
   @media only screen and (max-width: 1024px) {
     display: none;
   }
@@ -41,7 +40,7 @@ function SmartLink({ children, href }: { children: ReactNode, href: string }) {
   }, [href, router.pathname])
 
   return (
-    <Link active={isActive} href={href}>{children}</Link>
+    <StyledLink active={isActive} href={href}>{children}</StyledLink>
   )
 }
 
