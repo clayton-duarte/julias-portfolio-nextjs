@@ -3,7 +3,7 @@ import Text from "../Text";
 
 export default function ProblemSpaceSection() {
   return (
-    <Grid container p='3rem 0'>
+    <Grid container p='3rem'>
       <Grid p='2rem 0'>
         <Text.H4 color='PRIMARY' m='0 0 3rem 0'>Problem Space</Text.H4>
         <Text.H5 bold={false}>

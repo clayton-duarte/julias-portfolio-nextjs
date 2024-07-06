@@ -6,7 +6,7 @@ import Text from "../Text";
 
 export default function BannerSection() {
   return (
-    <Grid container p='3rem 0'>
+    <Grid container p='3rem'>
       <Grid xs='auto 1fr' gap='2rem' p='4rem 0'>
         <Image
           src="/high-key-banner.png"

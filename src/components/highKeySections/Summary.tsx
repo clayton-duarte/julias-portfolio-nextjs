@@ -4,7 +4,7 @@ import Text from "../Text";
 export default function SummarySection() {
   return (
     <Grid bg="PRIMARY" color="WHITE">
-      <Grid container p='3rem 0'>
+      <Grid container p='3rem'>
         <Grid justify='space-between' xs="repeat(4, auto)" p='5rem 0'>
           <Grid>
             <Text.H4>My role</Text.H4>

@@ -7,7 +7,7 @@ import Text from "../Text";
 
 export default function InterviewScript() {
   return (
-    <Grid container p='3rem 0'>
+    <Grid container p='3rem'>
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Interview Script</Text.H4>
       <Hr />
       <Grid m='3rem 0' gap='3rem' xs="1fr 1fr" align='center'>

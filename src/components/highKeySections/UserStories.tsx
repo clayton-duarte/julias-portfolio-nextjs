@@ -7,14 +7,14 @@ import Text from "../Text";
 export default function UserStories() {
   return (
     <>
-      <Grid container p='3rem 0'>
+      <Grid container p='3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>User Stories</Text.H4>
         <Hr />
       </Grid>
       <Grid justify="center" xs='auto'>
         <img src='https://placehold.co/730x800' alt='placeholder' />
       </Grid>
-      <Grid container p='3rem 0'>
+      <Grid container p='3rem'>
         <Text.H5 bold={false} align='center' m='0 0 5rem 0'>
           <Link href='https://docs.google.com/spreadsheets/d/10hmNROvyIbVEXt7ShnJDHVbtxTSnVn8ONtygGsGsY38/edit'>
             View the full User Stories here.
