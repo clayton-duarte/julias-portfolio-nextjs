@@ -82,6 +82,9 @@ function GlobalStyles() {
         a {
           color: ${t.BLACK};
         }
+        a:hover {
+          text-decoration: underline;
+        }
       `}
     />
   );

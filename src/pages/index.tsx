@@ -5,7 +5,7 @@ import Header from '~/components/Header'
 import Text from '~/components/Text';
 
 const HomeBanner = styled(Grid)`
-  height: calc(100vh - 130px); // full page - header
+  height: calc(100vh - 120px); // full page - header
   background-image: url("/julia-banner.png");
   background-position-y: bottom;
   background-size: auto 100vh;

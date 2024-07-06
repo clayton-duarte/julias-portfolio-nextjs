@@ -22,6 +22,13 @@ const StyledLink = styled(Link) <{ active?: boolean }>`
   }
 `
 
+const HomeLink = styled(StyledLink)`
+  font-size: 2.5rem;
+  &:hover {
+    text-decoration: none;
+  }
+`
+
 const DesktopLink = styled(StyledLink)`
   @media only screen and (max-width: 1024px) {
     display: none;
@@ -47,8 +54,10 @@ function SmartLink({ children, href }: { children: ReactNode, href: string }) {
 export default function HeaderComponent() {
   return (
     <Header bg='WHITE'>
-      <Grid container gap='3rem' p='3rem' xs='auto auto' justify='space-between'>
-        <SmartLink href='/'>Home</SmartLink>
+      <Grid container gap='3rem' p='2rem 3rem' xs='auto auto' justify='space-between' align='center'>
+        <HomeLink href='/'>
+          &#120129;&#x1D54A;
+        </HomeLink>
         <Grid xs='repeat(4, auto)' gap='10rem'>
           <SmartLink href="/work">Work</SmartLink>
           <SmartLink href="/about">About</SmartLink>
