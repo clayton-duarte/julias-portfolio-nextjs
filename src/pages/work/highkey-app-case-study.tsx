@@ -20,21 +20,29 @@ export default function HighkeyAppCaseStudyPage() {
       <Header />
       <Banner />
       <Summary />
-      <ProblemSpace />
-      <DesignProcess />
-      <SecondaryResearch />
-      <InterviewScript />
-      <AffinityMapping />
-      <ThemesSection />
-      <WhatPeopleSay />
-      <Persona />
-      <HowMightWe />
-      <ExperienceMapping />
-      <UserStories />
-      <TaskFlow />
-      <p>UI Inspo</p>
-      <p>Sketches</p>
-      <p>Wireframes</p>
+      <ProblemSpace /> {/* 1 <<<<<<< */}
+      <DesignProcess /> {/* 1 <<<<<<< */}
+      <SecondaryResearch /> {/* 1 <<<<<<< */}
+      <p>Hypothesis and Assumptions</p> {/* 2 */}
+      <InterviewScript /> {/* 3 */}
+      <AffinityMapping /> {/* 3 */}
+      <ThemesSection /> {/* 3 <<<<<<< */}
+      <WhatPeopleSay /> {/* 3 */}
+      <Persona /> {/* 4 <<<<<<< */}
+      <ExperienceMapping /> {/* 5 <<<<<<< */}
+      <HowMightWe /> {/* 6 <<<<<<< */}
+      <UserStories /> {/* 7-8 */}
+      <TaskFlow /> {/* 9 <<<<<<< */}
+      <p>UI Inspo</p> {/* 10 */}
+      <p>Sketches</p> {/* 11 */}
+      <p>Wireframes and 1st Prototype</p> {/* 11 */}
+      <p>User Testing and Results</p> {/* 12 <<<<<<< */}
+      <p>Before and After</p> {/* 13 <<<<<<< */}
+      <p>Moodboard and Branding</p> {/* 14 */}
+      <p>UI Library and Design System</p> {/* 15 <<<<<<< */}
+      <p>High Fidelity Design and Prototype</p> {/* 16 <<<<<<< */}
+      <p>Tarot Cards</p> {/* 17 <<<<<<< */}
+      <p>Key Learnings and Next Steps</p> {/* 18 <<<<<<< */}
     </>
   )
 }
