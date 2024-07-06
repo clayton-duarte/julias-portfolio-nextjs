@@ -26,6 +26,7 @@ const Button = styled.button<ButtonProps>`
     ${(props) => (props.color ? props.theme[props.color] : props.theme.PRIMARY)};
   &:hover {
     filter: brightness(1.1);
+    text-decoration: none;
   }
   &:disabled {
     filter: greyscale(1);

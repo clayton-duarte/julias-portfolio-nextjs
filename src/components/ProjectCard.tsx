@@ -1,48 +1,8 @@
 import Image from "next/image";
 
-import styled from "@emotion/styled"
-
-const Card = styled.div`
-  background: ${props => props.theme.LIGHT};
-  border-radius: 40px;
-  padding: 92px;
-  display: flex;
-  gap: 80px;
-`
-
-const Content = styled.div`
-  flex-direction: column;
-  align-items: start;
-  display: flex;
-  gap: 2rem;
-`
-
-const Title = styled.h2`
-  font-weight: 700;
-  font-size: 48px;
-  margin: 0;
-`
-
-const Description = styled.p`
-  font-size: 32px;
-  margin: 0;
-`
-
-const Button = styled.a`
-  background: ${props => props.theme.WHITE};
-  color: ${props => props.theme.BLACK};
-  text-decoration: none;
-  align-items: center;
-  border-radius: 10px;
-  padding: 16px 48px;
-  margin-top: 4rem;
-  font-weight: 700;
-  font-size: 32px;
-  &:hover {
-    background: ${props => props.theme.WHITE};
-    color: ${props => props.theme.PRIMARY};
-  }
-`
+import { ButtonLink } from "./Button";
+import Grid from "./Grid";
+import Text from "./Text";
 
 export interface ProjectCardProps {
   title: string;
@@ -51,12 +11,12 @@ export interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-  title,
   description,
-  href = "#"
+  title,
+  href
 }: ProjectCardProps) {
   return (
-    <Card>
+    <Grid xs='auto auto' bg='LIGHT' p="4rem">
       <Image
         src="/high-key-app.png"
         alt="high-key-app"
@@ -64,15 +24,23 @@ export default function ProjectCard({
         height={688}
         priority
       />
-      <Content>
-        <Title>{title}</Title>
-        <Description>
-          {description}
-        </Description>
-        <Button href={href}>
-          View project
-        </Button>
-      </Content>
-    </Card>
+      <Grid xs='auto' gap="2rem" p='2rem'>
+        <Text.H3>{title}</Text.H3>
+        <Grid xs='minmax(auto, 360px)'>
+          <Text.H5 bold={false} m='0 0 3rem 0'>
+            {description}
+          </Text.H5>
+        </Grid>
+        {href ? (
+          <ButtonLink size="1.5rem" href={href} color="DARK">
+            View project
+          </ButtonLink>
+        ) : (
+          <ButtonLink size="1.5rem" color="LIGHT">
+            Comming Soon
+          </ButtonLink>
+        )}
+      </Grid>
+    </Grid>
   )
 }
