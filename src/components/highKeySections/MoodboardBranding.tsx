@@ -12,7 +12,6 @@ import Text from "../Text";
 export default function MoodboardBranding() {
   return (
     <Grid container p='3rem'>
-      Wordmark
       <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Wordmark</Text.H4>
       <Hr />
       <Grid xs='minmax(auto, 768px)' m="3rem 0">

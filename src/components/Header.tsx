@@ -61,7 +61,7 @@ export default function HeaderComponent() {
         <Grid xs='repeat(4, auto)' gap='10rem'>
           <SmartLink href="/work">Work</SmartLink>
           <SmartLink href="/about">About</SmartLink>
-          <DesktopLink href="#">LinkedIn</DesktopLink>
+          <DesktopLink target='__blank' href="https://www.linkedin.com/in/ssantosjulia/">LinkedIn</DesktopLink>
           <DesktopLink href="#">Resume</DesktopLink>
         </Grid>
       </Grid>
