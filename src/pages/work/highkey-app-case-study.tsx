@@ -12,6 +12,7 @@ import ProblemSpace from "~/components/highKeySections/ProblemSpace";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import SketchesWireframes from "~/components/highKeySections/SketchesWireframes";
 import Summary from "~/components/highKeySections/Summary";
+import TarotCards from "~/components/highKeySections/TarotCards";
 import TaskFlow from "~/components/highKeySections/TaskFlow";
 import ThemesSection from "~/components/highKeySections/ThemesSection";
 import UserStories from "~/components/highKeySections/UserStories";
@@ -39,13 +40,7 @@ export default function HighkeyAppCaseStudyPage() {
       <MoodboardBranding /> {/* 14 */}
       <SketchesWireframes /> {/* 11 */}
       <NextStepsLearnings /> {/* 18 */}
-      <p>Hypothesis and Assumptions</p> {/* 2 */}
-      <p>UI Inspo</p> {/* 10 */}
-      <p>User Testing and Results</p> {/* 12 <<<<<<< */}
-      <p>Before and After</p> {/* 13 <<<<<<< */}
-      <p>UI Library and Design System</p> {/* 15 <<<<<<< */}
-      <p>High Fidelity Design and Prototype</p> {/* 16 <<<<<<< */}
-      <p>Tarot Cards</p> {/* 17 <<<<<<< */}
+      <TarotCards /> {/* 17 */}
       <ScrollTopFab />
     </>
   )
