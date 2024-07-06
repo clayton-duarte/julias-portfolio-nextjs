@@ -1,16 +1,14 @@
+import Image from 'next/image';
+
 import styled from '@emotion/styled'
 
+import juliaBanner from '~/assets/julia-banner.png';
 import Grid from '~/components/Grid';
 import Header from '~/components/Header'
 import Text from '~/components/Text';
 
 const HomeBanner = styled(Grid)`
   height: calc(100vh - 120px); // full page - header
-  background-image: url("/julia-banner.png");
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100vh;
   align-items: flex-end;
   overflow-x: hidden;
   position: relative;
@@ -44,6 +42,9 @@ export default function HomePage() {
         <Marquee>
           • Julia Santos - UX Designer • Julia Santos - UX Designer •
         </Marquee>
+        <Grid xs="minmax(auto, calc(100vh - 300px))" justify='center'>
+          <Image src={juliaBanner} alt='Julia Santos' priority />
+        </Grid>
       </HomeBanner>
     </Grid>
   );
