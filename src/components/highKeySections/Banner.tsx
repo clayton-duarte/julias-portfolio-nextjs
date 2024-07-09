@@ -20,7 +20,7 @@ export default function BannerSection() {
           <Text.H4 m="0 0 2rem 0" bold={false}>The HighKey app helps users to mix and match outfits while they can check their wearing habits.</Text.H4>
           <ButtonLink
             href="https://www.figma.com/proto/KXwEXl2lgDMzls0IY8lJtf/Untitled?page-id=818%3A1726&node-id=858-1855&viewport=-5982%2C-285%2C0.63&t=4kejvgEy3uAgKeoK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=858%3A1778&show-proto-sidebar=1"
-            target="__blank"
+            target="_blank"
             size="2rem"
           >
             View prototype

@@ -43,7 +43,7 @@ export default function MoodboardBranding() {
           priority
         />
       </Grid>
-      <Link target='__blank' href="https://www.figma.com/design/mLbMNuRlPPfixgpWu1Vh5H/MoodBoard?node-id=0-1&t=ry8bEd10jl6NFd1N-0">
+      <Link target='_blank' href="https://www.figma.com/design/mLbMNuRlPPfixgpWu1Vh5H/MoodBoard?node-id=0-1&t=ry8bEd10jl6NFd1N-0">
         <Text.H6 bold={false} m='3rem' align='center'>
           View the full UI Library and Design System here.
         </Text.H6>

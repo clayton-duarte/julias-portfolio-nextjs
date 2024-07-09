@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import takingNotes from '~/assets/taking-notes.png'
 
-import { size } from '../../theme';
 import Grid from "../Grid";
 import Text from "../Text";
 
@@ -47,7 +46,7 @@ export default function InterviewScript() {
         </Grid.Ul>
       </Grid>
       <Grid m='4rem 0'>
-        <Link target="__blank" href="https://docs.google.com/document/d/131w2mqgb22zPXgefqUwjIfZnuQKTOpKNO-qrCykudUY/edit">
+        <Link target="_blank" href="https://docs.google.com/document/d/131w2mqgb22zPXgefqUwjIfZnuQKTOpKNO-qrCykudUY/edit">
           <Text.H6 align='center' bold={false}>
             View the full user interview here.
           </Text.H6>

@@ -21,7 +21,7 @@ export default function UserStories() {
       </Grid>
       <Grid container p='3rem'>
         <Text.H6 bold={false} align='center' m='0 0 5rem 0'>
-          <Link target="__blank" href='https://docs.google.com/spreadsheets/d/10hmNROvyIbVEXt7ShnJDHVbtxTSnVn8ONtygGsGsY38/edit'>
+          <Link target="_blank" href='https://docs.google.com/spreadsheets/d/10hmNROvyIbVEXt7ShnJDHVbtxTSnVn8ONtygGsGsY38/edit'>
             View the full User Stories here.
           </Link>
         </Text.H6>
