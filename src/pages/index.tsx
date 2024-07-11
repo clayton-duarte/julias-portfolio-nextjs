@@ -1,15 +1,14 @@
+import Image from "next/image";
+
 import styled from '@emotion/styled'
 
+import juliaBanner from '~/assets/julia-banner.png'
 import Grid from '~/components/Grid';
 import Header, { HEADER_HEIGHT } from '~/components/Header'
 import Text from '~/components/Text';
 
 const HomeBanner = styled(Grid)`
   height: calc(100vh - ${HEADER_HEIGHT});
-  background-image: url("/julia-banner.png");
-  background-position: 50% 20%;
-  background-repeat: no-repeat;
-  background-size: auto 200vh;
   align-items: flex-end;
   overflow-x: hidden;
   position: relative;
@@ -35,11 +34,25 @@ const Marquee = styled(Text.H1)`
   }
 `
 
+const StyledImage = styled(Image)`
+  top: -25vh;
+  position: absolute;
+  max-width: 150vh;
+  width: 150vh;
+  transform: translate(-50%);
+  left: 50%;
+`
+
 export default function HomePage() {
   return (
     <Grid bg='LIGHT' gap='0'>
       <Header />
       <HomeBanner>
+        <StyledImage
+          src={juliaBanner}
+          alt="high-key-app"
+          priority
+        />
         <Marquee>
           • Julia Santos - UX Designer • Julia Santos - UX Designer •
         </Marquee>
