@@ -27,7 +27,7 @@ export default function WorkPage() {
   return (
     <>
       <Header />
-      <Grid container p='3rem' gap='10rem'>
+      <Grid container mdP='3rem' xsGap="10rem">
         {projects.map((cardProps, index) =>
           <ProjectCard
             key={`project-card-${index}`}

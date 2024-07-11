@@ -22,13 +22,21 @@ export default function ProjectCard({
   href,
 }: ProjectCardProps) {
   return (
-    <Grid xs={`minmax(auto, ${image.size}) auto`} bg='LIGHT' p="4rem">
+    <Grid
+      lg={`minmax(40%, ${image.size}) auto`}
+      xl={`minmax(auto, ${image.size}) auto`}
+      align="center"
+      bg='LIGHT'
+      xsP="3rem"
+      mdP="4rem"
+      gap="3rem"
+    >
       <Image
         src={image.src}
         alt={image.alt}
         priority
       />
-      <Grid xs='auto' gap="2rem" p='2rem'>
+      <Grid xs='auto' gap="2rem" mdP='2rem'>
         <Text.H3>{title}</Text.H3>
         <Grid xs='minmax(auto, 360px)'>
           <Text.H5 bold={false} m='0 0 3rem 0'>

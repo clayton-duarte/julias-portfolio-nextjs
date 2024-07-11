@@ -45,7 +45,17 @@ export interface StyledGridProps {
   lgGap?: string;
   xlGap?: string;
   m?: FourAxisProp;
+  xsM?: string;
+  smM?: string;
+  mdM?: string;
+  lgM?: string;
+  xlM?: string;
   p?: FourAxisProp;
+  xsP?: string;
+  smP?: string;
+  mdP?: string;
+  lgP?: string;
+  xlP?: string;
   minHeight?: string;
   maxHeight?: string;
   container?: boolean;
@@ -59,15 +69,15 @@ export const StyledGrid = styled.div<StyledGridProps>`
   display: grid;
   background: ${(props) => (props.bg ? props.theme[props.bg] : 'transparent')};
   color: ${(props) => (props.color ? props.theme[props.color] : 'inherit')};
+  padding: ${(props) => fromFourAxisToString(props.xsP ?? props.p) ?? 0};
   max-width: ${(props) => (props.container ? Breakpoints.XL : '100%')};
   font-size: ${(props) => props.size ? props.size : 'inherit'};
   max-height: ${(props) => props.maxHeight ?? 'max-content'};
-  padding: ${(props) => fromFourAxisToString(props.p) ?? 0};
   justify-self: ${(props) => props.justifySelf ?? 'start'};
   justify-content: ${(props) => props.justify ?? 'start'};
   grid-template-columns: ${(props) => props.xs ?? '1fr'};
   grid-template-rows: ${(props) => props.xsy ?? 'auto'};
-  gap: ${(props) => props.gap ?? props.xsGap ?? '1rem'};
+  gap: ${(props) => props.xsGap ?? props.gap ?? '1rem'};
   align-self: ${(props) => props.alignSelf ?? 'auto'};
   align-items: ${(props) => props.align ?? 'start'};
   border-radius: ${(props) => props.radius ?? '0'};
@@ -76,7 +86,7 @@ export const StyledGrid = styled.div<StyledGridProps>`
   position: relative;
   width: 100%;
   margin: ${(props) =>
-    props.m ? fromFourAxisToString(props.m) : props.container ? '0 auto' : 0};
+    fromFourAxisToString(props.xsM ?? props.m) ?? props.container ? '0 auto' : 0};
   min-height: ${(props) =>
     props.minHeight
       ? props.minHeight
@@ -88,6 +98,9 @@ export const StyledGrid = styled.div<StyledGridProps>`
     grid-template-columns: ${(props) => props.sm ?? props.xs ?? '1fr'};
     grid-template-rows: ${(props) => props.smy ?? props.xsy ?? 'auto'};
     gap: ${(props) => props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
+    padding: ${(props) => fromFourAxisToString(props.smP ?? props.xsP ?? props.p) ?? 0};
+    margin: ${(props) =>
+    fromFourAxisToString(props.smM ?? props.xsM ?? props.m) ?? props.container ? '0 auto' : 0};
   }
   @media (min-width: ${Breakpoints.MD}) {
     grid-template-columns: ${(props) =>
@@ -96,6 +109,9 @@ export const StyledGrid = styled.div<StyledGridProps>`
     props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
     gap: ${(props) =>
     props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
+    padding: ${(props) => fromFourAxisToString(props.mdP ?? props.smP ?? props.xsP ?? props.p) ?? 0};
+    margin: ${(props) =>
+    fromFourAxisToString(props.mdM ?? props.smM ?? props.xsM ?? props.m) ?? props.container ? '0 auto' : 0};
   }
   @media (min-width: ${Breakpoints.LG}) {
     grid-template-columns: ${(props) =>
@@ -104,6 +120,9 @@ export const StyledGrid = styled.div<StyledGridProps>`
     props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
     gap: ${(props) =>
     props.lgGap ?? props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
+    padding: ${(props) => fromFourAxisToString(props.lgP ?? props.mdP ?? props.smP ?? props.xsP ?? props.p) ?? 0};
+    margin: ${(props) =>
+    fromFourAxisToString(props.lgM ?? props.mdM ?? props.smM ?? props.xsM ?? props.m) ?? props.container ? '0 auto' : 0};
   }
   @media (min-width: ${Breakpoints.XL}) {
     grid-template-columns: ${(props) =>
@@ -112,6 +131,9 @@ export const StyledGrid = styled.div<StyledGridProps>`
     props.xly ?? props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
     gap: ${(props) =>
     props.xlGap ?? props.lgGap ?? props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
+    padding: ${(props) => fromFourAxisToString(props.xlP ?? props.lgP ?? props.mdP ?? props.smP ?? props.xsP ?? props.p) ?? 0};
+    margin: ${(props) =>
+    fromFourAxisToString(props.xlM ?? props.lgM ?? props.mdM ?? props.smM ?? props.xsM ?? props.m) ?? props.container ? '0 auto' : 0};
   }
 `;
 

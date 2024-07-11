@@ -89,6 +89,7 @@ function GlobalStyles() {
 
         img {
           max-width: 100%;
+          margin: 0 auto;
           height: auto;
           width: auto;
         }
