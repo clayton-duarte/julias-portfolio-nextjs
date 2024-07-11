@@ -5,6 +5,7 @@ import Header, { HEADER_HEIGHT } from '~/components/Header'
 import Text from '~/components/Text';
 
 const HomeBanner = styled(Grid)`
+  min-height: calc(100vh - ${HEADER_HEIGHT});
   height: calc(100vh - ${HEADER_HEIGHT});
   background-image: url("/julia-banner.png");
   background-position: 50% 20%;
@@ -19,7 +20,6 @@ const HomeBanner = styled(Grid)`
 const Marquee = styled(Text.H1)`
   animation: marquee 20s linear infinite;
   transform: translateX(0);
-  position: absolute;
   white-space: nowrap;
   font-weight: 400;
   font-size: 200px;
