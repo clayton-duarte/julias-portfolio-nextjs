@@ -12,7 +12,7 @@ export default function UserStories() {
       <Grid container p='3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>User Stories</Text.H4>
       </Grid>
-      <Grid justify="center" xs='minmax(auto, 730px)'>
+      <Grid xsP='1rem' lgP="0" justify="center" xs='minmax(auto, 730px)'>
         <Image
           src={userStories}
           alt="high-key-app"

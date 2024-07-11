@@ -5,7 +5,7 @@ export default function NextStepsLearnings() {
   return (
     <Grid container p='3rem'>
       <Text.H4 m="5rem 0">Next Steps & Key Learnings</Text.H4>
-      <Grid xs='1fr 1fr' gap="3rem">
+      <Grid md='1fr 1fr' gap="3rem">
         <Grid.Ul size='2rem' gap="2rem">
           <li>
             <Text.H4 bold={false}>

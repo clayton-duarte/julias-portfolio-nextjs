@@ -12,7 +12,7 @@ export default function WhatPeopleSay() {
     <>
       <Grid container p='3rem'>
         <Text.H4 bold={false} align='center'>What people are saying?</Text.H4>
-        <Grid xs='minmax(auto, 500px) minmax(auto, 500px)' align="center" justify='center' gap='3rem'>
+        <Grid md='minmax(auto, 500px) minmax(auto, 500px)' align="center" justify='center' gap='3rem'>
           <Image
             src={persona1}
             alt="high-key-app"

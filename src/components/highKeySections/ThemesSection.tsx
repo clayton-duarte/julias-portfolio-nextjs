@@ -9,7 +9,7 @@ export default function ThemesSection() {
         <Text.H4 bold={false} m='3rem 0'>
           The following were the core themes and insights that emerged through Affinity Mapping:
         </Text.H4>
-        <Grid xs='1fr 1fr' align="stretch" gap='1.5rem'>
+        <Grid md='1fr 1fr' align="stretch" gap='1.5rem'>
           <Grid bg='PRIMARY' color='WHITE' radius='1.25rem' p='2.5rem'>
             <Text.H5>Inspirational and Aspirational Shopping</Text.H5>
             <Text.H5 bold={false}>

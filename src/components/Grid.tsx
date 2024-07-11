@@ -184,10 +184,10 @@ Grid.Nav = (props: GridProps) =>
 Grid.Form = (props: GridProps) => Grid({ component: 'form', ...props });
 
 Grid.Ul = (props: GridProps) =>
-  Grid({ component: 'ul', p: '0 0 0 1rem', ...props });
+  Grid({ component: 'ul', p: '0 0 0 2rem', ...props });
 
 Grid.Ol = (props: GridProps) =>
-  Grid({ component: 'ol', p: '0 0 0 1rem', ...props });
+  Grid({ component: 'ol', p: '0 0 0 2rem', ...props });
 
 Grid.Li = (props: GridProps) => Grid({ component: 'li', ...props });
 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 import behaviours from '~/assets/behaviours.png';
 import motivationGoals from '~/assets/motivation-goals.png';
@@ -40,6 +41,13 @@ export default function AffinityMapping() {
         <Grid justify="center" xs='auto'>
           <Image src={behaviours} alt='Behaviours' priority />
         </Grid>
+      </Grid>
+      <Grid p='2rem 0'>
+        <Link target="_blank" href="https://www.figma.com/proto/kfHxXzxBNjHhztQ1IOrTvt/CP1?page-id=46%3A126&node-id=46-157&t=BWCppYSYxjVIAdLN-1">
+          <Text.H6 align='center' bold={false}>
+            View the full affinity mapping here.
+          </Text.H6>
+        </Link>
       </Grid>
     </>
   )

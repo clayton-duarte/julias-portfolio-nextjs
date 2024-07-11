@@ -9,26 +9,15 @@ import Text from '../Text';
 export default function SecondaryResearch() {
   return (
     <>
-      <Grid container p='0 3rem'>
-        <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Secondary Research</Text.H4>
-        <Grid m='4rem 0' gap='2rem'>
-          <Text.H5 bold={false}>A research from FirstInsight shows that 73% of Gen Z{' '}
-            <Text.Strong color='PRIMARY'>are willing to pay more for sustainable products</Text.Strong>.
-          </Text.H5>
-          <Text.H5 bold={false}>However, Statistics from Earth.org suggests that the frequency of wearing a piece of clothing has{' '}
+      <Grid container gap='3rem' p='3rem'>
+        <Text.H4 color='PRIMARY'>Secondary Research</Text.H4>
+        <Grid gap='2rem'>
+          <Text.H5 bold={false}>Statistics from Earth.org suggests that the frequency of wearing a piece of clothing has{' '}
             <Text.Strong color='PRIMARY'>significantly declined over the years</Text.Strong>{' '}
             contributing to the throwaway culture and, consequently, to the harmful effects on the environment.
           </Text.H5>
         </Grid>
-        <Grid xs='1fr 1fr 1.2fr' justify='space-between' gap='4.5rem' m='5rem 0'>
-          <Grid>
-            <Text.H1 color='PRIMARY'>73%</Text.H1>
-            <Text.H5 bold={false}>of Gen Z are the most{' '}
-              <Text.Strong color='PRIMARY'>willing to pay</Text.Strong>{' '}
-              more for{' '}
-              <Text.Strong color='PRIMARY'>sustainable products.</Text.Strong>
-            </Text.H5>
-          </Grid>
+        <Grid lg='1fr 1.2fr' justify='space-between' gap='4.5rem'>
           <Grid>
             <Grid xs='80px auto' gap='2rem' align="center">
               <Image
@@ -55,9 +44,6 @@ export default function SecondaryResearch() {
         </Grid>
         <Grid m='5rem 0'>
           <Text align='center'>Sources:{' '}
-            <Link target='_blank' href='https://www.firstinsight.com/press-releases/first-insight-finds-expectations-for-sustainable-retail-practices-growing-with-the-rise-of-gen-z-shoppers'>
-              FirstInsight
-            </Link>,{' '}
             <Link target='_blank' href='https://earth.org/statistics-about-fast-fashion-waste/'>
               Earth.org
             </Link>,{' '}

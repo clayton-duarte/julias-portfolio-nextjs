@@ -15,9 +15,9 @@ const StyledImage = styled(Image)`
 export default function TarotCards() {
   return (
     <Grid bg='PRIMARY' color='WHITE' p='3rem 0'>
-      <Grid container p='3rem'>
+      <Grid container p='3rem' gap='3rem'>
 
-        <Grid justify="center" xs="minmax(auto, 450px)" gap='2rem'>
+        <Grid p='2rem 0' justify="center" xs="minmax(auto, 450px)" gap='2rem'>
           <Text.H5 align='center'>Tarot Cards of Tech</Text.H5>
           <Text align='center'>
             helps all of us think bigger picture and longer term about the products we create and their effect on the world.

@@ -23,7 +23,7 @@ export default function TaskFlow() {
           This shows the data visualization in a subtle way without being pushy.
         </Text.H5>
       </Grid>
-      <Text.H3 p='3rem' bold={false} align='center'>Add an item into the app</Text.H3>
+      <Text.H3 p='3rem 0' bold={false} align='center'>Add an item into the app</Text.H3>
       <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={addItemUserStory}
@@ -31,7 +31,7 @@ export default function TaskFlow() {
           priority
         />
       </Grid>
-      <Text.H3 m="3rem 0 0 0" p='3rem' bold={false} align='center'>Create an outfit</Text.H3>
+      <Text.H3 m="3rem 0 0 0" p='3rem 0' bold={false} align='center'>Create an outfit</Text.H3>
       <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={clothUsageUserStory}
@@ -39,7 +39,7 @@ export default function TaskFlow() {
           priority
         />
       </Grid>
-      <Text.H3 m="3rem 0 0 0" p='3rem' bold={false} align='center'>Clothing usage visualization</Text.H3>
+      <Text.H3 m="3rem 0 0 0" p='3rem 0' bold={false} align='center'>Clothing usage visualization</Text.H3>
       <Grid xs='minmax(auto, 1000px)' justify="center">
         <Image
           src={createOutfitUserStory}

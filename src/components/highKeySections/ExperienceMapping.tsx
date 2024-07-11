@@ -11,7 +11,7 @@ export default function ExperienceMapping() {
       <Grid container p='1rem 3rem'>
         <Text.H4 m='3rem 0 0 0' color='PRIMARY'>Experience Mapping</Text.H4>
       </Grid>
-      <Grid justify="center" xs='minmax(auto, 1100px)' m='0 0 6rem 0'>
+      <Grid xsP='1rem' lgP="0" justify="center" xs='minmax(auto, 1100px)' m='0 0 6rem 0'>
         <Image
           src={experienceMapping}
           alt="high-key-app"
