@@ -39,6 +39,11 @@ export interface StyledGridProps {
   lgy?: string;
   xly?: string;
   gap?: string;
+  xsGap?: string;
+  smGap?: string;
+  mdGap?: string;
+  lgGap?: string;
+  xlGap?: string;
   m?: FourAxisProp;
   p?: FourAxisProp;
   minHeight?: string;
@@ -62,12 +67,12 @@ export const StyledGrid = styled.div<StyledGridProps>`
   justify-content: ${(props) => props.justify ?? 'start'};
   grid-template-columns: ${(props) => props.xs ?? '1fr'};
   grid-template-rows: ${(props) => props.xsy ?? 'auto'};
+  gap: ${(props) => props.gap ?? props.xsGap ?? '1rem'};
   align-self: ${(props) => props.alignSelf ?? 'auto'};
   align-items: ${(props) => props.align ?? 'start'};
   border-radius: ${(props) => props.radius ?? '0'};
   grid-area: ${(props) => props.area ?? 'auto'};
   height: ${(props) => props.height ?? 'auto'};
-  gap: ${(props) => props.gap ?? '1rem'};
   position: relative;
   width: 100%;
   margin: ${(props) =>
@@ -82,24 +87,31 @@ export const StyledGrid = styled.div<StyledGridProps>`
   @media (min-width: ${Breakpoints.SM}) {
     grid-template-columns: ${(props) => props.sm ?? props.xs ?? '1fr'};
     grid-template-rows: ${(props) => props.smy ?? props.xsy ?? 'auto'};
+    gap: ${(props) => props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
   }
   @media (min-width: ${Breakpoints.MD}) {
     grid-template-columns: ${(props) =>
     props.md ?? props.sm ?? props.xs ?? '1fr'};
     grid-template-rows: ${(props) =>
     props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
+    gap: ${(props) =>
+    props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
   }
   @media (min-width: ${Breakpoints.LG}) {
     grid-template-columns: ${(props) =>
     props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr'};
     grid-template-rows: ${(props) =>
     props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
+    gap: ${(props) =>
+    props.lgGap ?? props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
   }
   @media (min-width: ${Breakpoints.XL}) {
     grid-template-columns: ${(props) =>
     props.xl ?? props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr'};
     grid-template-rows: ${(props) =>
     props.xly ?? props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'};
+    gap: ${(props) =>
+    props.xlGap ?? props.lgGap ?? props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem'};
   }
 `;
 
