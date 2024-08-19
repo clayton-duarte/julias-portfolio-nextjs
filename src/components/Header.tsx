@@ -11,7 +11,7 @@ import { Breakpoints } from '~/theme'
 
 import Grid from './Grid'
 
-export const HEADER_HEIGHT = '120px'
+export const HEADER_HEIGHT = '77px'
 
 const Header = styled(Grid)`
   border-bottom: 2px solid ${props => props.theme.BLACK};
@@ -24,14 +24,14 @@ const StyledLink = styled(Link) <{ active?: boolean; }>`
   font-weight: ${props => props.active ? 700 : 400};
   text-decoration: none;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   &:hover {
     color: ${props => props.theme.PRIMARY};
   }
 `
 
 const HomeLink = styled(StyledLink)`
-  font-size: 2.5rem;
+  font-size: 2rem;
 
   &:hover {
     text-decoration: none;
@@ -98,7 +98,7 @@ export default function HeaderComponent() {
 
   return (
     <Header bg='WHITE'>
-      <Grid container xsGap="0 1rem" mdGap="0 3rem" p='2rem 3rem' xs='auto auto' justify='space-between' align='center'>
+      <Grid container xsGap="0 1rem" mdGap="0 2rem" p='1rem 3rem' xs='auto auto' justify='space-between' align='center'>
         <HomeLink href='/'>
           &#120129;&#x1D54A;
         </HomeLink>

@@ -52,19 +52,19 @@ function Text({
   return <Component {...textProps} />;
 }
 
-Text.P = (props: TextProps) => Text({ component: 'p', ...props });
+Text.P = (props: TextProps) => Text({ component: 'p', size: '16px', ...props });
 
-Text.H1 = (props: TextProps) => Text({ component: 'h1', size: '5rem', bold: true, ...props });
+Text.H1 = (props: TextProps) => Text({ component: 'h1', size: '64px', bold: true, ...props });
 
-Text.H2 = (props: TextProps) => Text({ component: 'h2', size: '3.8125rem', bold: true, ...props });
+Text.H2 = (props: TextProps) => Text({ component: 'h2', size: '40px', bold: true, ...props });
 
-Text.H3 = (props: TextProps) => Text({ component: 'h3', size: '3rem', bold: true, ...props });
+Text.H3 = (props: TextProps) => Text({ component: 'h3', size: '32px', bold: true, ...props });
 
-Text.H4 = (props: TextProps) => Text({ component: 'h4', size: '2.25rem', bold: true, ...props });
+Text.H4 = (props: TextProps) => Text({ component: 'h4', size: '24px', bold: true, ...props });
 
-Text.H5 = (props: TextProps) => Text({ component: 'h5', size: '1.688rem', bold: true, ...props });
+Text.H5 = (props: TextProps) => Text({ component: 'h5', size: '20px', bold: true, ...props });
 
-Text.H6 = (props: TextProps) => Text({ component: 'h6', size: '1.312rem', bold: true, ...props });
+Text.H6 = (props: TextProps) => Text({ component: 'h6', size: '16px', bold: true, ...props });
 
 Text.Span = (props: TextProps) => Text({ component: 'span', ...props });
 
