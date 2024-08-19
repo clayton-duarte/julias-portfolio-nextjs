@@ -36,6 +36,7 @@ export enum Colors {
   WARNING = '#FFC700',
   DANGER = '#831B0E',
   RED = '#831B0E',
+  PURPLE = '#373372',
 }
 
 export type ColorNames = keyof typeof Colors;
@@ -53,6 +54,7 @@ declare module '@emotion/react' {
     WARNING: string;
     DANGER: string;
     RED: string;
+    PURPLE: string;
   }
 
   export function useTheme(): Theme;
