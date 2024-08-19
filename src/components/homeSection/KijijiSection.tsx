@@ -18,7 +18,7 @@ export default function KijijiSection() {
           <Text.P size='24px'>
             A 24-hour hackathon, where the our cross-functional team were tasked with designing a solution to help small business and local sellers on Kijiji’s platform.
           </Text.P>
-          <Button disabled color='PURPLE'>
+          <Button disabled color='PURPLE' outlined >
             Coming Soon
           </Button>
           {/* <ButtonLink color='PURPLE' href='/work/highkey-app-case-study'>

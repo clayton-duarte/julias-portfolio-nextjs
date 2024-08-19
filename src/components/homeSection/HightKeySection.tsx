@@ -20,7 +20,7 @@ export default function HightKeySection() {
             <Text.P>UX/UI Design, UX Research, Case Study</Text.P>
           </Grid>
           <Text.P size='24px'>Helping users check their wearing habits while mixing and matching outfits.</Text.P>
-          <ButtonLink href='/work/highkey-app-case-study'>
+          <ButtonLink outlined href='/work/highkey-app-case-study'>
             View project
           </ButtonLink>
         </Grid>

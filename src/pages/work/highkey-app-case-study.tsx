@@ -23,24 +23,25 @@ export default function HighkeyAppCaseStudyPage() {
   return (
     <>
       <Header />
+
       <Banner />
       <Summary />
-      <ProblemSpace /> {/* 1 <<<<<<< */}
-      <DesignProcess /> {/* 1 <<<<<<< */}
-      <SecondaryResearch /> {/* 1 <<<<<<< */}
-      <InterviewScript /> {/* 3 */}
-      <AffinityMapping /> {/* 3 */}
-      <ThemesSection /> {/* 3 <<<<<<< */}
-      <WhatPeopleSay /> {/* 3 */}
-      <Persona /> {/* 4 <<<<<<< */}
-      <HowMightWe /> {/* 6 <<<<<<< */}
-      <ExperienceMapping /> {/* 5 <<<<<<< */}
-      <UserStories /> {/* 7-8 */}
-      <TaskFlow /> {/* 9 <<<<<<< */}
-      <MoodboardBranding /> {/* 14 */}
-      <SketchesWireframes /> {/* 11 */}
-      <NextStepsLearnings /> {/* 18 */}
-      <TarotCards /> {/* 17 */}
+      <ProblemSpace />
+      <DesignProcess />
+      <SecondaryResearch />
+      <InterviewScript />
+      <AffinityMapping />
+      <ThemesSection />
+      <WhatPeopleSay />
+      <Persona />
+      <HowMightWe />
+      <ExperienceMapping />
+      <UserStories />
+      <TaskFlow />
+      <MoodboardBranding />
+      <SketchesWireframes />
+      <NextStepsLearnings />
+      <TarotCards />
       <ScrollTopFab />
     </>
   )
