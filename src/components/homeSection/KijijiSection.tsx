@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import kijijiPng from '~/assets/kijiji.png'
-import Button from '~/components/Button';
+import Button, { ButtonLink } from '~/components/Button';
 import Grid from '~/components/Grid';
 import Text from '~/components/Text';
 
@@ -18,7 +18,12 @@ export default function KijijiSection() {
           <Text.P size='24px'>
             A 24-hour hackathon, where the our cross-functional team were tasked with designing a solution to help small business and local sellers on Kijiji’s platform.
           </Text.P>
-          <Button color='PURPLE'>View project</Button>
+          <Button disabled color='PURPLE'>
+            Coming Soon
+          </Button>
+          {/* <ButtonLink color='PURPLE' href='/work/highkey-app-case-study'>
+            View project
+          </ButtonLink> */}
         </Grid>
         <Image
           src={kijijiPng}

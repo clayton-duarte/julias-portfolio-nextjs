@@ -31,6 +31,7 @@ const Button = styled.button<ButtonProps>`
   }
   &:disabled {
     filter: greyscale(1);
+    cursor: not-allowed;
   }
 `;
 

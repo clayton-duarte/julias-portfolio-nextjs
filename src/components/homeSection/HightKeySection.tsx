@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import highkeyCellphone_1 from '~/assets/highkey-cellphone-1.png'
-import Button from '~/components/Button';
+import { ButtonLink } from '~/components/Button';
 import Grid from '~/components/Grid';
 import Text from '~/components/Text';
 
@@ -20,7 +20,9 @@ export default function HightKeySection() {
             <Text.P>UX/UI Design, UX Research, Case Study</Text.P>
           </Grid>
           <Text.P size='24px'>Helping users check their wearing habits while mixing and matching outfits.</Text.P>
-          <Button>View project</Button>
+          <ButtonLink href='/work/highkey-app-case-study'>
+            View project
+          </ButtonLink>
         </Grid>
       </Grid>
     </Grid>
