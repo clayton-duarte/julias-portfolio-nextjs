@@ -8,7 +8,7 @@ import InterviewScript from "~/components/highKeySections/InterviewScript";
 import MoodboardBranding from "~/components/highKeySections/MoodboardBranding";
 import NextStepsLearnings from "~/components/highKeySections/NextStepsLearnings";
 import Persona from "~/components/highKeySections/Persona";
-import ProblemSpace from "~/components/highKeySections/ProblemSpace";
+import ProjectOverview from "~/components/highKeySections/ProjectOverview";
 import SecondaryResearch from "~/components/highKeySections/SecondaryResearch";
 import SketchesWireframes from "~/components/highKeySections/SketchesWireframes";
 import Summary from "~/components/highKeySections/Summary";
@@ -25,8 +25,8 @@ export default function HighkeyAppCaseStudyPage() {
       <Header />
       <Banner />
       <Summary />
+      <ProjectOverview />
 
-      <ProblemSpace />
       <DesignProcess />
       <SecondaryResearch />
       <InterviewScript />
