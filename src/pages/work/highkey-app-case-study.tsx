@@ -23,9 +23,9 @@ export default function HighkeyAppCaseStudyPage() {
   return (
     <>
       <Header />
-
       <Banner />
       <Summary />
+
       <ProblemSpace />
       <DesignProcess />
       <SecondaryResearch />
