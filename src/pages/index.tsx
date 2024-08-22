@@ -1,11 +1,7 @@
-import Image from 'next/image';
+import styled from '@emotion/styled';
 
-import styled from '@emotion/styled'
-
-import highkeyCellphone_1 from '~/assets/highkey-cellphone-1.png'
-import Button from '~/components/Button';
 import Grid from '~/components/Grid';
-import Header, { HEADER_HEIGHT } from '~/components/Header'
+import Header, { HEADER_HEIGHT } from '~/components/Header';
 import HightKeySection from '~/components/homeSection/HightKeySection';
 import KijijiSection from '~/components/homeSection/KijijiSection';
 import Text from '~/components/Text';
@@ -13,7 +9,7 @@ import Text from '~/components/Text';
 const HomeBanner = styled(Grid)`
   min-height: calc(100vh - ${HEADER_HEIGHT});
   height: calc(100vh - ${HEADER_HEIGHT});
-  background-image: url("/julia-banner.png");
+  background-image: url('/julia-banner.png');
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: auto 200vh;
@@ -21,7 +17,7 @@ const HomeBanner = styled(Grid)`
   overflow-x: hidden;
   position: relative;
   display: flex;
-`
+`;
 
 const Marquee = styled(Text.H1)`
   animation: marquee 20s linear infinite;
@@ -39,11 +35,11 @@ const Marquee = styled(Text.H1)`
       transform: translateX(-21.5ch);
     }
   }
-`
+`;
 
 export default function HomePage() {
   return (
-    <Grid bg='WHITE' gap='0'>
+    <Grid bg="WHITE" gap="0">
       <Header />
       <HomeBanner>
         <Marquee>

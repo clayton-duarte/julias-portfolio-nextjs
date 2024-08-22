@@ -1,10 +1,24 @@
 {
-  "extends": "next/core-web-vitals",
-  "plugins": ["@typescript-eslint", "import"],
+  "extends": [
+    // "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
+  "plugins": ["@typescript-eslint", "import", "prettier"],
   "rules": {
+    "curly": ["warn", "multi-line", "consistent"],
+    "no-console": "error",
+    "no-nested-ternary": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prettier/prettier": "error",
     "@typescript-eslint/no-unused-vars": "warn",
-    // "@typescript-eslint/restrict-template-expressions": "off",
+    "no-unused-vars": "warn",
+    "react-hooks/rules-of-hooks": "error",
     "no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 1 }],
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "arrow-body-style": ["error", "always"],
     "@typescript-eslint/padding-line-between-statements": [
       "warn",
       {
@@ -36,7 +50,12 @@
     "import/order": [
       "warn",
       {
-        "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index", "object"], ["unknown"]],
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["parent", "sibling", "index", "object"],
+          ["unknown"]
+        ],
         "pathGroups": [
           {
             "pattern": "@**/*",

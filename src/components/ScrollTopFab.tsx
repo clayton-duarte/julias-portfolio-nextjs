@@ -1,11 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import styled from "@emotion/styled"
+import styled from '@emotion/styled';
 
 const StyledButton = styled.button`
-  border: 1px solid ${({ theme }) => theme.PRIMARY};
-  background: ${({ theme }) => theme.PRIMARY};
-  color: ${({ theme }) => theme.WHITE};
+  border: 1px solid
+    ${({ theme }) => {
+      return theme.PRIMARY;
+    }};
+  background: ${({ theme }) => {
+    return theme.PRIMARY;
+  }};
+  color: ${({ theme }) => {
+    return theme.WHITE;
+  }};
   justify-content: center;
   border-radius: 2rem;
   align-items: center;
@@ -18,10 +25,14 @@ const StyledButton = styled.button`
   right: 2rem;
   width: 3rem;
   :hover {
-    background: ${({ theme }) => theme.WHITE};
-    color: ${({ theme }) => theme.PRIMARY};
+    background: ${({ theme }) => {
+      return theme.WHITE;
+    }};
+    color: ${({ theme }) => {
+      return theme.PRIMARY;
+    }};
   }
-`
+`;
 
 export default function ScrollTopFab() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,9 +45,11 @@ export default function ScrollTopFab() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      return window.removeEventListener('scroll', onScroll);
+    };
   }, []);
 
   const handleClick = () => {
@@ -44,11 +57,9 @@ export default function ScrollTopFab() {
       behavior: 'smooth',
       top: 0,
     });
-  }
+  };
 
-  return isVisible && (
-    <StyledButton onClick={handleClick}>
-      &#x25B2;
-    </StyledButton>
-  )
+  return (
+    isVisible && <StyledButton onClick={handleClick}>&#x25B2;</StyledButton>
+  );
 }

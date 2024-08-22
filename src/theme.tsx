@@ -1,4 +1,5 @@
-import { Nunito_Sans } from "next/font/google";
+import { Nunito_Sans } from 'next/font/google';
+import { ReactNode } from 'react';
 
 import { ThemeProvider as Provider, Global, Theme } from '@emotion/react';
 
@@ -65,7 +66,8 @@ export const theme: Theme = Colors;
 function GlobalStyles() {
   return (
     <Global
-      styles={(t) => `
+      styles={(t) => {
+        return `
         html,
         body,
         #__next {
@@ -97,12 +99,13 @@ function GlobalStyles() {
           height: auto;
           width: auto;
         }
-      `}
+      `;
+      }}
     />
   );
 }
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <Provider theme={theme}>
       {children}

@@ -1,7 +1,7 @@
 import Grid from '../Grid';
 import Text from '../Text';
 
-export default function ProjectOverviewSection() {
+export default function WhyGenZSection() {
   return (
     <Grid container p="120px 0">
       <Grid p="2rem 0" color="RED" xs="minmax(auto, 527px)">

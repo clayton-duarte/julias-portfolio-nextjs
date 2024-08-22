@@ -1,11 +1,16 @@
-import Grid from "../Grid";
-import Text from "../Text";
+import Grid from '../Grid';
+import Text from '../Text';
 
 export default function SummarySection() {
   return (
     <Grid bg="PRIMARY" color="WHITE">
-      <Grid container p='3rem'>
-        <Grid justify='space-between' md="repeat(5, auto)" p='75px 0' gap="1rem">
+      <Grid container p="3rem">
+        <Grid
+          justify="space-between"
+          md="repeat(5, auto)"
+          p="75px 0"
+          gap="1rem"
+        >
           <Grid xsGap=".5rem" mdGap="32px">
             <Text.H4>My role</Text.H4>
             <Text>UX/UI and Research</Text>
@@ -35,5 +40,5 @@ export default function SummarySection() {
         </Grid>
       </Grid>
     </Grid>
-  )
+  );
 }
