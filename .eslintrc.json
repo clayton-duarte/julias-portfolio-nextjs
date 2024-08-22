@@ -1,6 +1,5 @@
 {
   "extends": [
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "next/core-web-vitals",
     "eslint:recommended"
@@ -8,11 +7,10 @@
   "plugins": ["@typescript-eslint", "import", "prettier"],
   "rules": {
     "curly": ["warn", "multi-line", "consistent"],
-    "no-console": "error",
     "no-nested-ternary": "error",
+    "no-console": "error",
     "no-var": "error",
     "prefer-const": "error",
-    "prettier/prettier": "error",
     "@typescript-eslint/no-unused-vars": "warn",
     "no-unused-vars": "warn",
     "react-hooks/rules-of-hooks": "error",

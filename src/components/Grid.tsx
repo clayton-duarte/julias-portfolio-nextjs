@@ -140,124 +140,124 @@ export const StyledGrid = styled.div<StyledGridProps>`
   // Responsive
   @media (min-width: ${Breakpoints.SM}) {
     grid-template-columns: ${(props) => {
-      return props.sm ?? props.xs ?? '1fr';
-    }};
+    return props.sm ?? props.xs ?? '1fr';
+  }};
     grid-template-rows: ${(props) => {
-      return props.smy ?? props.xsy ?? 'auto';
-    }};
+    return props.smy ?? props.xsy ?? 'auto';
+  }};
     gap: ${(props) => {
-      return props.smGap ?? props.xsGap ?? props.gap ?? '1rem';
-    }};
+    return props.smGap ?? props.xsGap ?? props.gap ?? '1rem';
+  }};
     padding: ${(props) => {
-      return fromFourAxisToString(props.smP ?? props.xsP ?? props.p) ?? 0;
-    }};
+    return fromFourAxisToString(props.smP ?? props.xsP ?? props.p) ?? 0;
+  }};
     margin: ${(props) => {
-      return fromFourAxisToString(props.smM ?? props.xsM ?? props.m) ??
-        props.container
-        ? '0 auto'
-        : 0;
-    }};
+    return fromFourAxisToString(props.smM ?? props.xsM ?? props.m) ??
+      props.container
+      ? '0 auto'
+      : 0;
+  }};
   }
   @media (min-width: ${Breakpoints.MD}) {
     grid-template-columns: ${(props) => {
-      return props.md ?? props.sm ?? props.xs ?? '1fr';
-    }};
+    return props.md ?? props.sm ?? props.xs ?? '1fr';
+  }};
     grid-template-rows: ${(props) => {
-      return props.mdy ?? props.smy ?? props.xsy ?? 'auto';
-    }};
+    return props.mdy ?? props.smy ?? props.xsy ?? 'auto';
+  }};
     gap: ${(props) => {
-      return props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem';
-    }};
+    return props.mdGap ?? props.smGap ?? props.xsGap ?? props.gap ?? '1rem';
+  }};
     padding: ${(props) => {
-      return (
-        fromFourAxisToString(props.mdP ?? props.smP ?? props.xsP ?? props.p) ??
-        0
-      );
-    }};
+    return (
+      fromFourAxisToString(props.mdP ?? props.smP ?? props.xsP ?? props.p) ??
+      0
+    );
+  }};
     margin: ${(props) => {
-      return fromFourAxisToString(
-        props.mdM ?? props.smM ?? props.xsM ?? props.m,
-      ) ?? props.container
-        ? '0 auto'
-        : 0;
-    }};
+    return fromFourAxisToString(
+      props.mdM ?? props.smM ?? props.xsM ?? props.m,
+    ) ?? props.container
+      ? '0 auto'
+      : 0;
+  }};
   }
   @media (min-width: ${Breakpoints.LG}) {
     grid-template-columns: ${(props) => {
-      return props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr';
-    }};
+    return props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr';
+  }};
     grid-template-rows: ${(props) => {
-      return props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto';
-    }};
+    return props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto';
+  }};
     gap: ${(props) => {
-      return (
-        props.lgGap ??
-        props.mdGap ??
-        props.smGap ??
-        props.xsGap ??
-        props.gap ??
-        '1rem'
-      );
-    }};
+    return (
+      props.lgGap ??
+      props.mdGap ??
+      props.smGap ??
+      props.xsGap ??
+      props.gap ??
+      '1rem'
+    );
+  }};
     padding: ${(props) => {
-      return (
-        fromFourAxisToString(
-          props.lgP ?? props.mdP ?? props.smP ?? props.xsP ?? props.p,
-        ) ?? 0
-      );
-    }};
+    return (
+      fromFourAxisToString(
+        props.lgP ?? props.mdP ?? props.smP ?? props.xsP ?? props.p,
+      ) ?? 0
+    );
+  }};
     margin: ${(props) => {
-      return fromFourAxisToString(
-        props.lgM ?? props.mdM ?? props.smM ?? props.xsM ?? props.m,
-      ) ?? props.container
-        ? '0 auto'
-        : 0;
-    }};
+    return fromFourAxisToString(
+      props.lgM ?? props.mdM ?? props.smM ?? props.xsM ?? props.m,
+    ) ?? props.container
+      ? '0 auto'
+      : 0;
+  }};
   }
   @media (min-width: ${Breakpoints.XL}) {
     grid-template-columns: ${(props) => {
-      return props.xl ?? props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr';
-    }};
+    return props.xl ?? props.lg ?? props.md ?? props.sm ?? props.xs ?? '1fr';
+  }};
     grid-template-rows: ${(props) => {
-      return (
-        props.xly ?? props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'
-      );
-    }};
+    return (
+      props.xly ?? props.lgy ?? props.mdy ?? props.smy ?? props.xsy ?? 'auto'
+    );
+  }};
     gap: ${(props) => {
-      return (
-        props.xlGap ??
-        props.lgGap ??
-        props.mdGap ??
-        props.smGap ??
-        props.xsGap ??
-        props.gap ??
-        '1rem'
-      );
-    }};
+    return (
+      props.xlGap ??
+      props.lgGap ??
+      props.mdGap ??
+      props.smGap ??
+      props.xsGap ??
+      props.gap ??
+      '1rem'
+    );
+  }};
     padding: ${(props) => {
-      return (
-        fromFourAxisToString(
-          props.xlP ??
-            props.lgP ??
-            props.mdP ??
-            props.smP ??
-            props.xsP ??
-            props.p,
-        ) ?? 0
-      );
-    }};
+    return (
+      fromFourAxisToString(
+        props.xlP ??
+        props.lgP ??
+        props.mdP ??
+        props.smP ??
+        props.xsP ??
+        props.p,
+      ) ?? 0
+    );
+  }};
     margin: ${(props) => {
-      return fromFourAxisToString(
-        props.xlM ??
-          props.lgM ??
-          props.mdM ??
-          props.smM ??
-          props.xsM ??
-          props.m,
-      ) ?? props.container
-        ? '0 auto'
-        : 0;
-    }};
+    return fromFourAxisToString(
+      props.xlM ??
+      props.lgM ??
+      props.mdM ??
+      props.smM ??
+      props.xsM ??
+      props.m,
+    ) ?? props.container
+      ? '0 auto'
+      : 0;
+  }};
   }
 `;
 
@@ -268,18 +268,18 @@ function Grid({
   ...props
 }: GridProps & {
   component?:
-    | 'div'
-    | 'section'
-    | 'article'
-    | 'main'
-    | 'aside'
-    | 'header'
-    | 'footer'
-    | 'nav'
-    | 'form'
-    | 'ul'
-    | 'ol'
-    | 'li';
+  | 'div'
+  | 'section'
+  | 'article'
+  | 'main'
+  | 'aside'
+  | 'header'
+  | 'footer'
+  | 'nav'
+  | 'form'
+  | 'ul'
+  | 'ol'
+  | 'li';
 }) {
   const Component = StyledGrid.withComponent(component);
 
