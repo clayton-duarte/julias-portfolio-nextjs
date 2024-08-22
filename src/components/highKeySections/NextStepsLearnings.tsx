@@ -3,10 +3,19 @@ import Text from '../Text';
 
 export default function NextStepsLearnings() {
   return (
-    <Grid container p="3rem">
+    <Grid
+      container
+      p="3rem"
+    >
       <Text.H4 m="5rem 0">Next Steps & Key Learnings</Text.H4>
-      <Grid md="1fr 1fr" gap="3rem">
-        <Grid.Ul size="2rem" gap="2rem">
+      <Grid
+        md="1fr 1fr"
+        gap="3rem"
+      >
+        <Grid.Ul
+          size="2rem"
+          gap="2rem"
+        >
           <li>
             <Text.H4 bold={false}>
               Expand on the visualization data features.
@@ -19,7 +28,10 @@ export default function NextStepsLearnings() {
             <Text.H4 bold={false}>Test the prototype with more users.</Text.H4>
           </li>
         </Grid.Ul>
-        <Grid.Ul size="2rem" gap="2rem">
+        <Grid.Ul
+          size="2rem"
+          gap="2rem"
+        >
           <li>
             <Text.H4 bold={false}>
               Iterate and testing is the key for improving the user experience.

@@ -3,9 +3,19 @@ import Text from '../Text';
 
 export default function ProjectOverviewSection() {
   return (
-    <Grid container p="120px 0">
-      <Grid p="2rem 0" color="RED" xs="minmax(auto, 527px)">
-        <Text.H4 color="PRIMARY" m="0 0 64px 0">
+    <Grid
+      container
+      p="120px 0"
+    >
+      <Grid
+        p="2rem 0"
+        color="RED"
+        xs="minmax(auto, 527px)"
+      >
+        <Text.H4
+          color="PRIMARY"
+          m="0 0 64px 0"
+        >
           Project Overview
         </Text.H4>
         <Text>

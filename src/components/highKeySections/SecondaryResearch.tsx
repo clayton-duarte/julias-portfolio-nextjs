@@ -9,7 +9,11 @@ import Text from '../Text';
 export default function SecondaryResearch() {
   return (
     <>
-      <Grid container gap="3rem" p="3rem">
+      <Grid
+        container
+        gap="3rem"
+        p="3rem"
+      >
         <Text.H4 color="PRIMARY">Secondary Research</Text.H4>
         <Grid gap="2rem">
           <Text.H5 bold={false}>
@@ -22,10 +26,22 @@ export default function SecondaryResearch() {
             harmful effects on the environment.
           </Text.H5>
         </Grid>
-        <Grid lg="1fr 1.2fr" justify="space-between" gap="4.5rem">
+        <Grid
+          lg="1fr 1.2fr"
+          justify="space-between"
+          gap="4.5rem"
+        >
           <Grid>
-            <Grid xs="80px auto" gap="2rem" align="center">
-              <Image src={trendDown} alt="high-key-app" priority />
+            <Grid
+              xs="80px auto"
+              gap="2rem"
+              align="center"
+            >
+              <Image
+                src={trendDown}
+                alt="high-key-app"
+                priority
+              />
               <Text.H1 color="PRIMARY">36%</Text.H1>
             </Grid>
             <Text.H5 bold={false}>
@@ -64,8 +80,15 @@ export default function SecondaryResearch() {
           </Text>
         </Grid>
       </Grid>
-      <Grid bg="PRIMARY" color="WHITE" p="3rem 0">
-        <Grid container p="0 3rem">
+      <Grid
+        bg="PRIMARY"
+        color="WHITE"
+        p="3rem 0"
+      >
+        <Grid
+          container
+          p="0 3rem"
+        >
           <Text.H5 bold={false}>
             After looking at some existing data, I wanted to find out why people
             are wearing their clothes less often, even though Gen Z, the

@@ -9,9 +9,20 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <Grid container p="3rem">
-        <Grid xl="minmax(auto, 550px) 1fr" gap="3rem" align="center">
-          <Image src={about} alt="Julia Santos" priority />
+      <Grid
+        container
+        p="3rem"
+      >
+        <Grid
+          xl="minmax(auto, 550px) 1fr"
+          gap="3rem"
+          align="center"
+        >
+          <Image
+            src={about}
+            alt="Julia Santos"
+            priority
+          />
           <Grid gap="2rem">
             <Text.H3>
               UX Designer, Research enthusiast & Graphic Designer

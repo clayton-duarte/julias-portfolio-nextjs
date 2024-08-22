@@ -39,7 +39,10 @@ const Marquee = styled(Text.H1)`
 
 export default function HomePage() {
   return (
-    <Grid bg="WHITE" gap="0">
+    <Grid
+      bg="WHITE"
+      gap="0"
+    >
       <Header />
       <HomeBanner>
         <Marquee>

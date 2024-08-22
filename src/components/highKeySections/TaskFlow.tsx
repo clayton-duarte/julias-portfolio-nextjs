@@ -9,11 +9,20 @@ import Text from '../Text';
 
 export default function TaskFlow() {
   return (
-    <Grid container p="0 3rem">
-      <Text.H4 m="3rem 0 0 0" color="PRIMARY">
+    <Grid
+      container
+      p="0 3rem"
+    >
+      <Text.H4
+        m="3rem 0 0 0"
+        color="PRIMARY"
+      >
         TaskFlow
       </Text.H4>
-      <Grid m="3rem 0" gap="2rem">
+      <Grid
+        m="3rem 0"
+        gap="2rem"
+      >
         <Text.H5 bold={false}>
           Through talking with my target user, I obtained some valuable insights
           about data visualization. If implemented in the app, it should be done
@@ -29,23 +38,58 @@ export default function TaskFlow() {
           pushy.
         </Text.H5>
       </Grid>
-      <Text.H3 p="3rem 0" bold={false} align="center">
+      <Text.H3
+        p="3rem 0"
+        bold={false}
+        align="center"
+      >
         Add an item into the app
       </Text.H3>
-      <Grid xs="minmax(auto, 1000px)" justify="center">
-        <Image src={addItemUserStory} alt="high-key-app" priority />
+      <Grid
+        xs="minmax(auto, 1000px)"
+        justify="center"
+      >
+        <Image
+          src={addItemUserStory}
+          alt="high-key-app"
+          priority
+        />
       </Grid>
-      <Text.H3 m="3rem 0 0 0" p="3rem 0" bold={false} align="center">
+      <Text.H3
+        m="3rem 0 0 0"
+        p="3rem 0"
+        bold={false}
+        align="center"
+      >
         Create an outfit
       </Text.H3>
-      <Grid xs="minmax(auto, 1000px)" justify="center">
-        <Image src={clothUsageUserStory} alt="high-key-app" priority />
+      <Grid
+        xs="minmax(auto, 1000px)"
+        justify="center"
+      >
+        <Image
+          src={clothUsageUserStory}
+          alt="high-key-app"
+          priority
+        />
       </Grid>
-      <Text.H3 m="3rem 0 0 0" p="3rem 0" bold={false} align="center">
+      <Text.H3
+        m="3rem 0 0 0"
+        p="3rem 0"
+        bold={false}
+        align="center"
+      >
         Clothing usage visualization
       </Text.H3>
-      <Grid xs="minmax(auto, 1000px)" justify="center">
-        <Image src={createOutfitUserStory} alt="high-key-app" priority />
+      <Grid
+        xs="minmax(auto, 1000px)"
+        justify="center"
+      >
+        <Image
+          src={createOutfitUserStory}
+          alt="high-key-app"
+          priority
+        />
       </Grid>
     </Grid>
   );

@@ -101,7 +101,11 @@ function SmartLink({
   }, [href, router.pathname]);
 
   return (
-    <StyledLink active={isActive} target={target} href={href}>
+    <StyledLink
+      active={isActive}
+      target={target}
+      href={href}
+    >
       {children}
     </StyledLink>
   );
@@ -126,7 +130,10 @@ export default function HeaderComponent() {
         align="center"
       >
         <HomeLink href="/">&#120129;&#x1D54A;</HomeLink>
-        <DesktopOnly xs="repeat(4, auto)" mdGap="10rem">
+        <DesktopOnly
+          xs="repeat(4, auto)"
+          mdGap="10rem"
+        >
           <SmartLink href="/work">Work</SmartLink>
           <SmartLink href="/about">About</SmartLink>
           <SmartLink
@@ -144,14 +151,22 @@ export default function HeaderComponent() {
         </DesktopOnly>
         <MobileOnly>
           <ButtonIcon onClick={handleClick}>
-            <Image src={open ? menuClosed : menu} alt="Menu" priority />
+            <Image
+              src={open ? menuClosed : menu}
+              alt="Menu"
+              priority
+            />
           </ButtonIcon>
         </MobileOnly>
         {open && (
           <MobileOnly>
             <Overlay onClick={handleClick}>
               <MobileMenu>
-                <Grid gap="3rem" p="3rem" align="start">
+                <Grid
+                  gap="3rem"
+                  p="3rem"
+                  align="start"
+                >
                   <SmartLink href="/work">Work</SmartLink>
                   <SmartLink href="/about">About</SmartLink>
                   <SmartLink

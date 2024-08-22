@@ -16,10 +16,21 @@ export default function BannerSection() {
         align="center"
         justify="center"
       >
-        <Image src={highKeyBanner} alt="high-key-app" priority />
-        <Grid gap="2rem" xs="auto" xsP="1rem">
+        <Image
+          src={highKeyBanner}
+          alt="high-key-app"
+          priority
+        />
+        <Grid
+          gap="2rem"
+          xs="auto"
+          xsP="1rem"
+        >
           <Text.H1 color="PRIMARY">Case Study -HighKey App</Text.H1>
-          <Text.H4 m="0 0 120px 0" bold={false}>
+          <Text.H4
+            m="0 0 120px 0"
+            bold={false}
+          >
             HighKey app helps users to mix and match outfits while they can
             check their wearing habits.
           </Text.H4>
