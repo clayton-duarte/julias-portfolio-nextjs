@@ -27,11 +27,11 @@ export type BreakpointNames = keyof typeof Breakpoints;
 
 export enum Colors {
   WHITE = '#F8F8F8',
-  LIGHT = '#C0B9BA',
+  GREY = '#F0EEEE',
   DARK = '#564E4E',
   BLACK = '#272424',
   PRIMARY = '#831B0E',
-  SECONDARY = '#FFC700',
+  SECONDARY = '#FFA499',
   INFO = '#831B0E',
   SUCCESS = '#36701B',
   WARNING = '#FFC700',
@@ -45,7 +45,7 @@ export type ColorNames = keyof typeof Colors;
 declare module '@emotion/react' {
   export interface Theme {
     WHITE: string;
-    LIGHT: string;
+    GREY: string;
     DARK: string;
     BLACK: string;
     PRIMARY: string;
