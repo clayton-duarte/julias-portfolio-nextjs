@@ -29,8 +29,8 @@ export default function HighkeyAppCaseStudyPage() {
       <ProjectOverview />
       <DesignProcess />
       <WhyGenZ />
-
       <SecondaryResearch />
+
       <InterviewScript />
       <AffinityMapping />
       <ThemesSection />

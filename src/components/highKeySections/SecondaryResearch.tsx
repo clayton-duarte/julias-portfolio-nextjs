@@ -11,38 +11,42 @@ export default function SecondaryResearch() {
     <>
       <Grid
         container
-        gap="3rem"
+        gap="120px"
         p="3rem"
       >
-        <Text.H4 color="PRIMARY">Secondary Research</Text.H4>
-        <Grid gap="2rem">
-          <Text.H5 bold={false}>
-            Statistics from Earth.org suggests that the frequency of wearing a
-            piece of clothing has{' '}
-            <Text.Strong color="PRIMARY">
-              significantly declined over the years
-            </Text.Strong>{' '}
-            contributing to the throwaway culture and, consequently, to the
-            harmful effects on the environment.
-          </Text.H5>
-        </Grid>
+        <Text.H3 color="RED" align='center'>
+          Gen Z demonstrates an environmentally friendly mindset. However...
+        </Text.H3>
+        {/* ROW */}
         <Grid
-          lg="1fr 1.2fr"
+          md="repeat(3, minmax(auto, 220px))"
           justify="space-between"
+          align='center'
           gap="4.5rem"
         >
+          {/* COL 1 */}
+          <Grid>
+            <Text.H2 color="PRIMARY">
+              7 to 10
+            </Text.H2>
+            <Text.H5 bold={false}>
+              The <Text.Strong color="PRIMARY">number of times</Text.Strong> a
+              garment is worn before being <Text.Strong color="PRIMARY">tossed</Text.Strong>.
+            </Text.H5>
+          </Grid>
+          {/* COL 2 */}
           <Grid>
             <Grid
-              xs="80px auto"
-              gap="2rem"
-              align="center"
+              xs="60px auto"
+              align="end"
+              gap="22px"
             >
               <Image
                 src={trendDown}
                 alt="high-key-app"
                 priority
               />
-              <Text.H1 color="PRIMARY">36%</Text.H1>
+              <Text.H2 color="PRIMARY">36%</Text.H2>
             </Grid>
             <Text.H5 bold={false}>
               The <Text.Strong color="PRIMARY">number of times</Text.Strong> a
@@ -50,17 +54,17 @@ export default function SecondaryResearch() {
               <Text.Strong color="PRIMARY">declined</Text.Strong> in 15 years.
             </Text.H5>
           </Grid>
+          {/* COL 3 */}
           <Grid>
-            <Text.H3 color="PRIMARY">
-              Gen Z<br />
-              spending habits
-            </Text.H3>
+            <Text.H2 color="PRIMARY">
+              500 M
+            </Text.H2>
             <Text.H5 bold={false}>
-              show they care the most about fashion, makeup and beauty products,
-              technology, and their pets.
+              Kilograms of fabric items are toss away in Canada per year.
             </Text.H5>
           </Grid>
         </Grid>
+        {/* SOURCES */}
         <Grid m="5rem 0">
           <Text align="center">
             Sources:{' '}
@@ -77,26 +81,29 @@ export default function SecondaryResearch() {
             >
               EcoCart
             </Link>
+            ,{' '}
+            <Link
+              target="_blank"
+              href="https://globalnews.ca/news/9430446/textile-waste-fast-fashion-ontario-research-recylcle/"
+            >
+              GlobalNews
+            </Link>
           </Text>
         </Grid>
       </Grid>
-      <Grid
+      {/* SECTION */}
+      < Grid
         bg="PRIMARY"
         color="WHITE"
         p="3rem 0"
       >
         <Grid
           container
-          p="0 3rem"
+          p="75px 24px"
         >
-          <Text.H5 bold={false}>
-            After looking at some existing data, I wanted to find out why people
-            are wearing their clothes less often, even though Gen Z, the
-            generation that buys the most fashion, knows a lot about
-            environmental issues. To understand this better, I talked to three
-            Gen Z individuals living in Toronto who use social media for outfit
-            inspiration.
-          </Text.H5>
+          <Text.H4>
+            After reviewing the available data, I decided to gain a deeper understanding of how young Canadian adults approach purchasing and donating clothes before proposing any solutions. In order to identify potential issues, I conducted one-on-one interviews with participants to explore their experiences on these topics.
+          </Text.H4>
         </Grid>
       </Grid>
     </>

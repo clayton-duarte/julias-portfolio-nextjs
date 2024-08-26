@@ -7,6 +7,8 @@ export default function WhyGenZSection() {
     <Grid
       container
       p="120px 0"
+      xs='minmax(auto, 866px)'
+      justify='center'
     >
       <QuestionTitle>Why to focus on Gen Z (Young Adults)</QuestionTitle>
       <Text.H4>
