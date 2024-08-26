@@ -6,7 +6,7 @@ export default function WhyGenZSection() {
   return (
     <Grid
       container
-      p="120px 0"
+      p="120px 24px"
       xs='minmax(auto, 866px)'
       justify='center'
     >

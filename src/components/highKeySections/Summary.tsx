@@ -1,4 +1,5 @@
 import Grid from '../Grid';
+import SectionContainer from '../SessionContainer';
 import Text from '../Text';
 
 export default function SummarySection() {
@@ -7,10 +8,7 @@ export default function SummarySection() {
       bg="PRIMARY"
       color="WHITE"
     >
-      <Grid
-        container
-        p="3rem"
-      >
+      <SectionContainer>
         <Grid
           justify="space-between"
           md="repeat(5, auto)"
@@ -59,7 +57,7 @@ export default function SummarySection() {
             <Text>May 2024 - July 2024</Text>
           </Grid>
         </Grid>
-      </Grid>
+      </SectionContainer>
     </Grid>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import trendDown from '~/assets/trend-down.svg';
 
+import BigQuote from '../BigQuote';
 import Grid from '../Grid';
 import Text from '../Text';
 
@@ -92,20 +93,9 @@ export default function SecondaryResearch() {
         </Grid>
       </Grid>
       {/* SECTION */}
-      < Grid
-        bg="PRIMARY"
-        color="WHITE"
-        p="3rem 0"
-      >
-        <Grid
-          container
-          p="75px 24px"
-        >
-          <Text.H4>
-            After reviewing the available data, I decided to gain a deeper understanding of how young Canadian adults approach purchasing and donating clothes before proposing any solutions. In order to identify potential issues, I conducted one-on-one interviews with participants to explore their experiences on these topics.
-          </Text.H4>
-        </Grid>
-      </Grid>
+      <BigQuote>
+        After reviewing the available data, I decided to gain a deeper understanding of how young Canadian adults approach purchasing and donating clothes before proposing any solutions. In order to identify potential issues, I conducted one-on-one interviews with participants to explore their experiences on these topics.
+      </BigQuote>
     </>
   );
 }

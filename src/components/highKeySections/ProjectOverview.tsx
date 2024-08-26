@@ -1,14 +1,12 @@
 import Grid from '../Grid';
+import SectionContainer from '../SessionContainer';
 import Text from '../Text';
 
 export default function ProjectOverviewSection() {
   return (
-    <Grid
-      container
-      p="120px 0"
-    >
+    <SectionContainer>
       <Grid
-        p="2rem 0"
+        p="120px 0"
         color="RED"
         xs="minmax(auto, 527px)"
       >
@@ -38,6 +36,6 @@ export default function ProjectOverviewSection() {
           .
         </Text>
       </Grid>
-    </Grid>
+    </SectionContainer>
   );
 }

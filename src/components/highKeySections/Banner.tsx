@@ -4,15 +4,16 @@ import highKeyBanner from '~/assets/high-key-banner.png';
 
 import { ButtonLink } from '../Button';
 import Grid from '../Grid';
+import SectionContainer from '../SessionContainer';
 import Text from '../Text';
 
 export default function BannerSection() {
   return (
-    <Grid container>
+    <SectionContainer>
       <Grid
         lg="minmax(auto, 620px) minmax(auto, 430px)"
         gap="2rem"
-        p="0 0 4rem 0"
+        p="0 0 126px 0"
         align="center"
         justify="center"
       >
@@ -43,6 +44,6 @@ export default function BannerSection() {
           </ButtonLink>
         </Grid>
       </Grid>
-    </Grid>
+    </SectionContainer>
   );
 }

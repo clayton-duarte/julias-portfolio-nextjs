@@ -10,21 +10,22 @@ export default function InterviewScript() {
   return (
     <Grid
       container
-      p="3rem"
+      p="24px"
     >
       <Text.H4
         m="3rem 0 0 0"
         color="PRIMARY"
+
       >
         Interview Script
       </Text.H4>
       <Grid
         m="3rem 0"
-        gap="3rem"
-        md="minmax(auto, 1fr) 1fr"
+        justify="space-between"
+        md="minmax(auto, 50%) minmax(auto, 450px)"
         align="center"
       >
-        <Text.H5>
+        <Text.H5 bold={false}>
           Some of the questions that I used during the interviews:
         </Text.H5>
         <span />

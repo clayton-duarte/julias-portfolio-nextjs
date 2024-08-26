@@ -30,10 +30,10 @@ export default function HighkeyAppCaseStudyPage() {
       <DesignProcess />
       <WhyGenZ />
       <SecondaryResearch />
-
       <InterviewScript />
-      <AffinityMapping />
       <ThemesSection />
+
+      <AffinityMapping />
       <WhatPeopleSay />
       <Persona />
       <HowMightWe />

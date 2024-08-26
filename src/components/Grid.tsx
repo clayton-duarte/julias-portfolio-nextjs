@@ -86,7 +86,7 @@ export const StyledGrid = styled.div<StyledGridProps>`
     return props.color ? props.theme[props.color] : 'inherit';
   }};
   padding: ${(props) => {
-    return fromFourAxisToString(props.xsP ?? props.p) ?? 0;
+    return fromFourAxisToString(props.xsP ?? props.p) ?? props.container;
   }};
   max-width: ${(props) => {
     return props.container ? Breakpoints.XL : '100%';
