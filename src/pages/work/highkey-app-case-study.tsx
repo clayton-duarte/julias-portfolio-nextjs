@@ -1,12 +1,12 @@
 import Header from '~/components/Header';
 import AffinityMapping from '~/components/highKeySections/AffinityMapping';
 import Banner from '~/components/highKeySections/Banner';
+import Branding from '~/components/highKeySections/Branding';
 import DesignProcess from '~/components/highKeySections/DesignProcess';
 import ExperienceMapping from '~/components/highKeySections/ExperienceMapping';
 import HowMightWe from '~/components/highKeySections/HowMightWe';
 import Ideation from '~/components/highKeySections/Ideation';
 import InterviewScript from '~/components/highKeySections/InterviewScript';
-import MoodboardBranding from '~/components/highKeySections/MoodboardBranding';
 import NextStepsLearnings from '~/components/highKeySections/NextStepsLearnings';
 import Persona from '~/components/highKeySections/Persona';
 import ProjectOverview from '~/components/highKeySections/ProjectOverview';
@@ -38,8 +38,8 @@ export default function HighkeyAppCaseStudyPage() {
       <ExperienceMapping />
       <Ideation />
       <TaskFlow />
+      <Branding />
 
-      <MoodboardBranding />
       <UserStories />
       <AffinityMapping />
       <WhatPeopleSay />
