@@ -1,5 +1,5 @@
 import Grid from '../Grid';
-import SectionContainer from '../SessionContainer';
+import SectionContainer from '../SectionContainer';
 import Text from '../Text';
 
 export default function ProjectOverviewSection() {

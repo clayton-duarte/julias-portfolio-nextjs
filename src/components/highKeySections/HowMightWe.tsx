@@ -18,12 +18,11 @@ export default function HowMightWe() {
             bold={false}
             align="center"
           >
-            help Gen Z Canadians with their outfit planning to reduce underusing
-            habits and make better use of their existing wardrobe?
+            help Gen Z Canadians with their outfit planning to reduce underusing habits and make better use of their existing wardrobe?
           </Text.H4>
         </Grid>
       </Grid>
-      <Grid
+      {/* <Grid
         container
         p="3rem"
         xs="minmax(auto, 862px)"
@@ -34,7 +33,7 @@ export default function HowMightWe() {
           to further understand how the users are currently experiencing the
           problem of underusing.
         </Text.H5>
-      </Grid>
+      </Grid> */}
     </>
   );
 }

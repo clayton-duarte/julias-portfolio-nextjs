@@ -32,12 +32,12 @@ export default function HighkeyAppCaseStudyPage() {
       <SecondaryResearch />
       <InterviewScript />
       <ThemesSection />
+      <HowMightWe />
+      <Persona />
+      <ExperienceMapping />
 
       <AffinityMapping />
       <WhatPeopleSay />
-      <Persona />
-      <HowMightWe />
-      <ExperienceMapping />
       <UserStories />
       <TaskFlow />
       <MoodboardBranding />

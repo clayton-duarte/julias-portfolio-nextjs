@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import BigQuote from '../BigQuote';
 import Grid from '../Grid';
-import SectionContainer from '../SessionContainer';
+import SectionContainer from '../SectionContainer';
 import Text from '../Text';
 
 const StyledGrid = styled(Grid)`

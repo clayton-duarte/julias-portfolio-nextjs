@@ -1,25 +1,32 @@
 import Image from 'next/image';
 
-import experienceMapping from '~/assets/experience-mapping.png';
-import { Text } from '~/components/Text';
+import experienceMap from '~/assets/experience-map.png';
 
+import BigQuote from '../BigQuote';
 import Grid from '../Grid';
+import SectionContainer from '../SectionContainer';
+import Text from '../Text';
 
 export default function ExperienceMapping() {
   return (
     <>
-      <Grid
-        container
-        p="1rem 3rem"
-      >
+      <SectionContainer>
         <Text.H4
           m="3rem 0 0 0"
           color="PRIMARY"
         >
           Experience Mapping
         </Text.H4>
-      </Grid>
-      <Grid
+        <Text.P>
+          By mapping what users are doing, feeling, and thinking while managing their wardrobes and purchasing clothes, I identified design opportunities that allow for a more holistic evaluation of potential tools and features.
+        </Text.P>
+        <Image
+          src={experienceMap}
+          alt="high-key-app"
+          priority
+        />
+      </SectionContainer>
+      {/* <Grid
         xsP="1rem"
         lgP="0"
         justify="center"
@@ -31,8 +38,8 @@ export default function ExperienceMapping() {
           alt="high-key-app"
           priority
         />
-      </Grid>
-      <Grid
+      </Grid> */}
+      {/* <Grid
         bg="PRIMARY"
         color="WHITE"
       >
@@ -50,7 +57,8 @@ export default function ExperienceMapping() {
             constant.
           </Text.H5>
         </Grid>
-      </Grid>
+      </Grid> */}
+      <BigQuote>I decided to focus on when the user is most stressed and disappointed, which is when they are checking their wardrobe. Once users check their wardrobe, feelings of ‘nothing to wear’ or ‘clothing pieces that don’t match’ are constant.</BigQuote>
     </>
   );
 }

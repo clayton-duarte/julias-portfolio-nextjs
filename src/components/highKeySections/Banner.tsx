@@ -4,7 +4,7 @@ import highKeyBanner from '~/assets/high-key-banner.png';
 
 import { ButtonLink } from '../Button';
 import Grid from '../Grid';
-import SectionContainer from '../SessionContainer';
+import SectionContainer from '../SectionContainer';
 import Text from '../Text';
 
 export default function BannerSection() {

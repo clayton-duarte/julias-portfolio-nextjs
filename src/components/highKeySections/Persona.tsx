@@ -3,17 +3,20 @@ import Image from 'next/image';
 import styled from '@emotion/styled';
 
 import jordan from '~/assets/jordan.jpg';
+import personaTable from '~/assets/persona-table.png';
 import { Breakpoints } from '~/theme';
 
 import Grid from '../Grid';
+import QuestionTitle from '../QuestionTitle';
+import SectionContainer from '../SectionContainer';
 import Text from '../Text';
 
 const GridBorderLeft = styled(Grid)`
   @media (min-width: ${Breakpoints.MD}) {
     border-left: 2px solid
       ${(props) => {
-        return props.theme.BLACK;
-      }};
+    return props.theme.BLACK;
+  }};
     padding-left: 5rem;
   }
 `;
@@ -22,8 +25,8 @@ const GridBorderTop = styled(Grid)`
   @media (min-width: ${Breakpoints.MD}) {
     border-top: 2px solid
       ${(props) => {
-        return props.theme.BLACK;
-      }};
+    return props.theme.BLACK;
+  }};
   }
 `;
 
@@ -31,19 +34,21 @@ const GridBorderTopLeft = styled(GridBorderLeft)`
   @media (min-width: ${Breakpoints.MD}) {
     border-top: 2px solid
       ${(props) => {
-        return props.theme.BLACK;
-      }};
+    return props.theme.BLACK;
+  }};
   }
 `;
 
 export default function Persona() {
   return (
-    <Grid
-      container
-      p="3rem"
-      gap="3rem"
-    >
-      <Text.H4 color="PRIMARY">Persona</Text.H4>
+    <SectionContainer>
+      <QuestionTitle>Who I am designing for </QuestionTitle>
+      <Image
+        src={personaTable}
+        alt="high-key-app"
+        priority
+      />
+      {/* <Text.H4 color="PRIMARY">Persona</Text.H4>
       <Grid m="3rem 0">
         <Text.H4 bold={false}>About</Text.H4>
         <Text.H5 bold={false}>
@@ -140,7 +145,7 @@ export default function Persona() {
             </li>
           </Grid.Ul>
         </GridBorderLeft>
-      </Grid>
-    </Grid>
+      </Grid> */}
+    </SectionContainer>
   );
 }
