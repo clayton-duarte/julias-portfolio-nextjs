@@ -4,6 +4,7 @@ import Banner from '~/components/highKeySections/Banner';
 import DesignProcess from '~/components/highKeySections/DesignProcess';
 import ExperienceMapping from '~/components/highKeySections/ExperienceMapping';
 import HowMightWe from '~/components/highKeySections/HowMightWe';
+import Ideation from '~/components/highKeySections/Ideation';
 import InterviewScript from '~/components/highKeySections/InterviewScript';
 import MoodboardBranding from '~/components/highKeySections/MoodboardBranding';
 import NextStepsLearnings from '~/components/highKeySections/NextStepsLearnings';
@@ -35,12 +36,13 @@ export default function HighkeyAppCaseStudyPage() {
       <HowMightWe />
       <Persona />
       <ExperienceMapping />
+      <Ideation />
+      <TaskFlow />
 
+      <MoodboardBranding />
+      <UserStories />
       <AffinityMapping />
       <WhatPeopleSay />
-      <UserStories />
-      <TaskFlow />
-      <MoodboardBranding />
       <SketchesWireframes />
       <NextStepsLearnings />
       <TarotCards />
