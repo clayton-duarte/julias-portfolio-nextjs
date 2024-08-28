@@ -57,7 +57,7 @@ export default function WhatPeopleSay() {
         </Grid>
       </Grid>
       <Grid
-        bg="PRIMARY"
+        bg="RED"
         color="WHITE"
         p="3rem 0"
       >

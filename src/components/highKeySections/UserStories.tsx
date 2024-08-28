@@ -14,7 +14,7 @@ export default function UserStories() {
       >
         <Text.H4
           m="3rem 0 0 0"
-          color="PRIMARY"
+          color="RED"
         >
           User Stories
         </Text.H4>
@@ -59,7 +59,7 @@ export default function UserStories() {
         >
           <Text.H4 bold={false}>
             To optimize user experience, I have chosen to focus on the Epic{' '}
-            <Text.Strong color="PRIMARY">
+            <Text.Strong color="RED">
               Utilization & Wear Frequency
             </Text.Strong>
             . This approach directly addresses the common user challenge of
@@ -68,7 +68,7 @@ export default function UserStories() {
           <Text.H4 bold={false}>
             Additionally, it tackles the critical issue of sustainability by
             helping users{' '}
-            <Text.Strong color="PRIMARY">
+            <Text.Strong color="RED">
               stay mindful of their existing clothing items
             </Text.Strong>
             , reducing the likelihood of neglecting what they already own.

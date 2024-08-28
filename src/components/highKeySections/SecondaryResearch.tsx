@@ -26,12 +26,12 @@ export default function SecondaryResearch() {
         >
           {/* COL 1 */}
           <Grid>
-            <Text.H2 color="PRIMARY">
+            <Text.H2 color="RED">
               7 to 10
             </Text.H2>
             <Text.H5 bold={false}>
-              The <Text.Strong color="PRIMARY">number of times</Text.Strong> a
-              garment is worn before being <Text.Strong color="PRIMARY">tossed</Text.Strong>.
+              The <Text.Strong color="RED">number of times</Text.Strong> a
+              garment is worn before being <Text.Strong color="RED">tossed</Text.Strong>.
             </Text.H5>
           </Grid>
           {/* COL 2 */}
@@ -46,17 +46,17 @@ export default function SecondaryResearch() {
                 alt="high-key-app"
                 priority
               />
-              <Text.H2 color="PRIMARY">36%</Text.H2>
+              <Text.H2 color="RED">36%</Text.H2>
             </Grid>
             <Text.H5 bold={false}>
-              The <Text.Strong color="PRIMARY">number of times</Text.Strong> a
+              The <Text.Strong color="RED">number of times</Text.Strong> a
               garment is worn has{' '}
-              <Text.Strong color="PRIMARY">declined</Text.Strong> in 15 years.
+              <Text.Strong color="RED">declined</Text.Strong> in 15 years.
             </Text.H5>
           </Grid>
           {/* COL 3 */}
           <Grid>
-            <Text.H2 color="PRIMARY">
+            <Text.H2 color="RED">
               500 M
             </Text.H2>
             <Text.H5 bold={false}>

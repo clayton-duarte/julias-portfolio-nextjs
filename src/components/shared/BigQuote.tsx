@@ -6,7 +6,7 @@ import Text from '~/components/shared/Text';
 export default function BigQuote({ children }: { children: ReactNode }) {
   return (
     <Grid
-      bg="PRIMARY"
+      bg="RED"
       color="WHITE"
       p="3rem 0"
     >

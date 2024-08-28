@@ -20,7 +20,7 @@ export default function SketchesWireframes() {
           m="3rem 0 0 0"
           align="center"
           transform="capitalize"
-          color="PRIMARY"
+          color="RED"
         >
           Bringing Ideas to reality
         </Text.H4>
@@ -57,7 +57,7 @@ export default function SketchesWireframes() {
         />
       </Grid>
       <Grid
-        bg="PRIMARY"
+        bg="RED"
         color="WHITE"
         m="3rem 0"
       >

@@ -12,7 +12,7 @@ export default function ExperienceMapping() {
       <SectionContainer>
         <Text.H4
           m="3rem 0 0 0"
-          color="PRIMARY"
+          color="RED"
         >
           Experience Mapping
         </Text.H4>
@@ -39,7 +39,7 @@ export default function ExperienceMapping() {
         />
       </Grid> */}
       {/* <Grid
-        bg="PRIMARY"
+        bg="RED"
         color="WHITE"
       >
         <Grid

@@ -17,7 +17,7 @@ export default function ThemesSection() {
       </BigQuote>
       <SectionContainer>
         <Text.H4
-          color="PRIMARY"
+          color="RED"
         >
           Themes
         </Text.H4>
@@ -33,7 +33,7 @@ export default function ThemesSection() {
           gap="1.5rem"
         >
           <Grid
-            bg='GREY'
+            bg='GREY_LIGHT'
             radius="1.25rem"
             p="2.5rem"
           >
@@ -43,7 +43,7 @@ export default function ThemesSection() {
             </Text>
           </Grid>
           <Grid
-            bg='GREY'
+            bg='GREY_LIGHT'
             radius="1.25rem"
             p="2.5rem"
           >
@@ -53,7 +53,7 @@ export default function ThemesSection() {
             </Text>
           </Grid>
           <Grid
-            bg='GREY'
+            bg='GREY_LIGHT'
             radius="1.25rem"
             p="2.5rem"
           >
@@ -63,7 +63,7 @@ export default function ThemesSection() {
             </Text>
           </Grid>
           <StyledGrid
-            bg='SECONDARY'
+            bg='RED_LIGHT'
             radius="1.25rem"
             p="2.5rem"
           >

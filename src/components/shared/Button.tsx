@@ -14,13 +14,13 @@ export interface ButtonProps {
 function getBgColor(props: ButtonProps & { theme: Theme }): string {
   if (props.outlined) return props.theme.WHITE;
 
-  return props.color ? props.theme[props.color] : props.theme.PRIMARY;
+  return props.color ? props.theme[props.color] : props.theme.RED;
 }
 
 function getTextColor(props: ButtonProps & { theme: Theme }): string {
   if (!props.outlined) return props.theme.WHITE;
 
-  return props.color ? props.theme[props.color] : props.theme.PRIMARY;
+  return props.color ? props.theme[props.color] : props.theme.RED;
 }
 
 const Button = styled.button<ButtonProps>`
@@ -32,8 +32,8 @@ const Button = styled.button<ButtonProps>`
   }};
   border: 1px solid
     ${(props) => {
-      return props.color ? props.theme[props.color] : props.theme.PRIMARY;
-    }};
+    return props.color ? props.theme[props.color] : props.theme.RED;
+  }};
   font-size: ${({ size }) => {
     return size ?? 'inherit';
   }};
@@ -51,8 +51,8 @@ const Button = styled.button<ButtonProps>`
   cursor: pointer;
   border: 1px solid
     ${(props) => {
-      return props.color ? props.theme[props.color] : props.theme.PRIMARY;
-    }};
+    return props.color ? props.theme[props.color] : props.theme.RED;
+  }};
   &:hover:not(:disabled) {
     filter: opacity(0.8);
     text-decoration: none;

@@ -26,36 +26,28 @@ export enum Breakpoints {
 export type BreakpointNames = keyof typeof Breakpoints;
 
 export enum Colors {
-  WHITE = '#F8F8F8',
-  GREY = '#F0EEEE',
-  DARK = '#564E4E',
   BLACK = '#272424',
-  PRIMARY = '#831B0E',
-  SECONDARY = '#FFA499',
-  INFO = '#831B0E',
-  SUCCESS = '#36701B',
-  WARNING = '#FFC700',
-  DANGER = '#831B0E',
+  WHITE = '#F8F8F8',
+  GREY = '#564E4E',
+  GREY_LIGHT = '#F0EEEE',
   RED = '#831B0E',
+  RED_LIGHT = '#FFA499',
   PURPLE = '#373372',
+  PURPLE_LIGHT = '#37337266',
 }
 
 export type ColorNames = keyof typeof Colors;
 
 declare module '@emotion/react' {
   export interface Theme {
+    BLACK: string;
     WHITE: string;
     GREY: string;
-    DARK: string;
-    BLACK: string;
-    PRIMARY: string;
-    SECONDARY: string;
-    INFO: string;
-    SUCCESS: string;
-    WARNING: string;
-    DANGER: string;
+    GREY_LIGHT: string;
     RED: string;
+    RED_LIGHT: string;
     PURPLE: string;
+    PURPLE_LIGHT: string;
   }
 
   export function useTheme(): Theme;
@@ -86,7 +78,7 @@ function GlobalStyles() {
         }
 
         a {
-          color: ${t.BLACK};
+          color: ${t.GREY};
         }
           
         a:hover {

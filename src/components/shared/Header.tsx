@@ -32,7 +32,7 @@ const StyledLink = styled(Link) <{ active?: boolean }>`
   font-size: 1.25rem;
   &:hover {
     color: ${(props) => {
-    return props.theme.PRIMARY;
+    return props.theme.RED;
   }};
   }
 `;

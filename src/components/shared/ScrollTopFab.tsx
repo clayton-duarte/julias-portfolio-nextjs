@@ -5,10 +5,10 @@ import styled from '@emotion/styled';
 const StyledButton = styled.button`
   border: 1px solid
     ${({ theme }) => {
-      return theme.PRIMARY;
-    }};
+    return theme.RED;
+  }};
   background: ${({ theme }) => {
-    return theme.PRIMARY;
+    return theme.RED;
   }};
   color: ${({ theme }) => {
     return theme.WHITE;
@@ -26,11 +26,11 @@ const StyledButton = styled.button`
   width: 3rem;
   :hover {
     background: ${({ theme }) => {
-      return theme.WHITE;
-    }};
+    return theme.WHITE;
+  }};
     color: ${({ theme }) => {
-      return theme.PRIMARY;
-    }};
+    return theme.RED;
+  }};
   }
 `;
 

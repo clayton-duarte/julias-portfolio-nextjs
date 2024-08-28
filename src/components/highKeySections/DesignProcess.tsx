@@ -12,7 +12,7 @@ import Text from '../shared/Text';
 export default function DesignProcess() {
   return (
     <Grid
-      bg="PRIMARY"
+      bg="RED"
       color="WHITE"
     >
       <Grid

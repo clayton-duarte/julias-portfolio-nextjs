@@ -14,7 +14,7 @@ const StyledImage = styled(Image)`
 export default function TarotCards() {
   return (
     <Grid
-      bg="PRIMARY"
+      bg="RED"
       color="WHITE"
       p="3rem 0"
     >

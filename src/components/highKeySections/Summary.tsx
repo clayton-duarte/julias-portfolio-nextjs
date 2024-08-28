@@ -5,7 +5,7 @@ import Text from '../shared/Text';
 export default function SummarySection() {
   return (
     <Grid
-      bg="PRIMARY"
+      bg="RED"
       color="WHITE"
     >
       <SectionContainer>

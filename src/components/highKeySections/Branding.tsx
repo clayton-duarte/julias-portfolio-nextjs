@@ -69,7 +69,7 @@ export default function BrandingSection() {
       >
         <Text.H4
           m="3rem 0 0 0"
-          color="PRIMARY"
+          color="RED"
         >
           Wordmark
         </Text.H4>

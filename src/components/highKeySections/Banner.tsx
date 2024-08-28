@@ -26,7 +26,7 @@ export default function BannerSection() {
           xs="auto"
           xsP="1rem"
         >
-          <Text.H1 color="PRIMARY">Case Study -HighKey App</Text.H1>
+          <Text.H1 color="RED">Case Study -HighKey App</Text.H1>
           <Text.H4
             m="0 0 120px 0"
             bold={false}

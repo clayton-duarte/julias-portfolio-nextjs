@@ -11,7 +11,7 @@ export default function ProjectOverviewSection() {
         xs="minmax(auto, 527px)"
       >
         <Text.H4
-          color="PRIMARY"
+          color="RED"
           m="0 0 64px 0"
         >
           Project Overview
@@ -24,7 +24,7 @@ export default function ProjectOverviewSection() {
           <strong>most significant impact on fashion consumption</strong>.
         </Text>
         <Text>
-          Through both primary and secondary research, I concentrated on{' '}
+          Through both RED and RED_LIGHT research, I concentrated on{' '}
           <strong>young adults aged 18 to 25</strong>. I conducted interviews
           with individuals who shop for themselves and discovered that they{' '}
           <strong>often struggle to optimize their wardrobes</strong>. My goal

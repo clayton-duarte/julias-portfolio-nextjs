@@ -12,7 +12,7 @@ export default function AffinityMapping() {
   return (
     <>
       <Grid
-        bg="PRIMARY"
+        bg="RED"
         color="WHITE"
         p="5rem 0"
       >
@@ -32,7 +32,7 @@ export default function AffinityMapping() {
       >
         <Text.H4
           m="3rem 0 0 0"
-          color="PRIMARY"
+          color="RED"
         >
           Affinity Mapping
         </Text.H4>

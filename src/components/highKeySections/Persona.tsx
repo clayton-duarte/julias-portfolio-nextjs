@@ -48,7 +48,7 @@ export default function Persona() {
         alt="high-key-app"
         priority
       />
-      {/* <Text.H4 color="PRIMARY">Persona</Text.H4>
+      {/* <Text.H4 color="RED">Persona</Text.H4>
       <Grid m="3rem 0">
         <Text.H4 bold={false}>About</Text.H4>
         <Text.H5 bold={false}>
