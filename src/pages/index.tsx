@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 import Grid from '~/components/Grid';
 import Header, { HEADER_HEIGHT } from '~/components/Header';
-import HightKeySection from '~/components/homeSection/HightKeySection';
-import KijijiSection from '~/components/homeSection/KijijiSection';
+import HightKeySection from '~/components/homeSections/HightKeySection';
+import KijijiSection from '~/components/homeSections/KijijiSection';
 import Text from '~/components/Text';
 
 const HomeBanner = styled(Grid)`

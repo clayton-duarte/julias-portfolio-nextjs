@@ -1,7 +1,7 @@
 import Grid from '~/components/Grid';
 import Header from '~/components/Header';
-import HightKeySection from '~/components/homeSection/HightKeySection';
-import KijijiSection from '~/components/homeSection/KijijiSection';
+import HightKeySection from '~/components/homeSections/HightKeySection';
+import KijijiSection from '~/components/homeSections/KijijiSection';
 
 export default function WorkPage() {
   return (
