@@ -5,8 +5,8 @@ import { ReactNode, useMemo, useState } from 'react';
 
 import styled from '@emotion/styled';
 
-import menuClosed from '~/assets/menu-closed.svg';
-import menu from '~/assets/menu.svg';
+import menuClosed from './assets/menu-closed.svg';
+import menu from './assets/menu.svg';
 import { Breakpoints } from '~/theme';
 
 import Grid from './Grid';
@@ -16,14 +16,14 @@ export const HEADER_HEIGHT = '77px';
 const Header = styled(Grid)`
   border-bottom: 2px solid
     ${(props) => {
-      return props.theme.BLACK;
-    }};
+    return props.theme.BLACK;
+  }};
   position: sticky;
   z-index: 999;
   top: 0;
 `;
 
-const StyledLink = styled(Link)<{ active?: boolean }>`
+const StyledLink = styled(Link) <{ active?: boolean }>`
   font-weight: ${(props) => {
     return props.active ? 700 : 400;
   }};
@@ -32,8 +32,8 @@ const StyledLink = styled(Link)<{ active?: boolean }>`
   font-size: 1.25rem;
   &:hover {
     color: ${(props) => {
-      return props.theme.PRIMARY;
-    }};
+    return props.theme.PRIMARY;
+  }};
   }
 `;
 

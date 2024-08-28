@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import highkeyCellphone_1 from '~/assets/highkey-cellphone-1.png';
-import { ButtonLink } from '~/components/Button';
-import Grid from '~/components/Grid';
-import Text from '~/components/Text';
+import highkeyCellphone_1 from './assets/highkey-cellphone-1.png';
+import { ButtonLink } from '~/components/shared/Button';
+import Grid from '~/components/shared/Grid';
+import Text from '~/components/shared/Text';
 
 export default function HightKeySection() {
   return (

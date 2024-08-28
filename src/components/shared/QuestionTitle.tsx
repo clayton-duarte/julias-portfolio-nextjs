@@ -3,9 +3,9 @@ import { ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 
-import questionMark from '~/assets/question-mark.svg';
-import Grid from '~/components/Grid';
-import Text from '~/components/Text';
+import questionMark from './assets/question-mark.svg';
+import Grid from '~/components/shared/Grid';
+import Text from '~/components/shared/Text';
 
 const StyledImage = styled(Image)`
 transform: translate(-50%, -50%);

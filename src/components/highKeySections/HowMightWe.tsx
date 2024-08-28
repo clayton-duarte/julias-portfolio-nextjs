@@ -1,5 +1,5 @@
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 export default function HowMightWe() {
   return (

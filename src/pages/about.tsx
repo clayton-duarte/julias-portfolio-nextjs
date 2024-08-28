@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import about from '~/assets/about.png';
-import Grid from '~/components/Grid';
-import Header from '~/components/Header';
-import Text from '~/components/Text';
+import about from './assets/about.png';
+import Grid from '~/components/shared/Grid';
+import Header from '~/components/shared/Header';
+import Text from '~/components/shared/Text';
 
 export default function AboutPage() {
   return (

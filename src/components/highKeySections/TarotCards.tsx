@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 import styled from '@emotion/styled';
 
-import tarotFace from '~/assets/tarot-face.png';
-import tarotVerse from '~/assets/tarot-verse.png';
+import tarotFace from './assets/tarot-face.png';
+import tarotVerse from './assets/tarot-verse.png';
 
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 const StyledImage = styled(Image)`
   border-radius: 2rem;

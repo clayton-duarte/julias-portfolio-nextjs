@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 
-import Grid from '~/components/Grid';
-import Header, { HEADER_HEIGHT } from '~/components/Header';
+import Grid from '~/components/shared/Grid';
+import Header, { HEADER_HEIGHT } from '~/components/shared/Header';
 import HightKeySection from '~/components/homeSections/HightKeySection';
 import KijijiSection from '~/components/homeSections/KijijiSection';
-import Text from '~/components/Text';
+import Text from '~/components/shared/Text';
 
 const HomeBanner = styled(Grid)`
   min-height: calc(100vh - ${HEADER_HEIGHT});

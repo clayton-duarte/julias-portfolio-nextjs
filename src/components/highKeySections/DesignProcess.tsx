@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
-import define from '~/assets/define.svg';
-import doubleDiamond from '~/assets/double-diamond.png';
-import empathize from '~/assets/empathize.svg';
-import ideate from '~/assets/ideate.svg';
-import prototype from '~/assets/prototype.svg';
-import test from '~/assets/test.svg';
+import define from './assets/define.svg';
+import doubleDiamond from './assets/double-diamond.png';
+import empathize from './assets/empathize.svg';
+import ideate from './assets/ideate.svg';
+import prototype from './assets/prototype.svg';
+import test from './assets/test.svg';
 
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 export default function DesignProcess() {
   return (

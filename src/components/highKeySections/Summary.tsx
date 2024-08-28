@@ -1,6 +1,6 @@
-import Grid from '../Grid';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 export default function SummarySection() {
   return (

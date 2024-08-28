@@ -1,6 +1,6 @@
-import Grid from '../Grid';
-import QuestionTitle from '../QuestionTitle';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import QuestionTitle from '../shared/QuestionTitle';
+import Text from '../shared/Text';
 
 export default function WhyGenZSection() {
   return (

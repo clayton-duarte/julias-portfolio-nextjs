@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
-import Grid from '~/components/Grid';
-import Text from '~/components/Text';
+import Grid from '~/components/shared/Grid';
+import Text from '~/components/shared/Text';
 
 export default function BigQuote({ children }: { children: ReactNode }) {
   return < Grid

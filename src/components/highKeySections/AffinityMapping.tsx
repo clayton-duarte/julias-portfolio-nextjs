@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import behaviours from '~/assets/behaviours.png';
-import motivationGoals from '~/assets/motivation-goals.png';
-import painPoints from '~/assets/pain-points.png';
+import behaviours from './assets/behaviours.png';
+import motivationGoals from './assets/motivation-goals.png';
+import painPoints from './assets/pain-points.png';
 
-import Grid from '../Grid';
-import Hr from '../Hr';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Hr from '../shared/Hr';
+import Text from '../shared/Text';
 
 export default function AffinityMapping() {
   return (

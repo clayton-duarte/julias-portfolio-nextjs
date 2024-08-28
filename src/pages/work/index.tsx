@@ -1,5 +1,5 @@
-import Grid from '~/components/Grid';
-import Header from '~/components/Header';
+import Grid from '~/components/shared/Grid';
+import Header from '~/components/shared/Header';
 import HightKeySection from '~/components/homeSections/HightKeySection';
 import KijijiSection from '~/components/homeSections/KijijiSection';
 

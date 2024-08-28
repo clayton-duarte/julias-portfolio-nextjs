@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-import BigQuote from '../BigQuote';
-import Grid from '../Grid';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import BigQuote from '../shared/BigQuote';
+import Grid from '../shared/Grid';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 const StyledGrid = styled(Grid)`
 border-bottom: 8px solid ${({ theme }) => { return theme.RED }};

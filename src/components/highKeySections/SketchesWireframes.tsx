@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
-import closetPage from '~/assets/closet-page.png';
-import consistentDescribe from '~/assets/consistent-describe.png';
-import midFiToEnding from '~/assets/mid-fi-to-ending.png';
-import onboarding from '~/assets/onboarding.png';
-import sketches from '~/assets/sketches.png';
-import wireframes from '~/assets/wireframes.png';
+import closetPage from './assets/closet-page.png';
+import consistentDescribe from './assets/consistent-describe.png';
+import midFiToEnding from './assets/mid-fi-to-ending.png';
+import onboarding from './assets/onboarding.png';
+import sketches from './assets/sketches.png';
+import wireframes from './assets/wireframes.png';
 
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 export default function SketchesWireframes() {
   return (

@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 import styled from '@emotion/styled';
 
-import jordan from '~/assets/jordan.jpg';
-import personaTable from '~/assets/persona-table.png';
+import jordan from './assets/jordan.jpg';
+import personaTable from './assets/persona-table.png';
 import { Breakpoints } from '~/theme';
 
-import Grid from '../Grid';
-import QuestionTitle from '../QuestionTitle';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import QuestionTitle from '../shared/QuestionTitle';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 const GridBorderLeft = styled(Grid)`
   @media (min-width: ${Breakpoints.MD}) {

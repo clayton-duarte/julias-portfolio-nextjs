@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import takingNotes from '~/assets/taking-notes.png';
+import takingNotes from './assets/taking-notes.png';
 
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 export default function InterviewScript() {
   return (

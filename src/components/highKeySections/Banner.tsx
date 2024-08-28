@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import highKeyBanner from '~/assets/high-key-banner.png';
+import highKeyBanner from './assets/high-key-banner.png';
 
-import { ButtonLink } from '../Button';
-import Grid from '../Grid';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import { ButtonLink } from '../shared/Button';
+import Grid from '../shared/Grid';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 export default function BannerSection() {
   return (

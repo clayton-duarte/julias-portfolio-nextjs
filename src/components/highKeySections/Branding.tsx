@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import navbarOld2 from '~/assets/navbar-old2.png';
-import navbarOld from '~/assets/navibar-old.png';
-import onboarding from '~/assets/onboarding1.png';
+import navbarOld2 from './assets/navbar-old2.png';
+import navbarOld from './assets/navibar-old.png';
+import onboarding from './assets/onboarding1.png';
 
-import BigQuote from '../BigQuote';
-import Grid from '../Grid';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import BigQuote from '../shared/BigQuote';
+import Grid from '../shared/Grid';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 export default function BrandingSection() {
   return (

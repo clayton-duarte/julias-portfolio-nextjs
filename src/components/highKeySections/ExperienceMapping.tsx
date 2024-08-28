@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import experienceMap from '~/assets/experience-mapping.png';
+import experienceMap from './assets/experience-mapping.png';
 
-import BigQuote from '../BigQuote';
-import Grid from '../Grid';
-import SectionContainer from '../SectionContainer';
-import Text from '../Text';
+import BigQuote from '../shared/BigQuote';
+import Grid from '../shared/Grid';
+import SectionContainer from '../shared/SectionContainer';
+import Text from '../shared/Text';
 
 export default function ExperienceMapping() {
   return (

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
-import persona1 from '~/assets/persona1.png';
-import persona2 from '~/assets/persona2.png';
-import persona3 from '~/assets/persona3.png';
+import persona1 from './assets/persona1.png';
+import persona2 from './assets/persona2.png';
+import persona3 from './assets/persona3.png';
 
-import Grid from '../Grid';
-import Text from '../Text';
+import Grid from '../shared/Grid';
+import Text from '../shared/Text';
 
 export default function WhatPeopleSay() {
   return (
