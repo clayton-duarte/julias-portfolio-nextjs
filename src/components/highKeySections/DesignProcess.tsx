@@ -6,7 +6,6 @@ import empathize from './assets/empathize.svg';
 import ideate from './assets/ideate.svg';
 import prototype from './assets/prototype.svg';
 import test from './assets/test.svg';
-
 import Grid from '../shared/Grid';
 import Text from '../shared/Text';
 

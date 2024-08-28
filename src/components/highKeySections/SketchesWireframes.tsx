@@ -6,7 +6,6 @@ import midFiToEnding from './assets/mid-fi-to-ending.png';
 import onboarding from './assets/onboarding.png';
 import sketches from './assets/sketches.png';
 import wireframes from './assets/wireframes.png';
-
 import Grid from '../shared/Grid';
 import Text from '../shared/Text';
 

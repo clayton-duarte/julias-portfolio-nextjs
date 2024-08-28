@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 import styled from '@emotion/styled';
 
-import jordan from './assets/jordan.jpg';
-import personaTable from './assets/persona-table.png';
 import { Breakpoints } from '~/theme';
 
+import jordan from './assets/jordan.jpg';
+import personaTable from './assets/persona-table.png';
 import Grid from '../shared/Grid';
 import QuestionTitle from '../shared/QuestionTitle';
 import SectionContainer from '../shared/SectionContainer';

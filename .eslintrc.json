@@ -1,8 +1,8 @@
 {
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
-    "next/core-web-vitals",
-    "eslint:recommended"
+    "next/core-web-vitals"
   ],
   "plugins": ["@typescript-eslint", "import", "prettier"],
   "rules": {

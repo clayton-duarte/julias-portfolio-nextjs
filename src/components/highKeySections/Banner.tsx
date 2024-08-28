@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import highKeyBanner from './assets/high-key-banner.png';
-
 import { ButtonLink } from '../shared/Button';
 import Grid from '../shared/Grid';
 import SectionContainer from '../shared/SectionContainer';

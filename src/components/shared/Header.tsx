@@ -5,10 +5,10 @@ import { ReactNode, useMemo, useState } from 'react';
 
 import styled from '@emotion/styled';
 
-import menuClosed from './assets/menu-closed.svg';
-import menu from './assets/menu.svg';
 import { Breakpoints } from '~/theme';
 
+import menuClosed from './assets/menu-closed.svg';
+import menu from './assets/menu.svg';
 import Grid from './Grid';
 
 export const HEADER_HEIGHT = '77px';

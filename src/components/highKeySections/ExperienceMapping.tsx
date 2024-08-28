@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import experienceMap from './assets/experience-mapping.png';
-
 import BigQuote from '../shared/BigQuote';
 import Grid from '../shared/Grid';
 import SectionContainer from '../shared/SectionContainer';

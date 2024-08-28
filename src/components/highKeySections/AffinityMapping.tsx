@@ -4,7 +4,6 @@ import Link from 'next/link';
 import behaviours from './assets/behaviours.png';
 import motivationGoals from './assets/motivation-goals.png';
 import painPoints from './assets/pain-points.png';
-
 import Grid from '../shared/Grid';
 import Hr from '../shared/Hr';
 import Text from '../shared/Text';

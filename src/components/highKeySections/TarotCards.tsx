@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 
 import tarotFace from './assets/tarot-face.png';
 import tarotVerse from './assets/tarot-verse.png';
-
 import Grid from '../shared/Grid';
 import Text from '../shared/Text';
 

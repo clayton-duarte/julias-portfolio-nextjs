@@ -1,9 +1,10 @@
 import Image from 'next/image';
 
-import kijijiPng from './assets/kijiji.png';
 import Button, { ButtonLink } from '~/components/shared/Button';
 import Grid from '~/components/shared/Grid';
 import Text from '~/components/shared/Text';
+
+import kijijiPng from './assets/kijiji.png';
 
 export default function KijijiSection() {
   return (

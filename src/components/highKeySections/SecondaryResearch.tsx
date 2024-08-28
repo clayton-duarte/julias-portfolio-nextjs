@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import trendDown from './assets/trend-down.svg';
-
 import BigQuote from '../shared/BigQuote';
 import Grid from '../shared/Grid';
 import Text from '../shared/Text';

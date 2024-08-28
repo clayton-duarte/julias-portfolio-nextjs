@@ -4,7 +4,6 @@ import Link from 'next/link';
 import addShirt from './assets/add-shirt.svg';
 import outfit from './assets/outfit.svg';
 import viewShirt from './assets/view-shirt.svg';
-
 import Grid from '../shared/Grid';
 import SectionContainer from '../shared/SectionContainer';
 import Text from '../shared/Text';
