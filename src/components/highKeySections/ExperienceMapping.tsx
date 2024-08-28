@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import experienceMap from '~/assets/experience-map.png';
+import experienceMap from '~/assets/experience-mapping.png';
 
 import BigQuote from '../BigQuote';
 import Grid from '../Grid';

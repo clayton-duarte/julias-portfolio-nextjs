@@ -40,12 +40,12 @@ export default function HighkeyAppCaseStudyPage() {
       <TaskFlow />
       <Branding />
 
-      <UserStories />
-      <AffinityMapping />
-      <WhatPeopleSay />
+      {/* <UserStories /> */}
+      {/* <AffinityMapping /> */}
+      {/* <WhatPeopleSay /> */}
       <SketchesWireframes />
       <NextStepsLearnings />
-      <TarotCards />
+      {/* <TarotCards /> */}
       <ScrollTopFab />
     </>
   );

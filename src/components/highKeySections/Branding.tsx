@@ -1,18 +1,71 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import moodboard from '~/assets/moodboard.png';
-import typography from '~/assets/typography.png';
-import wordmark from '~/assets/wordmark.png';
+import navbarOld2 from '~/assets/navbar-old2.png';
+import navbarOld from '~/assets/navibar-old.png';
+import onboarding from '~/assets/onboarding1.png';
 
+import BigQuote from '../BigQuote';
 import Grid from '../Grid';
+import SectionContainer from '../SectionContainer';
 import Text from '../Text';
 
 export default function BrandingSection() {
   return (
-
     <>
-      <Grid container
+      <BigQuote>
+        Bringing Ideas to reality...
+      </BigQuote>
+      <SectionContainer>
+        <Grid color='RED' xs='minmax(auto, 527px)' gap='64px'>
+          <Text.H4>UI Inspiration & Branding Creation</Text.H4>
+          <Text>
+            I drew inspiration from UI elements of both direct competitors (virtual closet apps) and indirect ones (social media platforms like Instagram and Pinterest) to craft the app&apos;s unique identity.
+          </Text>
+        </Grid>
+
+        <Grid md='auto auto' color='RED' align='end' p='32px 0 200px 0'>
+          <Grid xs='minmax(auto, 256px) auto' align='end' gap='32px'>
+            <Grid>
+              <Image
+                src={navbarOld}
+                alt="high-key-app"
+                priority
+              />
+              <Image
+                src={navbarOld2}
+                alt="high-key-app"
+                priority
+              />
+            </Grid>
+            <Text bold>
+              For the Nav bar the idea was to focus on critical pages such as the Home page, Closet/Wardrobe and the possibility of editing.
+            </Text>
+          </Grid>
+          <Grid xs='minmax(auto, auto) auto' align='end' gap='32px'>
+            <Image
+              src={onboarding}
+              alt="high-key-app"
+              priority
+            />
+            <Text bold>
+              For the Nav bar the idea was to focus on critical pages such as the Home page, Closet/Wardrobe and the possibility of editing.
+            </Text>
+          </Grid>
+        </Grid>
+
+        <Grid color='RED' xs='minmax(auto, 527px)' gap='64px'>
+          <Text.H4>Branding (view full branding and visual app’s creation)</Text.H4>
+          <Grid>
+            <Text>
+              When selecting the <strong>brand’s name</strong>, I started with the concept of <strong>‘HighKey’</strong>—a nod to Gen Z slang that conveys intensity and strong feelings toward something or someone.
+            </Text>
+            <Text>
+              The HighKey brand features a <strong>dark-red palette</strong> paired with geometric <strong>sans-serif typography</strong>, creating a bold and sleek feel. The dynamic color palette is designed to complement and enhance the UI elements.          </Text>
+
+          </Grid>
+        </Grid>
+      </SectionContainer>
+      {/* <Grid container
         p="3rem"
       >
         <Text.H4
@@ -84,7 +137,7 @@ export default function BrandingSection() {
             View the full UI Library and Design System here.
           </Text.H6>
         </Link>
-      </Grid>
+      </Grid> */}
     </>
   );
 }
