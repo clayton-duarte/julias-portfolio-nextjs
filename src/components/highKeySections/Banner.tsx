@@ -10,7 +10,7 @@ export default function BannerSection() {
   return (
     <SectionContainer>
       <Grid
-        lg="minmax(auto, 620px) minmax(auto, 430px)"
+        lg="minmax(auto, 620px) minmax(auto, 500px)"
         gap="2rem"
         p="0 0 126px 0"
         align="center"
