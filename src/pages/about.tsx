@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import about from '~/components/shared/assets/about.png';
+import Footer from '~/components/shared/Footer';
 import Grid from '~/components/shared/Grid';
 import Header from '~/components/shared/Header';
 import Text from '~/components/shared/Text';
@@ -10,6 +11,7 @@ export default function AboutPage() {
     <>
       <Header />
       <Grid
+        height='calc(100vh - 200px)'
         container
         p="3rem"
       >
@@ -40,6 +42,7 @@ export default function AboutPage() {
           </Grid>
         </Grid>
       </Grid>
+      <Footer />
     </>
   );
 }

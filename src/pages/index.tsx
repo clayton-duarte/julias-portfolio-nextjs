@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 import HightKeySection from '~/components/homeSections/HightKeySection';
 import KijijiSection from '~/components/homeSections/KijijiSection';
+import Footer from '~/components/shared/Footer';
 import Grid from '~/components/shared/Grid';
 import Header, { HEADER_HEIGHT } from '~/components/shared/Header';
 import Text from '~/components/shared/Text';
@@ -51,6 +52,7 @@ export default function HomePage() {
       </HomeBanner>
       <HightKeySection />
       <KijijiSection />
+      <Footer />
     </Grid>
   );
 }

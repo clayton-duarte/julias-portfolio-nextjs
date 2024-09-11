@@ -41,7 +41,7 @@ export default function SketchesWireframes() {
         />
         <Grid
           gap="3rem"
-          m="5rem 0"
+          p="5rem 0"
           xs="minmax(auto, 540px)"
         >
           <Text.H4 bold={false}>Wireframing</Text.H4>
@@ -80,7 +80,7 @@ export default function SketchesWireframes() {
         <Grid
           justify="center"
           xs="minmax(auto, 500px)"
-          m="5rem 0 10rem 0"
+          p="5rem 0 10rem 0"
         >
           <Text.H5>
             Ensure that the onboarding screen provides an app summary for users.
@@ -94,7 +94,7 @@ export default function SketchesWireframes() {
         <Grid
           justify="center"
           xs="minmax(auto, 500px)"
-          m="10rem 0"
+          p="5rem 0 10rem 0"
         >
           <Text.H5>
             Consider the real-life concepts of “outfits” and “closets” to
@@ -108,7 +108,7 @@ export default function SketchesWireframes() {
         />
         <Grid
           gap="2rem"
-          m="5rem 0"
+          p="5rem 0"
         >
           <Text.H5 bold={false}>
             I have changed the name of the page from “All Items” to “Your
@@ -125,7 +125,7 @@ export default function SketchesWireframes() {
         <Grid
           justify="center"
           xs="minmax(auto, 500px)"
-          m="10rem 0"
+          p="5rem 0"
         >
           <Text.H5>
             Use consistent text to describe the same actions or items within the
@@ -139,7 +139,7 @@ export default function SketchesWireframes() {
         />
         <Grid
           xs="minmax(auto, 840px)"
-          m="5rem 0"
+          p="0 0 10rem 0"
         >
           <Text.H5 bold={false}>
             The page changes on those screens three times, when in reality the
@@ -154,6 +154,7 @@ export default function SketchesWireframes() {
         <Grid
           xs="minmax(auto, 432px)"
           m="5rem 0 3rem 0"
+          justify='center'
         >
           <Text.H5 bold={false}>
             The final result is easier and smoother for the user to navigate.

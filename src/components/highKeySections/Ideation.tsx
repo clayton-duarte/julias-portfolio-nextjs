@@ -11,7 +11,7 @@ export default function IdeationSection() {
       <SectionContainer>
         <Grid xs='minmax(auto, 527px)'>
           <Text.H4 color="RED">Ideation</Text.H4>
-          <Text color="RED">Keeping the persona in mind, I brainstormed several ideas and prioritized them based on their impact relative to the effort required. Given the user&apos;s difficulty managing their closet, the chosen idea was to create a <strong>virtual closet</strong>. This would help them <strong>visualize their clothing items more effectively</strong> and <strong>keep track of how often they use each piece</strong>.</Text>
+          <Text>Keeping the persona in mind, I brainstormed several ideas and prioritized them based on their impact relative to the effort required. Given the user&apos;s difficulty managing their closet, the chosen idea was to create a <strong>virtual closet</strong>. This would help them <strong>visualize their clothing items more effectively</strong> and <strong>keep track of how often they use each piece</strong>.</Text>
         </Grid>
       </SectionContainer>
       <BigQuote>During the Ideation phase, I brainstormed over 20 ideas and refined them down to three final concepts. I then developed task flows and created initial sketches to provide a visual overview of the key user experience inside the app.</BigQuote>
