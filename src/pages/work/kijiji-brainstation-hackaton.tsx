@@ -1,3 +1,4 @@
+import Footer from "~/components/shared/Footer";
 import Header from "~/components/shared/Header";
 
 export default function KijijiBrainstationHackatonPage() {
@@ -21,6 +22,7 @@ export default function KijijiBrainstationHackatonPage() {
       {/* IDEATION */}
       {/* FINAL DESIGN */}
       {/* WHAT I LEARNED */}
+      <Footer variant="kijiji" />
     </>
   )
 }

@@ -8,6 +8,10 @@ const footerVariants = {
     color: 'WHITE',
     bg: 'RED',
   },
+  kijiji: {
+    color: 'WHITE',
+    bg: 'PURPLE',
+  },
   default: {
     color: 'BLACK',
     bg: 'WHITE',
