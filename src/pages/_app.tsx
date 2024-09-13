@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import type { AppProps } from 'next/app';
 
 import createCache from '@emotion/cache';
@@ -16,12 +17,19 @@ const StyledMain = styled.main`
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <CacheProvider value={cache}>
-      <ThemeProvider>
-        <StyledMain>
-          <Component {...pageProps} />
-        </StyledMain>
-      </ThemeProvider>
-    </CacheProvider>
+    <>
+      <CacheProvider
+        value={cache}
+      >
+        <ThemeProvider>
+          <StyledMain>
+            <Component
+              {...pageProps}
+            />
+          </StyledMain>
+        </ThemeProvider>
+      </CacheProvider>
+      <Analytics />
+    </>
   );
 }
