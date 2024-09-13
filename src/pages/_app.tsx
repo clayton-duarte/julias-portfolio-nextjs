@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"
 import type { AppProps } from 'next/app';
 
 import createCache from '@emotion/cache';
@@ -29,7 +28,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </StyledMain>
         </ThemeProvider>
       </CacheProvider>
-      <Analytics />
     </>
   );
 }
