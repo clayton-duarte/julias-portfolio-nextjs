@@ -1,3 +1,5 @@
+import Summary from "~/components/kijijiSections/Summary";
+import Overview from "~/components/kijijiSections/Overview";
 import Banner from "~/components/kijijiSections/Banner";
 import Footer from "~/components/shared/Footer";
 import Header from "~/components/shared/Header";
@@ -7,10 +9,8 @@ export default function KijijiBrainstationHackatonPage() {
     <>
       <Header />
       <Banner />
-      {/* SUMMARY */}
-      {/* OVERVIEW */}
-      {/* OVERVIEW 2 */}
-      {/* OVERVIEW 3 */}
+      <Summary />
+      <Overview />
       {/* CHALLENGE */}
       {/* ABOUT */}
       {/* ABOUT 2 */}

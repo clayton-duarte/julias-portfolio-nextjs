@@ -1,12 +1,15 @@
 import { ReactNode } from 'react';
 
-import Grid from '~/components/shared/Grid';
+import Grid, { type GridProps } from '~/components/shared/Grid';
 import Text from '~/components/shared/Text';
 
-export default function BigQuote({ children }: { children: ReactNode }) {
+export default function BigQuote({ children, bg = "RED" }: {
+  children: ReactNode;
+  bg?: GridProps['bg'];
+}) {
   return (
     <Grid
-      bg="RED"
+      bg={bg}
       color="WHITE"
       p="3rem 0"
     >

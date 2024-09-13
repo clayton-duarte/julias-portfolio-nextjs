@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
 
+import Grid from '~/components/shared/Grid';
 import SectionContainer from '~/components/shared/SectionContainer';
 import Text from '~/components/shared/Text';
 
 import kijijiLaptop from './assets/kijiji-laptop.png';
-import Grid from '../shared/Grid';
 
 export default function Banner() {
   return (
