@@ -6,7 +6,9 @@ import Header from '~/components/shared/Header';
 
 export default function WorkPage() {
   return (
-    <Grid gap="0">
+    <Grid
+      gap="0"
+    >
       <Header />
       <HightKeySection />
       <KijijiSection />

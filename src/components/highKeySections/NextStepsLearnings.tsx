@@ -12,9 +12,22 @@ export default function NextStepsLearnings() {
         p="3rem"
         xs="minmax(auto, 784px)"
       >
-        <Text.H4 color='RED' m="0 0 64px 0">Critique & Feedback</Text.H4>
-        <Text m="0 0 1rem 0">
-          I presented the project during user testing sessions and at a tech event, and received excellent feedback. Some <strong>key takeaways</strong> include:
+        <Text.H4
+          color="RED"
+          m="0 0 64px 0"
+        >
+          Critique & Feedback
+        </Text.H4>
+        <Text
+          m="0 0 1rem 0"
+        >
+          I presented the project during user testing sessions and at a tech event, and received excellent feedback. Some 
+          {' '}
+          <strong>
+            key takeaways
+          </strong>
+          {' '}
+          include:
         </Text>
         <Grid.Ul>
           <li>
@@ -72,7 +85,10 @@ export default function NextStepsLearnings() {
       </QuestionTitle>
 
       <SectionContainer>
-        <Grid.Ul gap='0' p="0 1rem 1rem 1rem">
+        <Grid.Ul
+          gap="0"
+          p="0 1rem 1rem 1rem"
+        >
           <li>
             Conducting more usability testings.
           </li>
@@ -83,7 +99,9 @@ export default function NextStepsLearnings() {
             Refining UI visuals.
           </li>
         </Grid.Ul>
-        <Text m='0 0 1rem 0'>
+        <Text
+          m="0 0 1rem 0"
+        >
           Although the app currently lacks social features, future updates may introduce them. Consider potential misuse scenarios, such as harassment, abusive messaging, and tracking user habits without consent.
         </Text>
         <Text>

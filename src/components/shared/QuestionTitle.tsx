@@ -21,14 +21,18 @@ export default function QuestionTitle(
     children: ReactNode
   }) {
   return (
-    <Grid p='120px 0' justify='center' align='center'>
+    <Grid
+      align="center"
+      justify="center"
+      p="120px 0"
+    >
       <StyledImage
-        src={questionMark}
-        alt="high-key-app"
         priority
+        alt="high-key-app"
+        src={questionMark}
       />
       <Text.H3
-        align='center'
+        align="center"
       >
         {children}
       </Text.H3>

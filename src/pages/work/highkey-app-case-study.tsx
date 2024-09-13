@@ -49,7 +49,9 @@ export default function HighkeyAppCaseStudyPage() {
       {/* <TarotCards /> */}
 
       <ScrollTopFab />
-      <Footer variant="highKeyApp" />
+      <Footer
+        variant="highKeyApp"
+      />
     </>
   );
 }

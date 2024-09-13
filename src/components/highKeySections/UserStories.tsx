@@ -13,22 +13,22 @@ export default function UserStories() {
         p="3rem"
       >
         <Text.H4
-          m="3rem 0 0 0"
           color="RED"
+          m="3rem 0 0 0"
         >
           User Stories
         </Text.H4>
       </Grid>
       <Grid
-        xsP="1rem"
-        lgP="0"
         justify="center"
+        lgP="0"
         xs="minmax(auto, 730px)"
+        xsP="1rem"
       >
         <Image
-          src={userStories}
-          alt="high-key-app"
           priority
+          alt="high-key-app"
+          src={userStories}
         />
       </Grid>
       <Grid
@@ -36,20 +36,20 @@ export default function UserStories() {
         p="3rem"
       >
         <Text.H6
-          bold={false}
           align="center"
+          bold={false}
           m="0 0 5rem 0"
         >
           <Link
-            target="_blank"
             href="https://docs.google.com/spreadsheets/d/10hmNROvyIbVEXt7ShnJDHVbtxTSnVn8ONtygGsGsY38/edit"
+            target="_blank"
           >
             View the full User Stories here.
           </Link>
         </Text.H6>
         <Text.H3
-          bold={false}
           align="center"
+          bold={false}
         >
           Approach
         </Text.H3>
@@ -57,18 +57,28 @@ export default function UserStories() {
           gap="2rem"
           m="3rem 0"
         >
-          <Text.H4 bold={false}>
-            To optimize user experience, I have chosen to focus on the Epic{' '}
-            <Text.Strong color="RED">
+          <Text.H4
+            bold={false}
+          >
+            To optimize user experience, I have chosen to focus on the Epic
+            {' '}
+            <Text.Strong
+              color="RED"
+            >
               Utilization & Wear Frequency
             </Text.Strong>
             . This approach directly addresses the common user challenge of
             managing their wardrobe effectively.
           </Text.H4>
-          <Text.H4 bold={false}>
+          <Text.H4
+            bold={false}
+          >
             Additionally, it tackles the critical issue of sustainability by
-            helping users{' '}
-            <Text.Strong color="RED">
+            helping users
+            {' '}
+            <Text.Strong
+              color="RED"
+            >
               stay mindful of their existing clothing items
             </Text.Strong>
             , reducing the likelihood of neglecting what they already own.

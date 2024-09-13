@@ -17,16 +17,22 @@ export default function DesignProcess() {
     >
       <Grid
         container
-        xsP="3rem 1rem"
-        mdP="5rem 3rem"
         gap="3rem"
+        mdP="5rem 3rem"
+        xsP="3rem 1rem"
       >
         <Grid
-          xs="minmax(auto, 450px)"
           justify="center"
+          xs="minmax(auto, 450px)"
         >
-          <Text.H4 align="center">Design Process</Text.H4>
-          <Text align="center">
+          <Text.H4
+            align="center"
+          >
+            Design Process
+          </Text.H4>
+          <Text
+            align="center"
+          >
             I used a human-centered approach in a double diamond process to
             places real people at the center of the solution.
           </Text>
@@ -37,21 +43,21 @@ export default function DesignProcess() {
           xs="minmax(auto, 665px)"
         >
           <Image
-            src={doubleDiamond}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={doubleDiamond}
           />
         </Grid>
         <Grid
-          xs="auto auto"
-          md="repeat(5, auto)"
           gap="2rem"
           justify="space-evenly"
           m="2rem 0"
+          md="repeat(5, auto)"
+          xs="auto auto"
         >
           <Grid
-            xs="auto"
             justify="center"
+            xs="auto"
           >
             <Grid
               bg="WHITE"
@@ -59,21 +65,21 @@ export default function DesignProcess() {
               radius="2.5rem"
             >
               <Image
-                src={empathize}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={empathize}
               />
             </Grid>
             <Text.H6
-              bold={false}
               align="center"
+              bold={false}
             >
               Empathize
             </Text.H6>
           </Grid>
           <Grid
-            xs="auto"
             justify="center"
+            xs="auto"
           >
             <Grid
               bg="WHITE"
@@ -81,21 +87,21 @@ export default function DesignProcess() {
               radius="2.5rem"
             >
               <Image
-                src={define}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={define}
               />
             </Grid>
             <Text.H6
-              bold={false}
               align="center"
+              bold={false}
             >
               Define
             </Text.H6>
           </Grid>
           <Grid
-            xs="auto"
             justify="center"
+            xs="auto"
           >
             <Grid
               bg="WHITE"
@@ -103,21 +109,21 @@ export default function DesignProcess() {
               radius="2.5rem"
             >
               <Image
-                src={ideate}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={ideate}
               />
             </Grid>
             <Text.H6
-              bold={false}
               align="center"
+              bold={false}
             >
               Ideate
             </Text.H6>
           </Grid>
           <Grid
-            xs="auto"
             justify="center"
+            xs="auto"
           >
             <Grid
               bg="WHITE"
@@ -125,21 +131,21 @@ export default function DesignProcess() {
               radius="2.5rem"
             >
               <Image
-                src={prototype}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={prototype}
               />
             </Grid>
             <Text.H6
-              bold={false}
               align="center"
+              bold={false}
             >
               Prototype
             </Text.H6>
           </Grid>
           <Grid
-            xs="auto"
             justify="center"
+            xs="auto"
           >
             <Grid
               bg="WHITE"
@@ -147,14 +153,14 @@ export default function DesignProcess() {
               radius="2.5rem"
             >
               <Image
-                src={test}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={test}
               />
             </Grid>
             <Text.H6
-              bold={false}
               align="center"
+              bold={false}
             >
               Test
             </Text.H6>

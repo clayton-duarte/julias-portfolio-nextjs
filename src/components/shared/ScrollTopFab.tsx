@@ -60,6 +60,12 @@ export default function ScrollTopFab() {
   };
 
   return (
-    isVisible && <StyledButton onClick={handleClick}>&#x25B2;</StyledButton>
+    isVisible && (
+      <StyledButton
+        onClick={handleClick}
+      >
+        &#x25B2;
+      </StyledButton>
+    )
   );
 }

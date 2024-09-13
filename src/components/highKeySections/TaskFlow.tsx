@@ -12,59 +12,121 @@ export default function TaskFlow() {
   return (
     <>
       <SectionContainer>
-        <Grid xs='minmax(auto, 527px)'>
-          <Text.H4 color="RED">Task Flow</Text.H4>
-          <Text>Through talking with my target user, I obtained some valuable insights about how they wanted to view data. If implemented in the app, it should be done in a fun way.</Text>
-          <Text>The choice was to create a user flow where the user
-            <strong>first creates an outfit</strong> and then can <strong>view how many
-              times they have created an outfit with that clothing piece.</strong> This shows the data visualization in non-intrusive way.</Text>
+        <Grid
+          xs="minmax(auto, 527px)"
+        >
+          <Text.H4
+            color="RED"
+          >
+            Task Flow
+          </Text.H4>
+          <Text>
+            Through talking with my target user, I obtained some valuable insights about how they wanted to view data. If implemented in the app, it should be done in a fun way.
+          </Text>
+          <Text>
+            The choice was to create a user flow where the user
+            <strong>
+              first creates an outfit
+            </strong>
+            {' '}
+            and then can
+            <strong>
+              view how many
+              times they have created an outfit with that clothing piece.
+            </strong>
+            {' '}
+            This shows the data visualization in non-intrusive way.
+          </Text>
         </Grid>
       </SectionContainer>
       <SectionContainer>
-        <Grid md="repeat(3, minmax(auto, 180px))" justify="space-between" align='center'>
-          <Grid gap="32px">
+        <Grid
+          align="center"
+          justify="space-between"
+          md="repeat(3, minmax(auto, 180px))"
+        >
+          <Grid
+            gap="32px"
+          >
             <Image
+              priority
+              alt="high-key-app"
               src={addShirt}
-              alt="high-key-app"
-              priority
             />
-            <Text.H4 color="RED" bold={false}>Add an item into the app</Text.H4>
+            <Text.H4
+              bold={false}
+              color="RED"
+            >
+              Add an item into the app
+            </Text.H4>
             <Grid.Ul>
-              <li>Image recognition allows user to separated image from background.</li>
-              <li>Also automatically recommend clothing labels.</li>
+              <li>
+                Image recognition allows user to separated image from background.
+              </li>
+              <li>
+                Also automatically recommend clothing labels.
+              </li>
             </Grid.Ul>
           </Grid>
-          <Grid gap="32px">
+          <Grid
+            gap="32px"
+          >
             <Image
+              priority
+              alt="high-key-app"
               src={outfit}
-              alt="high-key-app"
-              priority
             />
-            <Text.H4 color="RED" bold={false}>Create an outfit</Text.H4>
+            <Text.H4
+              bold={false}
+              color="RED"
+            >
+              Create an outfit
+            </Text.H4>
             <Grid.Ul>
-              <li>When you match items into an outfit, those individual items starts counting as “worn”.</li>
-              <li>If the user did not create an outfit with that individual item in the last 30 days, one message pops up recommending creating an outfit with that item.</li>
-              <li>The outfits stay inside cards where you can check clothes individually.</li>
+              <li>
+                When you match items into an outfit, those individual items starts counting as “worn”.
+              </li>
+              <li>
+                If the user did not create an outfit with that individual item in the last 30 days, one message pops up recommending creating an outfit with that item.
+              </li>
+              <li>
+                The outfits stay inside cards where you can check clothes individually.
+              </li>
             </Grid.Ul>
           </Grid>
-          <Grid gap="32px">
+          <Grid
+            gap="32px"
+          >
             <Image
-              src={viewShirt}
-              alt="high-key-app"
               priority
+              alt="high-key-app"
+              src={viewShirt}
             />
-            <Text.H4 color="RED" bold={false}>Clothing usage visualization</Text.H4>
+            <Text.H4
+              bold={false}
+              color="RED"
+            >
+              Clothing usage visualization
+            </Text.H4>
             <Grid.Ul>
-              <li>The user can check how many times they create an outfit with that item, per day, month and year.</li>
-              <li>The app provide a sort by based on most worn, least worn.</li>
+              <li>
+                The user can check how many times they create an outfit with that item, per day, month and year.
+              </li>
+              <li>
+                The app provide a sort by based on most worn, least worn.
+              </li>
             </Grid.Ul>
           </Grid>
         </Grid>
       </SectionContainer>
       <SectionContainer>
-        <Text align="center">
-          <Link target="_blank"
-            href="https://www.figma.com/board/b2mncqw5eIXBa1aqyy2EnK/Flows?node-id=0-1&t=U4MnStf3yrkDltSE-0">
+        <Text
+          align="center"
+        >
+          <Link
+            href="https://www.figma.com/board/b2mncqw5eIXBa1aqyy2EnK/Flows?node-id=0-1&t=U4MnStf3yrkDltSE-0"
+            target="_blank"
+          >
             View the full Flows here.
           </Link>
         </Text>

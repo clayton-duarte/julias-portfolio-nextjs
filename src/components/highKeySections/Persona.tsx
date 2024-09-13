@@ -42,11 +42,14 @@ const GridBorderTopLeft = styled(GridBorderLeft)`
 export default function Persona() {
   return (
     <SectionContainer>
-      <QuestionTitle>Who I am designing for </QuestionTitle>
+      <QuestionTitle>
+        Who I am designing for
+        {' '}
+      </QuestionTitle>
       <Image
-        src={personaTable}
-        alt="high-key-app"
         priority
+        alt="high-key-app"
+        src={personaTable}
       />
       {/* <Text.H4 color="RED">Persona</Text.H4>
       <Grid m="3rem 0">

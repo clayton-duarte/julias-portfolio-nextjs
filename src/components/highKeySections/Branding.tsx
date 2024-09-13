@@ -19,62 +19,90 @@ export default function BrandingSection() {
         Bringing Ideas to reality...
       </BigQuote>
       <SectionContainer>
-        <Grid xs='minmax(auto, 527px)' gap='64px'>
-          <Text.H4 color='RED'>UI Inspiration & Branding Creation</Text.H4>
+        <Grid
+          gap="64px"
+          xs="minmax(auto, 527px)"
+        >
+          <Text.H4
+            color="RED"
+          >
+            UI Inspiration & Branding Creation
+          </Text.H4>
           <Text>
             I drew inspiration from UI elements of both direct competitors (virtual closet apps) and indirect ones (social media platforms like Instagram and Pinterest) to craft the app&apos;s unique identity.
           </Text>
         </Grid>
 
-        <Grid md='auto auto' align='end' p='32px 0 200px 0'>
-          <Grid xs='minmax(auto, 256px) auto' align='end' gap='32px'>
+        <Grid
+          align="end"
+          md="auto auto"
+          p="32px 0 200px 0"
+        >
+          <Grid
+            align="end"
+            gap="32px"
+            xs="minmax(auto, 256px) auto"
+          >
             <Grid>
               <Image
-                src={navbarOld}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={navbarOld}
               />
               <Image
-                src={navbarOld2}
-                alt="high-key-app"
                 priority
+                alt="high-key-app"
+                src={navbarOld2}
               />
             </Grid>
-            <Text bold>
+            <Text
+              bold
+            >
               For the Nav bar the idea was to focus on critical pages such as the Home page, Closet/Wardrobe and the possibility of editing.
             </Text>
           </Grid>
-          <Grid xs='minmax(auto, auto) auto' align='end' gap='32px'>
+          <Grid
+            align="end"
+            gap="32px"
+            xs="minmax(auto, auto) auto"
+          >
             <Image
-              src={onboarding}
-              alt="high-key-app"
               priority
+              alt="high-key-app"
+              src={onboarding}
             />
-            <Text bold>
+            <Text
+              bold
+            >
               For the Nav bar the idea was to focus on critical pages such as the Home page, Closet/Wardrobe and the possibility of editing.
             </Text>
           </Grid>
         </Grid>
       </SectionContainer>
-      <Grid container
+      <Grid
+        container
         p="3rem"
       >
         <Text.H4
-          m="3rem 0 0 0"
           color="RED"
+          m="3rem 0 0 0"
         >
           Wordmark
         </Text.H4>
         <Grid
-          xs="minmax(auto, 936px)"
-          m="3rem 0"
           gap="2rem"
+          m="3rem 0"
+          xs="minmax(auto, 936px)"
         >
-          <Text.H4 bold={false}>
+          <Text.H4
+            bold={false}
+          >
             I tried to create the wordmark through some sketches, but it was not
             the path I wanted to follow.
           </Text.H4>
-          <Text.H4 bold={false}>
+          <Text.H4
+            bold={false}
+          >
             I initially envisioned the wordmark to be clean, minimal, and
             geometric, but my sketches leaned towards a more organic style. So, I
             went back to the laptop and started testing using guiding lines.
@@ -85,45 +113,48 @@ export default function BrandingSection() {
           xs="minmax(auto, 1fr)"
         >
           <Image
-            src={wordmark}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={wordmark}
           />
         </Grid>
         <Grid
-          xs="minmax(auto, 768px)"
           m="3rem 0"
+          xs="minmax(auto, 768px)"
         >
-          <Text.H5 bold={false}>
+          <Text.H5
+            bold={false}
+          >
             For the brand wordmark and overall typography, I selected the Jost
             font, a geometric sans-serif typeface inspired by Futura, specifically
-            designed for optimal screen readability.{' '}
+            designed for optimal screen readability.
+            {' '}
           </Text.H5>
         </Grid>
         <Grid
+          gap="3rem"
           justify="center"
           xs="minmax(auto, 1fr)"
-          gap="3rem"
         >
           <Image
-            src={typography}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={typography}
           />
           <Image
-            src={moodboard}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={moodboard}
           />
         </Grid>
         <Link
-          target="_blank"
           href="https://www.figma.com/design/mLbMNuRlPPfixgpWu1Vh5H/MoodBoard?node-id=0-1&t=ry8bEd10jl6NFd1N-0"
+          target="_blank"
         >
           <Text.H6
+            align="center"
             bold={false}
             m="3rem"
-            align="center"
           >
             View the full UI Library and Design System here.
           </Text.H6>

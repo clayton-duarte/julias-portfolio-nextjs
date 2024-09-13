@@ -6,6 +6,26 @@
   ],
   "plugins": ["@typescript-eslint", "import", "prettier"],
   "rules": {
+    "react/jsx-one-expression-per-line": ["error"],
+    "react/jsx-closing-tag-location": ["error", "tag-aligned"],
+    "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      "error",
+      { "maximum": 1, "when": "multiline" }
+    ],
+    "jsx-quotes": ["error", "prefer-double"],
     "curly": ["warn", "multi-line", "consistent"],
     "no-nested-ternary": "error",
     "no-console": "error",

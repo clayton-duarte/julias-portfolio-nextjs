@@ -103,8 +103,8 @@ function SmartLink({
   return (
     <StyledLink
       active={isActive}
-      target={target}
       href={href}
+      target={target}
     >
       {children}
     </StyledLink>
@@ -119,65 +119,91 @@ export default function HeaderComponent() {
   };
 
   return (
-    <Header bg="WHITE">
+    <Header
+      bg="WHITE"
+    >
       <Grid
         container
-        xsGap="0 1rem"
+        align="center"
+        justify="space-between"
         mdGap="0 2rem"
         p="1rem 3rem"
         xs="auto auto"
-        justify="space-between"
-        align="center"
+        xsGap="0 1rem"
       >
-        <HomeLink href="/">&#120129;&#x1D54A;</HomeLink>
-        <DesktopOnly
-          xs="repeat(4, auto)"
-          mdGap="10rem"
+        <HomeLink
+          href="/"
         >
-          <SmartLink href="/work">Work</SmartLink>
-          <SmartLink href="/about">About</SmartLink>
+          &#120129;&#x1D54A;
+        </HomeLink>
+        <DesktopOnly
+          mdGap="10rem"
+          xs="repeat(4, auto)"
+        >
           <SmartLink
-            target="_blank"
+            href="/work"
+          >
+            Work
+          </SmartLink>
+          <SmartLink
+            href="/about"
+          >
+            About
+          </SmartLink>
+          <SmartLink
             href="https://www.linkedin.com/in/ssantosjulia/"
+            target="_blank"
           >
             LinkedIn
           </SmartLink>
           <SmartLink
-            target="_blank"
             href="/julia-santos-ux-designer-resume.pdf"
+            target="_blank"
           >
             Resume
           </SmartLink>
         </DesktopOnly>
         <MobileOnly>
-          <ButtonIcon onClick={handleClick}>
+          <ButtonIcon
+            onClick={handleClick}
+          >
             <Image
-              src={open ? menuClosed : menu}
-              alt="Menu"
               priority
+              alt="Menu"
+              src={open ? menuClosed : menu}
             />
           </ButtonIcon>
         </MobileOnly>
         {open && (
           <MobileOnly>
-            <Overlay onClick={handleClick}>
+            <Overlay
+              onClick={handleClick}
+            >
               <MobileMenu>
                 <Grid
+                  align="start"
                   gap="3rem"
                   p="3rem"
-                  align="start"
                 >
-                  <SmartLink href="/work">Work</SmartLink>
-                  <SmartLink href="/about">About</SmartLink>
                   <SmartLink
-                    target="_blank"
+                    href="/work"
+                  >
+                    Work
+                  </SmartLink>
+                  <SmartLink
+                    href="/about"
+                  >
+                    About
+                  </SmartLink>
+                  <SmartLink
                     href="https://www.linkedin.com/in/ssantosjulia/"
+                    target="_blank"
                   >
                     LinkedIn
                   </SmartLink>
                   <SmartLink
-                    target="_blank"
                     href="/julia-santos-ux-designer-resume.pdf"
+                    target="_blank"
                   >
                     Resume
                   </SmartLink>

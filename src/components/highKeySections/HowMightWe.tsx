@@ -10,13 +10,17 @@ export default function HowMightWe() {
       >
         <Grid
           container
-          xsP="3rem 1rem"
           mdP="5rem 3rem"
+          xsP="3rem 1rem"
         >
-          <Text.H1 align="center">How Might We</Text.H1>
-          <Text.H4
-            bold={false}
+          <Text.H1
             align="center"
+          >
+            How Might We
+          </Text.H1>
+          <Text.H4
+            align="center"
+            bold={false}
           >
             help Gen Z Canadians with their outfit planning to reduce underusing habits and make better use of their existing wardrobe?
           </Text.H4>

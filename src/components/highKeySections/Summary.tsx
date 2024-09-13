@@ -10,30 +10,40 @@ export default function SummarySection() {
     >
       <SectionContainer>
         <Grid
+          gap="1rem"
           justify="space-between"
           md="repeat(5, auto)"
           p="75px 0"
-          gap="1rem"
         >
           <Grid
-            xsGap=".5rem"
             mdGap="32px"
+            xsGap=".5rem"
           >
-            <Text.H4>My role</Text.H4>
-            <Text>UX/UI and Research</Text>
+            <Text.H4>
+              My role
+            </Text.H4>
+            <Text>
+              UX/UI and Research
+            </Text>
           </Grid>
           <Grid
-            xsGap=".5rem"
             mdGap="32px"
+            xsGap=".5rem"
           >
-            <Text.H4>Industry</Text.H4>
-            <Text>Fashion, Tech</Text>
+            <Text.H4>
+              Industry
+            </Text.H4>
+            <Text>
+              Fashion, Tech
+            </Text>
           </Grid>
           <Grid
-            xsGap=".5rem"
             mdGap="32px"
+            xsGap=".5rem"
           >
-            <Text.H4>Tools used</Text.H4>
+            <Text.H4>
+              Tools used
+            </Text.H4>
             <Text>
               Figma, Google slides,
               <br />
@@ -43,18 +53,26 @@ export default function SummarySection() {
             </Text>
           </Grid>
           <Grid
-            xsGap=".5rem"
             mdGap="32px"
+            xsGap=".5rem"
           >
-            <Text.H4>Designed for</Text.H4>
-            <Text>iOs mobile</Text>
+            <Text.H4>
+              Designed for
+            </Text.H4>
+            <Text>
+              iOs mobile
+            </Text>
           </Grid>
           <Grid
-            xsGap=".5rem"
             mdGap="32px"
+            xsGap=".5rem"
           >
-            <Text.H4>Duration</Text.H4>
-            <Text>May 2024 - July 2024</Text>
+            <Text.H4>
+              Duration
+            </Text.H4>
+            <Text>
+              May 2024 - July 2024
+            </Text>
           </Grid>
         </Grid>
       </SectionContainer>

@@ -6,8 +6,8 @@ export default function SectionContainer({ children }: { children: ReactNode }) 
   return (
     <Grid
       container
-      xsP="1rem"
       mdP="3rem"
+      xsP="1rem"
     >
       {children}
     </Grid>

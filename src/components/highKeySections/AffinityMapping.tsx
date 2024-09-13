@@ -20,9 +20,12 @@ export default function AffinityMapping() {
           container
           p="0 3rem"
         >
-          <Text.H5 bold={false}>
+          <Text.H5
+            bold={false}
+          >
             I used a Affinity mapping to quickly organize the Insights from the
-            interviews.{' '}
+            interviews.
+            {' '}
           </Text.H5>
         </Grid>
       </Grid>
@@ -31,18 +34,22 @@ export default function AffinityMapping() {
         p="0 3rem"
       >
         <Text.H4
-          m="3rem 0 0 0"
           color="RED"
+          m="3rem 0 0 0"
         >
           Affinity Mapping
         </Text.H4>
         <Grid
-          m="3rem 0 0 0"
-          justify="center"
-          xs="minmax(auto, 500px)"
           gap=".25rem"
+          justify="center"
+          m="3rem 0 0 0"
+          xs="minmax(auto, 500px)"
         >
-          <Text.H6 align="center">Pain Points</Text.H6>
+          <Text.H6
+            align="center"
+          >
+            Pain Points
+          </Text.H6>
           <Hr />
         </Grid>
         <Grid
@@ -50,18 +57,22 @@ export default function AffinityMapping() {
           xs="auto"
         >
           <Image
-            src={painPoints}
+            priority
             alt="Pain Points"
-            priority
+            src={painPoints}
           />
         </Grid>
         <Grid
-          m="3rem 0 0 0"
-          justify="center"
-          xs="minmax(auto, 500px)"
           gap=".25rem"
+          justify="center"
+          m="3rem 0 0 0"
+          xs="minmax(auto, 500px)"
         >
-          <Text.H6 align="center">Motivation/Goals</Text.H6>
+          <Text.H6
+            align="center"
+          >
+            Motivation/Goals
+          </Text.H6>
           <Hr />
         </Grid>
         <Grid
@@ -69,18 +80,22 @@ export default function AffinityMapping() {
           xs="auto"
         >
           <Image
-            src={motivationGoals}
+            priority
             alt="Motivation/Goals"
-            priority
+            src={motivationGoals}
           />
         </Grid>
         <Grid
-          m="3rem 0 0 0"
-          justify="center"
-          xs="minmax(auto, 500px)"
           gap=".25rem"
+          justify="center"
+          m="3rem 0 0 0"
+          xs="minmax(auto, 500px)"
         >
-          <Text.H6 align="center">Behaviours</Text.H6>
+          <Text.H6
+            align="center"
+          >
+            Behaviours
+          </Text.H6>
           <Hr />
         </Grid>
         <Grid
@@ -88,16 +103,18 @@ export default function AffinityMapping() {
           xs="auto"
         >
           <Image
-            src={behaviours}
-            alt="Behaviours"
             priority
+            alt="Behaviours"
+            src={behaviours}
           />
         </Grid>
       </Grid>
-      <Grid p="2rem 0">
+      <Grid
+        p="2rem 0"
+      >
         <Link
-          target="_blank"
           href="https://www.figma.com/proto/kfHxXzxBNjHhztQ1IOrTvt/CP1?page-id=46%3A126&node-id=46-157&t=BWCppYSYxjVIAdLN-1"
+          target="_blank"
         >
           <Text.H6
             align="center"

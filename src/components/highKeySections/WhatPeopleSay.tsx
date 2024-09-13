@@ -14,21 +14,21 @@ export default function WhatPeopleSay() {
         p="3rem"
       >
         <Text.H4
-          bold={false}
           align="center"
+          bold={false}
         >
           What people are saying?
         </Text.H4>
         <Grid
-          md="minmax(auto, 500px) minmax(auto, 500px)"
           align="center"
-          justify="center"
           gap="3rem"
+          justify="center"
+          md="minmax(auto, 500px) minmax(auto, 500px)"
         >
           <Image
-            src={persona1}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={persona1}
           />
           <Text.H5>
             “I get a lot of hand-me-downs so a lot of the hand-me-downs I keep
@@ -36,9 +36,9 @@ export default function WhatPeopleSay() {
             closet.”
           </Text.H5>
           <Image
-            src={persona2}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={persona2}
           />
           <Text.H5>
             “Let’s organize this mess!” You know, only keep the essentials. The
@@ -46,9 +46,9 @@ export default function WhatPeopleSay() {
             essentials”
           </Text.H5>
           <Image
-            src={persona3}
-            alt="high-key-app"
             priority
+            alt="high-key-app"
+            src={persona3}
           />
           <Text.H5>
             “My biggest challenge was to actually not keep the clothes that I
@@ -65,9 +65,15 @@ export default function WhatPeopleSay() {
           container
           p="0 3rem"
         >
-          <Text.H5 bold={false}>
-            I decided to focus on the theme of{' '}
-            <Text.Strong>Utilization & Wear Frequency</Text.Strong>. Many users
+          <Text.H5
+            bold={false}
+          >
+            I decided to focus on the theme of
+            {' '}
+            <Text.Strong>
+              Utilization & Wear Frequency
+            </Text.Strong>
+            . Many users
             mentioned how often they buy new clothes or receive hand-me-downs
             from parents and then forget about them inside their wardrobe. I
             have chosen to address this problem by creating a solution that

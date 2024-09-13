@@ -15,23 +15,31 @@ export default function HightKeySection() {
     >
       <Grid
         container
-        xs="minmax(auto, 528px) minmax(auto, 322px)"
         gap="120px"
+        xs="minmax(auto, 528px) minmax(auto, 322px)"
       >
         <Image
-          src={highkeyCellphone_1}
-          alt="highkey-cellphone"
           priority
+          alt="highkey-cellphone"
+          src={highkeyCellphone_1}
         />
         <Grid
           gap="48px"
           p="100px 0 0 0"
         >
-          <Grid gap="0">
-            <Text.H2>HighKey</Text.H2>
-            <Text.P>UX/UI Design, UX Research, Case Study</Text.P>
+          <Grid
+            gap="0"
+          >
+            <Text.H2>
+              HighKey
+            </Text.H2>
+            <Text.P>
+              UX/UI Design, UX Research, Case Study
+            </Text.P>
           </Grid>
-          <Text.P size="24px">
+          <Text.P
+            size="24px"
+          >
             Helping users check their wearing habits while mixing and matching
             outfits.
           </Text.P>

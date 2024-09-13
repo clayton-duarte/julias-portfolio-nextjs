@@ -27,8 +27,18 @@ export default function Footer({
 
   return (
     <footer>
-      <Grid color={footerVariants[variant].color as ColorNames} bg={footerVariants[variant].bg as ColorNames}>
-        <Text align="center">© {thisYear} Julia Santos. All rights reserved.</Text>
+      <Grid
+        bg={footerVariants[variant].bg as ColorNames}
+        color={footerVariants[variant].color as ColorNames}
+      >
+        <Text
+          align="center"
+        >
+          ©
+          {thisYear}
+          {' '}
+          Julia Santos. All rights reserved.
+        </Text>
       </Grid>
     </footer>
   );

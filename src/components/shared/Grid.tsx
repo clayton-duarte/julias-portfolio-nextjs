@@ -283,7 +283,11 @@ function Grid({
 }) {
   const Component = StyledGrid.withComponent(component);
 
-  return <Component {...props} />;
+  return (
+    <Component
+      {...props}
+    />
+  );
 }
 
 Grid.Main = (props: GridProps) => {

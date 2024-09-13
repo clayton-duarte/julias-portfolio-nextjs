@@ -65,7 +65,11 @@ function Text({
 }) {
   const Component = StyledText.withComponent(component);
 
-  return <Component {...textProps} />;
+  return (
+    <Component
+      {...textProps}
+    />
+  );
 }
 
 Text.P = (props: TextProps) => {

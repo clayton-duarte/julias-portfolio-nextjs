@@ -11,8 +11,8 @@ export default function ExperienceMapping() {
     <>
       <SectionContainer>
         <Text.H4
-          m="3rem 0 0 0"
           color="RED"
+          m="3rem 0 0 0"
         >
           Experience Mapping
         </Text.H4>
@@ -20,9 +20,9 @@ export default function ExperienceMapping() {
           By mapping what users are doing, feeling, and thinking while managing their wardrobes and purchasing clothes, I identified design opportunities that allow for a more holistic evaluation of potential tools and features.
         </Text.P>
         <Image
-          src={experienceMap}
-          alt="high-key-app"
           priority
+          alt="high-key-app"
+          src={experienceMap}
         />
       </SectionContainer>
       {/* <Grid
@@ -57,7 +57,9 @@ export default function ExperienceMapping() {
           </Text.H5>
         </Grid>
       </Grid> */}
-      <BigQuote>I decided to focus on when the user is most stressed and disappointed, which is when they are checking their wardrobe. Once users check their wardrobe, feelings of ‘nothing to wear’ or ‘clothing pieces that don’t match’ are constant.</BigQuote>
+      <BigQuote>
+        I decided to focus on when the user is most stressed and disappointed, which is when they are checking their wardrobe. Once users check their wardrobe, feelings of ‘nothing to wear’ or ‘clothing pieces that don’t match’ are constant.
+      </BigQuote>
     </>
   );
 }

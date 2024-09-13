@@ -19,7 +19,9 @@ const Text = styled.div`
 export default function TiltLabel({ children }: { children: ReactNode }) {
   return (
     <Wrapper>
-      <Text>{children}</Text>
+      <Text>
+        {children}
+      </Text>
     </Wrapper>
   );
 }

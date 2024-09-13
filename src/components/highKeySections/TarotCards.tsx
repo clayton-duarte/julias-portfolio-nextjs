@@ -20,51 +20,61 @@ export default function TarotCards() {
     >
       <Grid
         container
-        p="3rem"
         gap="3rem"
+        p="3rem"
       >
         <Grid
-          p="2rem 0"
-          justify="center"
-          xs="minmax(auto, 450px)"
           gap="2rem"
+          justify="center"
+          p="2rem 0"
+          xs="minmax(auto, 450px)"
         >
-          <Text.H5 align="center">Tarot Cards of Tech</Text.H5>
-          <Text align="center">
+          <Text.H5
+            align="center"
+          >
+            Tarot Cards of Tech
+          </Text.H5>
+          <Text
+            align="center"
+          >
             helps all of us think bigger picture and longer term about the
             products we create and their effect on the world.
           </Text>
         </Grid>
 
         <Grid
+          gap="3rem"
+          justify="space-evenly"
           m="5rem 0"
           xs="minmax(auto, 370px) minmax(auto, 370px)"
-          justify="space-evenly"
-          gap="3rem"
         >
           <StyledImage
-            src={tarotFace}
-            alt="Tarot Face"
             priority
+            alt="Tarot Face"
+            src={tarotFace}
           />
           <StyledImage
-            src={tarotVerse}
-            alt="Tarot Face"
             priority
+            alt="Tarot Face"
+            src={tarotVerse}
           />
         </Grid>
 
         <Grid
-          justify="center"
           gap="2rem"
+          justify="center"
         >
-          <Text.H5 bold={false}>
+          <Text.H5
+            bold={false}
+          >
             For now, the app does not have social features, but in the future,
             it will. So, considering ways a bad actor could misuse the app
             includes harassment, sending abusive messages to other users, and
             tracking user habits without consent.
           </Text.H5>
-          <Text.H5 bold={false}>
+          <Text.H5
+            bold={false}
+          >
             To prevent these dangerous behaviors, the app could implement robust
             reporting and moderation systems, ensure transparent privacy
             policies, and obtain user consent.
